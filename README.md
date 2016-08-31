@@ -1,0 +1,2 @@
+# Documentation
+CORAL Documentation Project
