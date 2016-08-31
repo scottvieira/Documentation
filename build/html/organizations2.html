@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Organizations User Guide &mdash; coral_documentation 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="coral_documentation 0.0.1 documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="organizations-user-guide">
+<span id="organizations-user-guide"></span><h1><strong>Organizations User Guide</strong><a class="headerlink" href="#organizations-user-guide" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="about-coral-organizations">
+<span id="about-coral-organizations"></span><h1>About CORAL Organizations<a class="headerlink" href="#about-coral-organizations" title="Permalink to this headline">¶</a></h1>
+<p>A component of Hesburgh Libraries locally developed ERM, CORAL Organizations provides a way to store and manage names, contacts and account information for the many publishers, providers, vendors, etc that libraries interact with on a daily basis all within a single searchable location.</p>
+</div>
+<div class="section" id="component-overview">
+<span id="component-overview"></span><h1>Component Overview<a class="headerlink" href="#component-overview" title="Permalink to this headline">¶</a></h1>
+<p>CORAL Organizations has three major components in the primary navigation at the top of each page.</p>
+<p>• Home</p>
+<p>• New Organization</p>
+<p>• Admin</p>
+<div class="section" id="home">
+<span id="home"></span><h2>Home<a class="headerlink" href="#home" title="Permalink to this headline">¶</a></h2>
+<p>image of main home screen</p>
+<p>Search has been placed on the Home page as the primary point of entry into the organization records. There are two keyword searches available. The first keyword search &#8216;Name (contains)&#8217; searches against organization name and organization alias. For example, AIP could be retrieved by searching for any or all of the words in American Institute of Physics or by the alias AIP. The second keyword search available is ‘Contact Name (contains)’. This allows the user to search for the name of a known contact (ex. Jane Smith) instead of searching for the name of the organization.</p>
+<p>Users also have the ability to search by an organization&#8217;s role (ex. Publisher, provider, library, etc). And the last search option is more of an AZ browse for the retrieval of organizations by the first letter of the name.</p>
+</div>
+<div class="section" id="new-organization">
+<span id="new-organization"></span><h2>New Organization<a class="headerlink" href="#new-organization" title="Permalink to this headline">¶</a></h2>
+<p>The purpose of the &#8216;Parent&#8217; field is to relate multiple organizations together and to create an organization hierarchy. The field includes an auto-fill populated by existing organization records. The parent organization must already have an existing organization record in order for it to be assigned. Each organization may have only one parent assigned but multiple organizations may have the same parent thereby creating a useful parent-child hierarchy.</p>
+<p>image of Add New Organization screen</p>
+<p>Select New Organization from the main navigation to begin adding new organization records. The link will present the window on the right.</p>
+<p>&#8216;Name&#8217; is the name of the organization (i.e. MetaPress, Sage Publications, etc). This is the only required field.</p>
+<p>&#8216;Parent&#8217; is the name of the parent organization (i.e. Proquest as parent of Chadwyck-Healey).</p>
+<p>&#8216;Company URL&#8217; is meant to be the url of the organization’s homepage.</p>
+<p>&#8216;Role(s)&#8217; is the organization’s role. The values for this field can be customized through the Admin page.</p>
+<p>&#8216;Account Details&#8217; is meant for account numbers and general descriptive info about a library’s account with the organization. The ‘Notes’ field is for general notes.</p>
+</div>
+<div class="section" id="the-organization-record">
+<span id="the-organization-record"></span><h2>The Organization Record<a class="headerlink" href="#the-organization-record" title="Permalink to this headline">¶</a></h2>
+<p>image of main Organization Record</p>
+<p>Here is an organization record for Cambridge Scientific Abstracts. The information on the record is split among five tabs. The sixth tab labeled Licenses is an interoperability feature with CORAL Licensing.</p>
+<p>The Organization Record</p>
+<ul class="simple">
+<li>Organization: This tab displays the information found on the New Organizations screen explained on the previous page.</li>
+<li>Aliases: This tab is for adding alternate names and acronyms so that the record can be retrieved using various names.</li>
+<li>Contacts: This tab includes contact information for the organization (ex. Email, phone numbers for sales reps).</li>
+<li>Accounts: This tab is for managing administrator accounts (ex. Username/password logins for usage statistics collection).</li>
+<li>Issues: This tab is intended for recording major incidents with the organization and/or its resources (ex. Publisher changed servers and access was lost for several days).</li>
+<li>Licenses: This tab will display links to the records in CORAL Licensing for all licenses from the organization. This is an interoperability feature which can be activated when both CORAL Licensing and CORAL Organizations are installed.</li>
+</ul>
+<div class="section" id="organization">
+<span id="organization"></span><h3>Organization<a class="headerlink" href="#organization" title="Permalink to this headline">¶</a></h3>
+<p>The figure above shows the organization tab for Cambridge Scientific Abstracts. Notice that this screenshot does not display the &#8216;Account Details&#8217;, ‘Notes’ or ‘Company URL’ fields that were found on the New Organization window on the previous page. These three fields are not displayed because no data was entered into those fields when the record was added. This was done in order to save space and to create a cleaner design. The ‘edit organization details’ link will open the same window as seen on the previous page so that the user can further edit the organization name, role, etc.</p>
+<p>In this example Cambridge Scientific Abstracts has been assigned ProQuest as the parent organization. The &#8216;view&#8217; link next to ProQuest LLC will open the ProQuest organization record.</p>
+</div>
+<div class="section" id="aliases">
+<span id="aliases"></span><h3>Aliases<a class="headerlink" href="#aliases" title="Permalink to this headline">¶</a></h3>
+<p>image of example Alias CSA- Cambridge Scientific Abstracts</p>
+<p>The Aliases tab allows the user to add multiple aliases for the organization. In this example, the acronym CSA has been added. Each alias is assigned an alias type. The default values for the &#8216;Alias Type&#8217; field are Alternate Name, Name Change and Acronym. These field values can be customized using the Admin page discussed later in this document.</p>
+</div>
+<div class="section" id="contacts">
+<span id="contacts"></span><h3>Contacts<a class="headerlink" href="#contacts" title="Permalink to this headline">¶</a></h3>
+<p>image of example</p>
+<p>The Contacts tab allows the user to add contact information such as phone numbers and email addresses for specific personnel as well as general support. There are two options for adding new contact information; &#8216;add named contact&#8217; and ‘add unnamed contact’. These two links open the windows shown on the next page.</p>
+<p>Add Named Contact Add Unnamed Contact</p>
+<p>side by side images exmaples</p>
+<p>The &#8216;add named contact&#8217; and ‘add unnamed contact’ links open the two windows above. The only difference between the two is that the unnamed contact has no Name or Title field. Generic contact numbers such as a technical support 1-800 number would be added as an unnamed contact. Specific personnel such as a license manager or sales representative would be added as a named contact.</p>
+<p>The values for the &#8216;Role(s)&#8217; field can be customized through the Admin page discussed later in this document. Named and unnamed contacts use the same role values. The ‘Archived’ field is likely the only field that needs further explanation. Contacts can either be deleted or archived when the information is no longer accurate. Contacts that have the ‘Archived’ box checked are kept in the system but are collapsed beneath a ‘show archived contacts’ link so that all users know that the contact information is out of date. This was done for historical tracking purposes so that a library can record who their license managers, etc have been over the years. The ability to delete a contact has been restricted to users with admin privileges because of the chance that a contact might be deleted when it should only be archived.</p>
+</div>
+<div class="section" id="accounts">
+<span id="accounts"></span><h3>Accounts<a class="headerlink" href="#accounts" title="Permalink to this headline">¶</a></h3>
+<p>The Accounts tab is used for storing login information that library personnel use for site administration, gathering usage statistics, etc. Account login information can be entered in either CORAL Organizations or CORAL Resources. Account login information which is resource specific may be entered in CORAL Resources. Account login information that is not resource specific (ex. A single administrator login for all Gale databases) should be entered here in CORAL Organizations. Information stored at the organization level will be inherited by individual resources within CORAL Resources. The resource vs organization specific account information may be confusing but it will make more sense when CORAL Resources is installed along with CORAL Organizations.</p>
+<p>The &#8216;add new external login&#8217; link opens the following window.</p>
+</div>
+<div class="section" id="add-new-external-login">
+<span id="add-new-external-login"></span><h3>Add New External Login<a class="headerlink" href="#add-new-external-login" title="Permalink to this headline">¶</a></h3>
+<p>image of Add Login form</p>
+<p>&#8216;Login Type&#8217; values can be customized. Default values are Admin, FTP, Marc, Statistics, Support, Other.</p>
+<p>&#8216;URL&#8217;, ‘Username’ and ‘Password’ are self-explanatory.</p>
+<p>&#8216;Local Account Email&#8217; is the address of the library personnel registered on the account.</p>
+<p>Once again there is an extra notes field for additional information.</p>
+</div>
+<div class="section" id="issues">
+<span id="issues"></span><h3>Issues<a class="headerlink" href="#issues" title="Permalink to this headline">¶</a></h3>
+<p>image of Issues tab</p>
+<p>The Issues tab is meant for recording general information about an organization that may be valuable over time. This could include anything but one example would be recording when an organization has frequent breaks in access or significant server downtimes. Another example would be having an organization that is often slow when it comes to sending out renewal invoices. The &#8216;add new issue&#8217; link opens a new window which includes a date and notes field. It is a simple field but it may come in handy for recording the institutional knowledge that exists among various personnel.</p>
+<p>image of the License tab with example</p>
+</div>
+<div class="section" id="licenses">
+<span id="licenses"></span><h3>Licenses<a class="headerlink" href="#licenses" title="Permalink to this headline">¶</a></h3>
+<p>The Licenses tab is only available when CORAL Licensing has been installed and the interoperability enabled. This tab will provide links to the license records within CORAL Licensing for all licenses where the organization has been identified as the Publisher/Provider. The hyperlinked license name will open the license record in a new window.</p>
+</div>
+</div>
+<div class="section" id="admin">
+<span id="admin"></span><h2>Admin<a class="headerlink" href="#admin" title="Permalink to this headline">¶</a></h2>
+<p>The Admin page is where you can manage user privileges as well as edit the values for organization role, contact role, alias type and external login type. As with the other modules, CORAL Organizations is designed to work with your campus authentication system (see the technical documentation for details). All valid users are given view only access when logged into CORAL Organizations unless they have specifically been granted additional privileges. You only need to add specific user accounts for personnel that need more than view only privileges. The available privileges are &#8216;view only&#8217;, ‘add/edit’ and ‘admin’. The ‘add new user’ link on the Admin page opens the following window where ‘Login ID’ is the user’s campus ID.</p>
+<p>Privileges</p>
+<ul class="simple">
+<li>Admin : provides full add/edit rights including access to the Admin page and the ability to delete contacts.</li>
+<li>Add/edit : provides ability to add/edit organization records and all available fields but does not grant access to Admin page and does not give permission to delete contacts.</li>
+<li>View only : provides only the ability to view existing organization records.</li>
+</ul>
+<p>side image with Add New User form</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><strong>Organizations User Guide</strong></a></li>
+<li><a class="reference internal" href="#about-coral-organizations">About CORAL Organizations</a></li>
+<li><a class="reference internal" href="#component-overview">Component Overview</a><ul>
+<li><a class="reference internal" href="#home">Home</a></li>
+<li><a class="reference internal" href="#new-organization">New Organization</a></li>
+<li><a class="reference internal" href="#the-organization-record">The Organization Record</a><ul>
+<li><a class="reference internal" href="#organization">Organization</a></li>
+<li><a class="reference internal" href="#aliases">Aliases</a></li>
+<li><a class="reference internal" href="#contacts">Contacts</a></li>
+<li><a class="reference internal" href="#accounts">Accounts</a></li>
+<li><a class="reference internal" href="#add-new-external-login">Add New External Login</a></li>
+<li><a class="reference internal" href="#issues">Issues</a></li>
+<li><a class="reference internal" href="#licenses">Licenses</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#admin">Admin</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/organizations2.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Scott Vieira.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/organizations2.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

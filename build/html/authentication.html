@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Authentication &mdash; coral_documentation_project 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="coral_documentation_project 0.0.1 documentation" href="index.html" />
+    <link rel="next" title="Terms Tool User Guide" href="terms.html" />
+    <link rel="prev" title="Technical Documentation" href="technical.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="authentication">
+<span id="authentication"></span><h1>Authentication<a class="headerlink" href="#authentication" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="supported-browsers">
+<span id="supported-browsers"></span><h2>Supported Browsers<a class="headerlink" href="#supported-browsers" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Current and recent Firefox, IE, Safari, Seamonkey, Opera an Chrome versions all supported</li>
+<li>Requires browser to have Javascript enabled. The CORAL interface relies heavily on AJAX, JQuery and JQuery plugins</li>
+</ul>
+</div>
+<div class="section" id="server-side-requirements-and-setup">
+<span id="server-side-requirements-and-setup"></span><h2>Server-Side Requirements and Setup<a class="headerlink" href="#server-side-requirements-and-setup" title="Permalink to this headline">¶</a></h2>
+<p><strong>Database</strong></p>
+<p>The recommended name for the auth database is <code class="docutils literal"><span class="pre">coral_auth_prod</span></code>. If you have created a “coral” user
+for your other modules, it should have select, insert, update and delete privileges to the
+<code class="docutils literal"><span class="pre">coral_auth_prod</span></code>. If you are using different users for your other CORAL installs, you will need to make
+sure that all of your other users have select access to the new authentication database.</p>
+</div>
+<div class="section" id="installation">
+<span id="installation"></span><h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Installation can occur in one of two ways – either through the web installation script or manually. Web
+installation will provide advantages over manual because will check MySQL privileges and PHP version.
+Installation is recommended in the /coral/auth/ directory. It is also recommended that you check out
+the CORAL Main Landing page and place it into the /coral/ directory. This contains an HTML file and
+graphics for each module, similar to the landing page on the CORAL demo website.</p>
+<div class="section" id="web-installation">
+<span id="web-installation"></span><h3>Web Installation<a class="headerlink" href="#web-installation" title="Permalink to this headline">¶</a></h3>
+<p>Visit <code class="docutils literal"><span class="pre">http://.../coral/auth/install/</span></code> and follow instructions on the screen</p>
+<p><em>Be sure to remove the <code class="docutils literal"><span class="pre">/install/</span></code> directory once installation is complete</em></p>
+</div>
+<div class="section" id="manual-installation">
+<span id="manual-installation"></span><h3>Manual Installation<a class="headerlink" href="#manual-installation" title="Permalink to this headline">¶</a></h3>
+<p>Install database tables</p>
+<ol class="simple">
+<li>Create new database schema (recommended name is <code class="docutils literal"><span class="pre">coral_auth_prod</span></code>)</li>
+<li>Run SQL file</li>
+</ol>
+<p>Update <code class="docutils literal"><span class="pre">/admin/configuration.ini</span></code></p>
+<p><em><strong>Important:</strong></em> First rename <code class="docutils literal"><span class="pre">/admin/configuration_sample.ini</span></code> to <code class="docutils literal"><span class="pre">/admin/configuration.ini</span></code></p>
+<ol class="simple">
+<li>Under [settings]<ol>
+<li>timeout=length of time (in seconds) the user remains logged in</li>
+</ol>
+</li>
+<li>Under [database]<ol>
+<li>type=mysqlcurrently only MySQL is supported but other database types could be supported if modifications to the generic database classes are made</li>
+<li>host=MySQL server - could be localhost as well</li>
+<li>name=database name (for example, <code class="docutils literal"><span class="pre">coral_resources_prod</span></code>)</li>
+<li>username=recommended to have a single user with select, update, insert, delete access to all coral modules</li>
+<li>password=password for above mentioned user</li>
+</ol>
+</li>
+<li>For security reasons, remove the <code class="docutils literal"><span class="pre">/install/</span></code> directory once the installation is complete</li>
+</ol>
+</div>
+</div>
+<div class="section" id="setting-up-and-using-authentication-module-for-the-first-time">
+<span id="setting-up-and-using-authentication-module-for-the-first-time"></span><h2>Setting up and using Authentication module for the first time<a class="headerlink" href="#setting-up-and-using-authentication-module-for-the-first-time" title="Permalink to this headline">¶</a></h2>
+<p>After installation a single default user will be set up with the username <em>coral</em> and password <em>admin</em>. In
+your browser, visit the page <code class="docutils literal"><span class="pre">/coral/auth/admin.php</span></code> to add your username/password and set yourself
+(or anyone else) as ‘admin’. The ‘admin’ users will be able to add, edit and delete users in
+Authentication. Once you have another ‘admin’ user set up you can delete the original coral/admin
+user.</p>
+<p><em><strong>Important:</strong></em> Your usernames should always match the usernames in other CORAL modules for proper privileges. Note that after the CORAL Authentication install the only user set up is ‘coral’. Be sure to add all other users from other modules on the CORAL Authentication Admin page – link is at the bottom of
+the login page.</p>
+</div>
+<div class="section" id="using-authentication-with-other-coral-modules">
+<span id="using-authentication-with-other-coral-modules"></span><h2>Using Authentication with other CORAL Modules<a class="headerlink" href="#using-authentication-with-other-coral-modules" title="Permalink to this headline">¶</a></h2>
+<p>CORAL Authentication should be installed before this point, and all of your users from the other CORAL
+Modules should be added to CORAL Authentication. If you already have other CORAL modules installed and wish to switch to CORAL Authentication, you will need to add the following to each config file - <code class="docutils literal"><span class="pre">/coral/module_name/admin/configuration.ini</span></code> under [settings]</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">authModule</span><span class="o">=</span><span class="n">Y</span>
+<span class="n">authDatabaseName</span><span class="o">=</span><span class="n">coral_auth_prod</span>
+</pre></div>
+</div>
+<p>You can leave the <code class="docutils literal"><span class="pre">remoteAuthVariableName</span></code> alone.</p>
+<p>Users will still need to be set up in each module separately because of varying permissions for each. In
+Organizations and Resources any users in CORAL Authentication will be set up as view only users if they
+are not already set up. In Usage and Licensing users must be set up explicitly for access. The username
+in the CORAL module and CORAL Authentication need to match.</p>
+<p>You also will probably want to add a ‘logout’ link to your modules pages. You can either download the
+new <code class="docutils literal"><span class="pre">/coral/modulename/templates/header.php</span></code> or you can make the following manual change:</p>
+<p>Around line 85, replace the following line:</p>
+<p><code class="docutils literal"><span class="pre">&lt;br</span> <span class="pre">/&gt;&lt;span</span> <span class="pre">style='color:red;font-size:90%;'&gt;&amp;nbsp;&lt;/span&gt;</span></code></p>
+<p>With the following line:</p>
+<p><code class="docutils literal"><span class="pre">&lt;br</span> <span class="pre">/&gt;&lt;?php</span> <span class="pre">if($config-&gt;settings-&gt;authModule</span> <span class="pre">==</span> <span class="pre">'Y'){</span> <span class="pre">echo</span> <span class="pre">&quot;&lt;a</span> <span class="pre">href='&quot;</span> <span class="pre">.</span> <span class="pre">$coralURL</span> <span class="pre">.</span> <span class="pre">&quot;auth/?logout'&gt;logout&lt;/a&gt;&quot;;</span> <span class="pre">}</span> <span class="pre">?&gt;</span></code></p>
+<p>If you find yourself with mismatching users (i.e. only the ‘coral’ user in auth but only other users in the remaining modules), you should go into CORAL Authentication as your ‘admin’ user (coral/admin by default), go into the Admin page, and add the usernames to match the other modules.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Authentication</a><ul>
+<li><a class="reference internal" href="#supported-browsers">Supported Browsers</a></li>
+<li><a class="reference internal" href="#server-side-requirements-and-setup">Server-Side Requirements and Setup</a></li>
+<li><a class="reference internal" href="#installation">Installation</a><ul>
+<li><a class="reference internal" href="#web-installation">Web Installation</a></li>
+<li><a class="reference internal" href="#manual-installation">Manual Installation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#setting-up-and-using-authentication-module-for-the-first-time">Setting up and using Authentication module for the first time</a></li>
+<li><a class="reference internal" href="#using-authentication-with-other-coral-modules">Using Authentication with other CORAL Modules</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="technical.html" title="previous chapter">Technical Documentation</a></li>
+      <li>Next: <a href="terms.html" title="next chapter">Terms Tool User Guide</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016. <a href="https://www.gnu.org/licenses/fdl-1.3.en.html">GNU Free Documentation 1.3</a>.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

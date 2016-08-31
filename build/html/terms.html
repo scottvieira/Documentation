@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Terms Tool User Guide &mdash; coral_documentation_project 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="coral_documentation_project 0.0.1 documentation" href="index.html" />
+    <link rel="next" title="Glossary" href="glossary.html" />
+    <link rel="prev" title="Authentication" href="authentication.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="terms-tool-user-guide">
+<span id="terms-tool-user-guide"></span><h1>Terms Tool User Guide<a class="headerlink" href="#terms-tool-user-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="about-the-coral-terms-tool">
+<span id="about-the-coral-terms-tool"></span><h2>About the CORAL Terms Tool<a class="headerlink" href="#about-the-coral-terms-tool" title="Permalink to this headline">¶</a></h2>
+<p>An add-on to CORAL Licensing, the Terms Tool enables key stakeholders
+such as interlibrary loan staff to view the license terms without
+needing direct access to CORAL Licensing. The tool allows authorized
+users to retrieve license terms for a specific resource based on an
+ISSN or ISBN query. In addition to CORAL Licensing, the Terms Tool
+requires the installing site to have either the SFX or
+SerialsSolutions openURL resolver (or alternatively any openURL
+resolver with an API). The Terms Tool queries the openURL resolver for
+a specific ISSN or ISBN, retrieves the list of available providers for
+that ISSN/ISBN, and then queries CORAL Licensing for the license terms
+for each provider. It is a multi-step process but it all takes place
+behind the scenes and results in a seamless easy to use process for
+the user.</p>
+</div>
+<div class="section" id="enabling-the-terms-tool">
+<span id="enabling-the-terms-tool"></span><h2>Enabling the Terms Tool<a class="headerlink" href="#enabling-the-terms-tool" title="Permalink to this headline">¶</a></h2>
+<p>The process of using the Terms Tool begins with the license record
+within CORAL Licensing. The first step is for the licensing personnel
+to create a license record with completed expressions as in the
+following screenshot.</p>
+<p>Please note that these are not the actual license terms for Allen
+Press journals. This is only a fabricated example. This license record
+shows both the Coursepacks and Interlibrary Loan expressions for the
+license agreement titled <em>Allen Press Online Journals Terms and
+Conditions of Use</em>. There are two important items to note about these
+expressions that directly impact the terms tool. The first is that the
+expressions are using Display Notes rather than Internal Notes. Each
+expression type can be configured within the CORAL Licensing Admin tab
+to use either Display or Internal Notes. Only those expressions which
+use Display Notes are made available through the Terms Tool. The
+second item of note is the presence of the checkbox next to the
+expression type. This is the Terms Tool Checkbox. It is used by the
+licensing personnel to indicate that the expression is completed and
+is ready to be included in the Terms Tool. The action of checking this
+box will send out an email to the personnel managing the Terms Tool</p>
+<p>alerting them that new license terms are available. The recipients of
+this email are configured on the Admin tab of CORAL Licensing. The
+following screenshot shows the details of a user entry in CORAL
+Licensing. Any user with an email address in the ‘Terms Tool Email’
+field will receive the system generated email when the terms tool
+checkbox is selected.</p>
+</div>
+<div class="section" id="mapping-license-terms-to-resources">
+<span id="mapping-license-terms-to-resources"></span><h2>Mapping License Terms to Resources<a class="headerlink" href="#mapping-license-terms-to-resources" title="Permalink to this headline">¶</a></h2>
+<p>At this point there is a completed license record showing the terms
+for the license agreement <em>Allen Press Online Journals Terms and
+Conditions of Use</em>. The next step which needs to be completed is to
+identify which journals are covered by this specific license
+agreement. This is accomplished using the ‘Terms Tool’ tab on the
+license record as in the following screenshot.</p>
+<p>The task is to identify which journals are covered by the <em>Allen Press
+Online Journals and Conditions of Use</em> license agreement. This is
+accomplished by making a connection between the license agreement and
+the list of journals as entered in the library’s openURL resolver. In
+this example all of the journals that are covered by the terms of the
+agreement were activated and entered as a distinct group within the
+library’s openURL resolver. In SFX for example this is accomplished by
+activating all the journals covered by the agreement within the same
+target. The target is then given a target public name of ‘Allen Press’
+(serialsolutions calls this field databaseName). Then within the
+‘Terms Tool’ tab of CORAL Licensing the link can be entered between
+the document <em>Allen Press Online Journals and Conditions of Use</em> and
+the SFX target named ‘Allen Press’. The Terms Tool will now know that
+all journals available within the Allen Press target are covered by
+the terms of this specific license agreement.</p>
+<p>The Terms Tool now has the information it needs to operate. The
+scenario is as follows. The Terms Tool receives an ISSN via the url
+<em>http://.../coral/terms/?issn=XXXX-XXXX</em>. The Terms Tool sends a query
+with the provided issn to the library’s openURL resolver. The openURL
+resolver returns an xml reply listing all of the provider names (SFX’s
+target public name or SerialsSolutions’ databaseName) for the provided
+ISSN. The Terms Tool queries CORAL Licensing for all license
+agreements which have been mapped to each provider name and retrieves
+all of the associated license terms from the identified license
+agreements. The terms are then displayed on screen to the user.</p>
+</div>
+<div class="section" id="terms-tool-in-action">
+<span id="terms-tool-in-action"></span><h2>Terms Tool in Action<a class="headerlink" href="#terms-tool-in-action" title="Permalink to this headline">¶</a></h2>
+<p>The following screenshot shows the Terms Tool display for the journal
+<em>Intellectual and Developmental Disabilities</em> (issn 1934-9491).</p>
+<p>At this point the Terms Tool has already queried both the openURL
+resolver and then CORAL Licensing and identified that Coursepack and
+Interlibrary Loan terms are available for this journal. The link for
+Interlibrary Loan leads to the following screenshot.</p>
+<p>And in the above screenshot the user now sees the specific
+interlibrary loan license terms for this journal. Access to this
+journal is available via Allen Press and interlibrary loan use is
+permitted. The Display Notes from the license record detail how the
+interlibrary loan is to be handled. The actual document text from the
+license agreement is hidden beneath a ‘view license snippet’ link for
+those wishing to see the original language. The provider name at the
+end of the opening line is hyperlinked and will take the user directly
+to the provider’s webpage for the journal. This example lists only one
+provider, Allen Press, but the Terms Tool will display terms for all
+providers when the library does have</p>
+<p>access through multiple providers. If no license terms are available
+for a provider the Terms Tool will show that as well as in the
+following example.</p>
+<p>Again, please note that the license terms in these screenshots are all
+fabricated examples and do not reflect the actual terms of the
+provider’s real license agreements. In the preceding screenshot access
+is available to the library through multiple providers but license terms
+are only available for the BioMed Central access.</p>
+</div>
+<div class="section" id="finding-the-terms-tool">
+<span id="finding-the-terms-tool"></span><h2>Finding the Terms Tool<a class="headerlink" href="#finding-the-terms-tool" title="Permalink to this headline">¶</a></h2>
+<p>The Terms Tool is used by querying it with a url containing either an
+ISSN or ISBN such as
+<a class="reference external" href="http://coral.mylibrary.edu/coral/terms?issn=XXXX-XXXX"><em>http://coral.mylibrary.edu/coral/terms/?issn=XXXX-XXXX</em>.</a>
+Using the Terms Tool requires some way for users to easily send this
+type of ISSN/ISBN query. One option is to place a link to the Terms
+Tool on the library’s openURL resolver menu. The template for the SFX
+menu, for instance, can be edited in such a way as to create a link to
+the Terms Tool which will dynamically use the ISSN and/or ISBN for the
+specific resource being requested. The University of Notre Dame chose
+this option and implemented the Terms Tool by placing the necessary
+code in the footer of the SFX menu template. Similar options should
+exist for the SerialsSolutions openURL resolver. A number of options
+exist for how the Terms Tool could be implemented. It will be up to
+each library to determine how they wish to create the necessary
+ISSN/ISBN links.</p>
+</div>
+<div class="section" id="technical-documentation">
+<span id="technical-documentation"></span><h2>Technical Documentation<a class="headerlink" href="#technical-documentation" title="Permalink to this headline">¶</a></h2>
+<p>Additional technical documentation for installing and implementing the
+Terms Tool is available on the CORAL Documentation page. Please read
+the technical documentation thoroughly as it explains additional
+details and configuration options necessary for proper use of the
+Terms Tool.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Terms Tool User Guide</a><ul>
+<li><a class="reference internal" href="#about-the-coral-terms-tool">About the CORAL Terms Tool</a></li>
+<li><a class="reference internal" href="#enabling-the-terms-tool">Enabling the Terms Tool</a></li>
+<li><a class="reference internal" href="#mapping-license-terms-to-resources">Mapping License Terms to Resources</a></li>
+<li><a class="reference internal" href="#terms-tool-in-action">Terms Tool in Action</a></li>
+<li><a class="reference internal" href="#finding-the-terms-tool">Finding the Terms Tool</a></li>
+<li><a class="reference internal" href="#technical-documentation">Technical Documentation</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="authentication.html" title="previous chapter">Authentication</a></li>
+      <li>Next: <a href="glossary.html" title="next chapter">Glossary</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016. <a href="https://www.gnu.org/licenses/fdl-1.3.en.html">GNU Free Documentation 1.3</a>.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
