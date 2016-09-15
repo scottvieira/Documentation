@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Merging Repositories &mdash; coral_documentation_project 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="coral_documentation_project 0.0.1 documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="merging-repositories">
+<span id="merging-repositories"></span><h1>Merging Repositories<a class="headerlink" href="#merging-repositories" title="Permalink to this headline">¶</a></h1>
+<p>Project to merge repositories launched in 2015</p>
+<p>This page is a work in progress</p>
+<p>How to move from multi-modules installs to the coral-erm main repository</p>
+<p>The goal is to migrate from Coral with several modules as you know from ndlibersa to a single repository. This procedure is a way to do it. Setup a Coral &#8220;nearby&#8221; your current coral setup and switch from one to the other.</p>
+<p>Pre-requisites</p>
+<p>Be sure to be up to date for all Coral modules</p>
+<p>For the example I used two locations:</p>
+<p>CORAL_MULTI_MODULES=/home/coral/www # current setup CORAL_MAIN_REPO=/home/coral/main # setup for testing and future source code</p>
+<p>Checkout new sources</p>
+<p>cd $CORAL_MULTI_MODULES cd .. git clone git://github.com/Coral-erm/main.git</p>
+<p>Create another site for web server</p>
+<p>Clone your current config file and change the source directory</p>
+<p>Example with nginx:</p>
+<p>cp /etc/nginx/sites-enabled/coral-httpd.conf /etc/nginx/sites-enabled/coral-main-httpd.conf vim /etc/nginx/sites-enabled/coral-main-httpd.conf</p>
+<p>Replace CORAL_MULTI_MODULES by CORAL_MAIN_REPO directory in coral-main-httpd.conf and server_name</p>
+<p>service nginx stop service nginx start</p>
+<p>Copy your current config files in main repository</p>
+<p>cd $CORAL_MAIN_REPO cp $CORAL_MULTI_MODULES/auth/admin/configuration.ini $CORAL_MAIN_REPO/auth/admin/configuration.ini cp $CORAL_MULTI_MODULES/resources/admin/configuration.ini $CORAL_MAIN_REPO/resources/admin/configuration.ini cp $CORAL_MULTI_MODULES/organizations/admin/configuration.ini $CORAL_MAIN_REPO/organizations/admin/configuration.ini</p>
+<p>[...] Do it for all your modules.</p>
+<p>Test your new site pointing on CORAL_MAIN_REPO</p>
+<p>Check everything is alright with the new main repository and your databases. Switch sites to have the main repo in the good location</p>
+<p>mv $CORAL_MULTI_MODULES old_coral_setup mv $CORAL_MAIN_REPO $CORAL_MULTI_MODULES</p>
+<p>Enjoy, the new main repository is now in production. How has been created this main repository</p>
+<p>The idea was to move all module codes/patches into a subdirectory with the target name, then merge the result in a single git repository. Example :</p>
+<p>the organization repository has files in . (index.php, templates/, admin.php ...)
+after the following commands, everything is move in a organizations directory What must be understood is that git clone organizations http://github.com/... create an organizations directory. But it&#8217;s the &#8220;root&#8221; directory of the repository. What we want is to have everything in an &#8220;organizations directory&#8221; that is a subdir of this one. So at the end of the process, the code is in organizations/organizations/*, and that&#8217;s what we want, because the 1st &#8220;organizations&#8221; is the repo name.
+The magic command is :</p>
+<p>git filter-branch &#8211;prune-empty &#8211;tree-filter &#8216;mkdir -p organizations &amp;&amp; git ls-tree &#8211;name-only $GIT_COMMIT | xargs -I files mv files organizations&#8217;</p>
+<p>It create an organizations directory and move all files created/updated by a patch into this directory.</p>
+<p>Complete script:</p>
+<p>clone main</p>
+<p>cd ~/coralmerged git clone git&#64;github.com:ndlibersa/CORAL-Main.git</p>
+<p>clone organizations</p>
+<p>git clone git&#64;github.com:ndlibersa/organizations.git</p>
+<p>enter organizations and move everything into organizations/organizations</p>
+<p>cd organizations git filter-branch &#8211;prune-empty &#8211;tree-filter &#8216;mkdir -p organizations &amp;&amp; git ls-tree &#8211;name-only $GIT_COMMIT | xargs -I files mv files organizations&#8217;</p>
+<p>now, go back to CORAL-Main and merge the organizations patches</p>
+<p>cd ../CORAL-Main git remote add organizations ~/coralmerged/organizations/ git remote update organizations git merge origin/organizations</p>
+<p>that&#8217;s all folks.</p>
+<p>do that for every module</p>
+<p>Hey, for resources and reports, I get a nasty message &#8220;blabla is not empty&#8221;.</p>
+<p>Yes. That&#8217;s because for resources &amp; reports, there is already a resources &amp; reports subdirectory (that is quickly dropped for reports, but it exist at one time). So moving into the resources/reports directory is not possible, as it already exist.</p>
+<p>We need to trick git by moving into a temporary directory, then rename it. Thus we have:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">resources</span><span class="o">/</span><span class="n">cataloguing</span><span class="o">.</span><span class="n">php</span> <span class="n">then</span>
+<span class="n">newresources</span><span class="o">/</span><span class="n">resources</span><span class="o">/</span><span class="n">cataloguing</span><span class="o">.</span><span class="n">php</span> <span class="n">then</span>
+<span class="n">resources</span><span class="o">/</span><span class="n">resources</span><span class="o">/</span><span class="n">cataloguing</span><span class="o">.</span><span class="n">php</span><span class="o">.</span>
+<span class="n">We</span> <span class="n">do</span> <span class="n">this</span> <span class="ow">in</span> <span class="mi">4</span> <span class="n">steps</span><span class="p">:</span>
+</pre></div>
+</div>
+<p>move everythin in a newresource directory</p>
+<p>git filter-branch &#8211;prune-empty &#8211;tree-filter &#8216;mkdir -p newresources &amp;&amp; git ls-tree &#8211;name-only $GIT_COMMIT | xargs -I files mv files newresources&#8217;</p>
+<p>rename the newresources directory into resources</p>
+<p>git filter-branch &#8211;prune-empty &#8211;tree-filter &#8216;mkdir -p resources &amp;&amp; mv newresources/* resources/&#8217;</p>
+<p>move .htaccess</p>
+<p>git filter-branch -f &#8211;prune-empty &#8211;tree-filter &#8216;mkdir -p resources &amp;&amp; mv newresources/.htaccess resources/&#8217;</p>
+<p>move .gitignore</p>
+<p>git filter-branch -f &#8211;prune-empty &#8211;tree-filter &#8216;mkdir -p resources; if [ -e &#8220;newresources/.gitignore&#8221; ]; then mv newresources/.gitignore resources/; fi&#8217;</p>
+<p>(The .htaccess &amp; .gitignore steps are mandatory because the * does not include .* files)</p>
+<p>Once this is made for all ndlibersa modules, add coral-main repository, and push the merged repository</p>
+<p>git remote add coral-erm git&#64;github.com:Coral-erm/main.git git remote update coral-erm git push -f coral-erm master</p>
+<p>Compare two directories (merged repo &amp; non-merged instance with multiple repos to verify everything is OK</p>
+<p>To verify directories tree before / after, you can use</p>
+<p>diff &lt;(cd directory_before &amp;&amp; find | sort) &lt;(cd directory_after &amp;&amp; find | sort) &gt; output.log</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016. <a href="https://www.gnu.org/licenses/fdl-1.3.en.html">GNU Free Documentation 1.3</a>.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
