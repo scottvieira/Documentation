@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>FAQ &mdash; coral_documentation_project 0.0.1 documentation</title>
+    <title>Coding Guidelines &mdash; coral_documentation_project 0.0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -24,8 +24,8 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="coral_documentation_project 0.0.1 documentation" href="index.html" />
-    <link rel="next" title="Coding Guidelines" href="codingguidelines.html" />
-    <link rel="prev" title="Glossary" href="glossary.html" />
+    <link rel="next" title="CORAL Documentation Style Guide" href="docstyleguide.html" />
+    <link rel="prev" title="FAQ" href="faq.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -41,24 +41,24 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="faq">
-<span id="faq"></span><h1>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="general">
-<span id="general"></span><h2>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h2>
-<p><strong>Restarting Workflows</strong></p>
-<p>Question: My intention was to set up a workflow for renewals that could be completed and then restarted the next year. We’ve been able to set up and successfully use a workflow for this, but I don’t see any way to begin it again in subsequent years. Am I missing something or are the workflows only set up to be once and done?</p>
-<p>Answer: This is a known difference between how the system was designed and how many people are using it.</p>
-<p>Two workarounds:</p>
-<p>First, there is the technical way: “If you have access to the databases, using mysql you can change the statusID number.
-update Resource set statusID = &#8216;1&#8217; where resourceID=NNN;
-I believe &#8220;1&#8221; is not complete and &#8220;2&#8221; is complete. You&#8217;d need to use the resourceID of your resource. You can find that in the url of the resource page. ” (from an email Kelly Drake sent on May 19, 2014)</p>
-<p>Second, there is the non-technical way: Until the last step in your workflow has been marked as complete, you can click “restart workflow.” People simply leave the last step incomplete until the next year, then click “restart workflow.”</p>
+  <div class="section" id="coding-guidelines">
+<span id="coding-guidelines"></span><h1>Coding Guidelines<a class="headerlink" href="#coding-guidelines" title="Permalink to this headline">¶</a></h1>
+<p>This page lists the CORAL coding guidelines. It&#8217;s shared between all modules, so these rules apply for all of them.</p>
+<div class="section" id="issues-pull-requests">
+<span id="issues-pull-requests"></span><h2>Issues &amp; Pull requests<a class="headerlink" href="#issues-pull-requests" title="Permalink to this headline">¶</a></h2>
+<p>Any pull request must be related to an issue. In the 1st line of the commit message, please add &#8220;(issue #nnn)&#8221; at the beginning of the message. For example : &#8220;(issue #23) Fixes this and that&#8221;. Ideally, the message is the same as the title of the issue.</p>
 </div>
-<div class="section" id="installation">
-<span id="installation"></span><h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="technical">
-<span id="technical"></span><h2>Technical<a class="headerlink" href="#technical" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="database-update">
+<span id="database-update"></span><h2>Database update<a class="headerlink" href="#database-update" title="Permalink to this headline">¶</a></h2>
+<p>When a patch is submitted that requires a DB change, the changes must be provided in a separate SQL file.
+When merged into the master repository, the DB change file is appended to the update_NEXT.sql file by the merger.
+before releasing a new version, the update_NEXT.sql file will be renamed to update_.sql
+Translating</p>
+<p>For the translation you must think to use the next syntax to help the translation will be more easy:</p>
+<p>For the code PHP: _(&#8220;string PHP to traslate&#8221;)</p>
+<p>If you want translate the string &#8220;Hello&#8221;, you can do this: <?php echo _("Hello"); ?></p>
+<p>For the code JavaScript: _(&#8220;string JavaScript to translate&#8221;)</p>
+<p>Example: alert(_(&#8220;There are some errors&#8221;));</p>
 </div>
 </div>
 
@@ -70,10 +70,9 @@ I believe &#8220;1&#8221; is not complete and &#8220;2&#8221; is complete. You&#
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">FAQ</a><ul>
-<li><a class="reference internal" href="#general">General</a></li>
-<li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#technical">Technical</a></li>
+<li><a class="reference internal" href="#">Coding Guidelines</a><ul>
+<li><a class="reference internal" href="#issues-pull-requests">Issues &amp; Pull requests</a></li>
+<li><a class="reference internal" href="#database-update">Database update</a></li>
 </ul>
 </li>
 </ul>
@@ -81,8 +80,8 @@ I believe &#8220;1&#8221; is not complete and &#8220;2&#8221; is complete. You&#
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="glossary.html" title="previous chapter">Glossary</a></li>
-      <li>Next: <a href="codingguidelines.html" title="next chapter">Coding Guidelines</a></li>
+      <li>Previous: <a href="faq.html" title="previous chapter">FAQ</a></li>
+      <li>Next: <a href="docstyleguide.html" title="next chapter">CORAL Documentation Style Guide</a></li>
   </ul></li>
 </ul>
 </div>

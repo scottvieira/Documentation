@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>FAQ &mdash; coral_documentation_project 0.0.1 documentation</title>
+    <title>System Requirements &mdash; coral_documentation_project 0.0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -24,8 +24,8 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="coral_documentation_project 0.0.1 documentation" href="index.html" />
-    <link rel="next" title="Coding Guidelines" href="codingguidelines.html" />
-    <link rel="prev" title="Glossary" href="glossary.html" />
+    <link rel="next" title="CORAL Resources Module User Guide" href="resources.html" />
+    <link rel="prev" title="Overview: the Basics of CORAL" href="overview.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -41,25 +41,12 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="faq">
-<span id="faq"></span><h1>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="general">
-<span id="general"></span><h2>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h2>
-<p><strong>Restarting Workflows</strong></p>
-<p>Question: My intention was to set up a workflow for renewals that could be completed and then restarted the next year. We’ve been able to set up and successfully use a workflow for this, but I don’t see any way to begin it again in subsequent years. Am I missing something or are the workflows only set up to be once and done?</p>
-<p>Answer: This is a known difference between how the system was designed and how many people are using it.</p>
-<p>Two workarounds:</p>
-<p>First, there is the technical way: “If you have access to the databases, using mysql you can change the statusID number.
-update Resource set statusID = &#8216;1&#8217; where resourceID=NNN;
-I believe &#8220;1&#8221; is not complete and &#8220;2&#8221; is complete. You&#8217;d need to use the resourceID of your resource. You can find that in the url of the resource page. ” (from an email Kelly Drake sent on May 19, 2014)</p>
-<p>Second, there is the non-technical way: Until the last step in your workflow has been marked as complete, you can click “restart workflow.” People simply leave the last step incomplete until the next year, then click “restart workflow.”</p>
+  <p>CORAL: the Basics</p>
+<div class="section" id="system-requirements">
+<span id="system-requirements"></span><h1>System Requirements<a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h1>
 </div>
-<div class="section" id="installation">
-<span id="installation"></span><h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="technical">
-<span id="technical"></span><h2>Technical<a class="headerlink" href="#technical" title="Permalink to this headline">¶</a></h2>
-</div>
+<div class="section" id="the-user-interface">
+<span id="the-user-interface"></span><h1>The User Interface<a class="headerlink" href="#the-user-interface" title="Permalink to this headline">¶</a></h1>
 </div>
 
 
@@ -70,19 +57,15 @@ I believe &#8220;1&#8221; is not complete and &#8220;2&#8221; is complete. You&#
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">FAQ</a><ul>
-<li><a class="reference internal" href="#general">General</a></li>
-<li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#technical">Technical</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">System Requirements</a></li>
+<li><a class="reference internal" href="#the-user-interface">The User Interface</a></li>
 </ul>
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="glossary.html" title="previous chapter">Glossary</a></li>
-      <li>Next: <a href="codingguidelines.html" title="next chapter">Coding Guidelines</a></li>
+      <li>Previous: <a href="overview.html" title="previous chapter">Overview: the Basics of CORAL</a></li>
+      <li>Next: <a href="resources.html" title="next chapter">CORAL Resources Module User Guide</a></li>
   </ul></li>
 </ul>
 </div>
