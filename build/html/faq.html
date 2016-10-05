@@ -24,7 +24,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="coral_documentation_project 0.0.1 documentation" href="index.html" />
-    <link rel="next" title="CORAL Documentation Style Guide" href="styleguide.html" />
+    <link rel="next" title="Coding Guidelines" href="codingguidelines.html" />
     <link rel="prev" title="Glossary" href="glossary.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -45,6 +45,14 @@
 <span id="faq"></span><h1>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="general">
 <span id="general"></span><h2>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h2>
+<p><strong>Restarting Workflows</strong></p>
+<p>Question: My intention was to set up a workflow for renewals that could be completed and then restarted the next year. We’ve been able to set up and successfully use a workflow for this, but I don’t see any way to begin it again in subsequent years. Am I missing something or are the workflows only set up to be once and done?</p>
+<p>Answer: This is a known difference between how the system was designed and how many people are using it.</p>
+<p>Two workarounds:</p>
+<p>First, there is the technical way: “If you have access to the databases, using mysql you can change the statusID number.
+update Resource set statusID = &#8216;1&#8217; where resourceID=NNN;
+I believe &#8220;1&#8221; is not complete and &#8220;2&#8221; is complete. You&#8217;d need to use the resourceID of your resource. You can find that in the url of the resource page. ” (from an email Kelly Drake sent on May 19, 2014)</p>
+<p>Second, there is the non-technical way: Until the last step in your workflow has been marked as complete, you can click “restart workflow.” People simply leave the last step incomplete until the next year, then click “restart workflow.”</p>
 </div>
 <div class="section" id="installation">
 <span id="installation"></span><h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
@@ -74,7 +82,7 @@
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
       <li>Previous: <a href="glossary.html" title="previous chapter">Glossary</a></li>
-      <li>Next: <a href="styleguide.html" title="next chapter">CORAL Documentation Style Guide</a></li>
+      <li>Next: <a href="codingguidelines.html" title="next chapter">Coding Guidelines</a></li>
   </ul></li>
 </ul>
 </div>

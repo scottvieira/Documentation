@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Coding Guidelines &mdash; coral_documentation_project 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="coral_documentation_project 0.0.1 documentation" href="index.html" />
+    <link rel="next" title="CORAL Documentation Style Guide" href="docstyleguide.html" />
+    <link rel="prev" title="FAQ" href="faq.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="coding-guidelines">
+<span id="coding-guidelines"></span><h1>Coding Guidelines<a class="headerlink" href="#coding-guidelines" title="Permalink to this headline">¶</a></h1>
+<p>This page lists the CORAL coding guidelines. It&#8217;s shared between all modules, so these rules apply for all of them.</p>
+<div class="section" id="issues-pull-requests">
+<span id="issues-pull-requests"></span><h2>Issues &amp; Pull requests<a class="headerlink" href="#issues-pull-requests" title="Permalink to this headline">¶</a></h2>
+<p>Any pull request must be related to an issue. In the 1st line of the commit message, please add &#8220;(issue #nnn)&#8221; at the beginning of the message. For example : &#8220;(issue #23) Fixes this and that&#8221;. Ideally, the message is the same as the title of the issue.</p>
+</div>
+<div class="section" id="database-update">
+<span id="database-update"></span><h2>Database update<a class="headerlink" href="#database-update" title="Permalink to this headline">¶</a></h2>
+<p>When a patch is submitted that requires a DB change, the changes must be provided in a separate SQL file.
+When merged into the master repository, the DB change file is appended to the update_NEXT.sql file by the merger.
+before releasing a new version, the update_NEXT.sql file will be renamed to update_.sql
+Translating</p>
+<p>For the translation you must think to use the next syntax to help the translation will be more easy:</p>
+<p>For the code PHP: _(&#8220;string PHP to traslate&#8221;)</p>
+<p>If you want translate the string &#8220;Hello&#8221;, you can do this: <?php echo _("Hello"); ?></p>
+<p>For the code JavaScript: _(&#8220;string JavaScript to translate&#8221;)</p>
+<p>Example: alert(_(&#8220;There are some errors&#8221;));</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Coding Guidelines</a><ul>
+<li><a class="reference internal" href="#issues-pull-requests">Issues &amp; Pull requests</a></li>
+<li><a class="reference internal" href="#database-update">Database update</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="faq.html" title="previous chapter">FAQ</a></li>
+      <li>Next: <a href="docstyleguide.html" title="next chapter">CORAL Documentation Style Guide</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016. <a href="https://www.gnu.org/licenses/fdl-1.3.en.html">GNU Free Documentation 1.3</a>.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
