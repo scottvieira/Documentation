@@ -1,7 +1,8 @@
 Releasing a New Version of a Module
 -----------------------------------
 
-- Before you release a new version of a CORAL module to the public, consider these tasks:
+Before you release a new version of a CORAL module to the public, consider these tasks:
+
 - Download the latest module code from the master branch on github
 - Install and test in a fresh location (not on top of a previous version)
 - Test the upgrade process (from the previous version to the latest code version)
