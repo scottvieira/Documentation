@@ -1,2 +1,2 @@
 # Documentation
-CORAL Documentation Project
+CORAL Documentation Project  ***Beta***
