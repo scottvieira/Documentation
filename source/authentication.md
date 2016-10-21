@@ -1,7 +1,7 @@
 Authentication
 --------------
 
-### Supported Browsers :) :(
+### Supported Browsers
 * Current and recent Firefox, IE, Safari, Seamonkey, Opera an Chrome versions all supported
 * Requires browser to have Javascript enabled. The CORAL interface relies heavily on AJAX, JQuery and JQuery plugins
 
