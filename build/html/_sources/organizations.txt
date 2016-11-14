@@ -21,7 +21,7 @@ CORAL Organizations has three major components in the primary navigation at the 
 
 The home screen contains a search on the left and a list of organizations on the right.  The up and down arrows in the table header can be used to sort the organizations by name, alias, parent, or role.
 
-![image alt text](img/organizations/image_0.png)
+![Screenshot of Organizations Home Page](img/organizations/organizations_homepage.png)
 
 There are four facets for search:
 
@@ -47,7 +47,7 @@ Select New Organization from the main navigation to begin adding new organizatio
 
 * **Parent:** Name of the parent organization (i.e. Proquest as parent of Chadwyck-Healey). The purpose of the ‘Parent’ field is to relate multiple organizations together and to create an organization hierarchy. The field includes an auto-fill populated by existing organization records. The parent organization must already have an existing organization record in order for it to be assigned. Each organization may have only one parent assigned but multiple organizations may have the same parent thereby creating a useful parent-child hierarchy.
 
-* **Company URL:**  Intendedmeant to be the url of the organization’s homepage.
+* **Company URL:**  The URL of the organization’s homepage.
 
 * **Role(s):  **the organization’s role. The values for this field can be customized through the [Admin](#bookmark=id.26in1rg)[ ](#bookmark=id.26in1rg)page.
 
@@ -57,7 +57,7 @@ Select New Organization from the main navigation to begin adding new organizatio
 
 ### The Organization Record
 
-![image alt text](img/organizations/image_1.png)
+![Screenshot of Organizations record](img/organizations/organizations_recordview.png)
 
 Here is an organization record for Cambridge Scientific Abstracts. The information on the record is split among five tabs. The sixth tab labeled Licenses appears when the CORAL Licensing module is installed and enabled.
 
@@ -83,13 +83,13 @@ In this example Cambridge Scientific Abstracts has been assigned ProQuest as the
 
 #### Aliases
 
-![image alt text](img/organizations/image_2.png)
+![Screenshot of Alliases view](img/organizations/organizations_aliasesview.png)
 
 The Aliases tab allows the user to add multiple aliases for the organization.  The default alias types are Alternative Name, Name Change, and Acronym.  These fields can be customized using the [Admin](#bookmark=id.26in1rg)[ ](#bookmark=id.26in1rg)page
 
 #### Contacts
 
-![image alt text](img/organizations/image_3.png)
+![Screenshot of Contact view](img/organizations/organizations_contactview.png)
 
 The Contacts tab allows the user to add contact information for both specific personnel and general support.  None of the fields are required except for Role(s).
 
@@ -105,7 +105,7 @@ Account login information can be entered in either CORAL Organizations or if ins
 
 Add new login information by selecting the ‘add new external login’ link.
 
-![image alt text](img/organizations/image_4.png)
+![Screenshot of accounts view](img/organizations/organizations_accountsview.png)
 
 Most of the fields are self-explanatory, with the exception of
 
@@ -115,7 +115,7 @@ Most of the fields are self-explanatory, with the exception of
 
 #### Issues
 
-![image alt text](img/organizations/image_5.png)
+![Screenshot of issues view](img/organizations/organizations_issuesview.png)
 
 The Issues tab is meant for recording general information about an organization that may be valuable over time. One example would be recording when an organization has frequent breaks in access or significant server downtimes. Another example would be having an organization that is often slow when it comes to sending out renewal invoices. The ‘add new issue’ link opens a new window which includes a date and notes field. It is a simple field but it may come in handy for recording the institutional knowledge that exists among various personnel.
 
