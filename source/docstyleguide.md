@@ -22,8 +22,8 @@ For example, the following folder name for organizations.md
 	/img/organizations/
 
 
-2) Add images to the subfolder created in step 1.  Name the images with a prefix identifying the markdown file they are associated with, separated by an underscore with a brief description of the image. 
+2) Add images to the subfolder created in step 1.  Name the images with a prefix identifying the markdown file they are associated with, separated Uppercase letters with a brief description of the image. Note: The underscore character causes GitHub to incorrectly process the image filenames in Markdown, which leads to problems in building files in the ReadtheDocs.
 
-For example: **organizations_accountsview.png** for a a screenshot of the Organization's module accounts form.
+For example: **organizationsAccountsView.png** for a a screenshot of the Organization's module accounts form.
 
 
