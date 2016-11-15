@@ -21,7 +21,7 @@ CORAL Organizations has three major components in the primary navigation at the 
 
 The home screen contains a search on the left and a list of organizations on the right.  The up and down arrows in the table header can be used to sort the organizations by name, alias, parent, or role.
 
-![Screenshot of Organizations Home Page](img/organizations/organizations_homepage.png)
+![Screenshot of Organizations Home Page](img/organizations/test1.png)
 
 There are four facets for search:
 
