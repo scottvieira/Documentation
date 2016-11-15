@@ -57,7 +57,7 @@ Select New Organization from the main navigation to begin adding new organizatio
 
 ### The Organization Record
 
-![Screenshot of Organizations record](img/organizations/organizations_recordview.png)
+![Screenshot of Organizations record](img/organizations/organizationsRecordView.png)
 
 Here is an organization record for Cambridge Scientific Abstracts. The information on the record is split among five tabs. The sixth tab labeled Licenses appears when the CORAL Licensing module is installed and enabled.
 
@@ -83,13 +83,13 @@ In this example Cambridge Scientific Abstracts has been assigned ProQuest as the
 
 #### Aliases
 
-![Screenshot of Alliases view](img/organizations/organizations_aliasesview.png)
+![Screenshot of Alliases view](img/organizations/organizationsAliasesView.png)
 
 The Aliases tab allows the user to add multiple aliases for the organization.  The default alias types are Alternative Name, Name Change, and Acronym.  These fields can be customized using the [Admin](#bookmark=id.26in1rg)[ ](#bookmark=id.26in1rg)page
 
 #### Contacts
 
-![Screenshot of Contact view](img/organizations/organizations_contactview.png)
+![Screenshot of Contact view](img/organizations/organizationsContactView.png)
 
 The Contacts tab allows the user to add contact information for both specific personnel and general support.  None of the fields are required except for Role(s).
 
@@ -105,7 +105,7 @@ Account login information can be entered in either CORAL Organizations or if ins
 
 Add new login information by selecting the ‘add new external login’ link.
 
-![Screenshot of accounts view](img/organizations/organizations_accountsview.png)
+![Screenshot of accounts view](img/organizations/organizationsAccountsView.png)
 
 Most of the fields are self-explanatory, with the exception of
 
@@ -115,7 +115,7 @@ Most of the fields are self-explanatory, with the exception of
 
 #### Issues
 
-![Screenshot of issues view](img/organizations/organizations_issuesview.png)
+![Screenshot of issues view](img/organizations/organizationsIssuesView.png)
 
 The Issues tab is meant for recording general information about an organization that may be valuable over time. One example would be recording when an organization has frequent breaks in access or significant server downtimes. Another example would be having an organization that is often slow when it comes to sending out renewal invoices. The ‘add new issue’ link opens a new window which includes a date and notes field. It is a simple field but it may come in handy for recording the institutional knowledge that exists among various personnel.
 
@@ -135,5 +135,5 @@ Privileges
 
 * View only : provides only the ability to view existing organization records.
 
-![Screen shot for adding new user](img/organizations/organizations_addnewuser.png)
+![Screen shot for adding new user](img/organizations/organizationsAddNewUser.png)
 
