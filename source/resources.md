@@ -22,6 +22,8 @@ CORAL Resources Module User Guide
 
  • My Queue
 
+ • File Import
+
  • Admin
 
 ### Home
