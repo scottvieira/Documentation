@@ -76,13 +76,14 @@ Here is an organization record for Cambridge Scientific Abstracts. The informati
 
 The figure above shows the organization tab for Cambridge Scientific Abstracts. Notice that this screenshot does not display the ‘Account Details’, ‘Notes’ or ‘Company URL’ fields that were found on the New Organization window on the previous page. These three fields are not displayed because no data was entered into those fields when the record was added.
 
-The ‘edit organization details’ link [insert pencil icon], will open up a window that allows you to edit the information originally entered in the New Organization’s window.
+The ‘edit organization details’ link ![edit icon](img/general/editicon.png), will open up a window that allows you to edit the information originally entered in the New Organization’s window.
 
-In this example Cambridge Scientific Abstracts has been assigned ProQuest as the parent organization. The ‘view’ [insert view arrow] link next to ProQuest LLC will open the ProQuest organization record.
+In this example Cambridge Scientific Abstracts has been assigned ProQuest as the parent organization. The ‘view’ link
+![view icon](img/general/viewicon.png) next to ProQuest LLC will open the ProQuest organization record.
 
 #### Aliases
 
-![Screenshot of Alliases view](img/organizations/organizationsAliasesView.png)
+![Screenshot of Aliases view](img/organizations/organizationsAliasesView.png)
 
 The Aliases tab allows the user to add multiple aliases for the organization.  The default alias types are Alternative Name, Name Change, and Acronym.  These fields can be customized using the [Admin](#bookmark=id.26in1rg)[ ](#bookmark=id.26in1rg)page
 
@@ -120,7 +121,7 @@ The Issues tab is meant for recording general information about an organization 
 
 #### Licenses
 
-![Screenshot of issues view](img/organizations/organizationsLicensesView.png)
+![Screenshot of licenses view](img/organizations/organizationsLicensesView.png)
 
 The Licenses tab provides links to the license records entered into CORAL Licensing for all licenses where the organization has been identified as the Publisher/Provider. The hyperlinked license name will open the license record in a new window.
 
