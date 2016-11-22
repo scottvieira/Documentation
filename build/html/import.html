@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Import Tool &#8212; coral_documentation_project 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="coral_documentation_project 0.0.1 documentation" href="index.html" />
+    <link rel="next" title="Terms Tool User Guide" href="terms.html" />
+    <link rel="prev" title="Authentication" href="authentication.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="import-tool">
+<span id="import-tool"></span><h1>Import Tool<a class="headerlink" href="#import-tool" title="Permalink to this headline">¶</a></h1>
+<p>This tool allows to import resources and organizations from a CSV file.</p>
+<div class="section" id="configuration">
+<span id="configuration"></span><h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>Change the admin/configuration.ini file to specify on which input columns should the IsbnOrIssn be deduped for the import tool:</p>
+<p>[settings]</p>
+<p>importISBNDedupingColumns=&#8221;ISSN,EISSN,PrintISSN,OnlineISSN,Print ISSN,Online ISSN,ISBN,EISBN&#8221;
+For a resource in the csv file, if there is a value in one of these column that match an existing isbnOrIssn, the resource won&#8217;t be imported.</p>
+</div>
+<div class="section" id="csv-format">
+<span id="csv-format"></span><h2>CSV Format<a class="headerlink" href="#csv-format" title="Permalink to this headline">¶</a></h2>
+<p>The first line of the CSV file must be column headers, not data.</p>
+<p>Example: titleText,resourceURL,ISSN,EISSN,organization,role,parentResource</p>
+<p>Then, each line is a resource.</p>
+<p>Use</p>
+<p>First screen</p>
+<p>The user must choose the file to upload and the CSV separator (comma, semi-column or pipe).</p>
+<p>Second screen</p>
+<p>The user must choose which columns of the CSV file are to be used for import. If a column header name matches a database column name, it will be automatically selected accordingly.</p>
+<p>Third screen</p>
+<p>It&#8217;s a report of:</p>
+<p>the number of resources processed
+the number of resources imported
+the number of parents imported
+the number of resources that have been attached to an existing parent
+the number of organizations created
+the number of resources that have been attached to an existing organization.</p>
+</div>
+<div class="section" id="resources-import-rules">
+<span id="resources-import-rules"></span><h2>Resources import rules<a class="headerlink" href="#resources-import-rules" title="Permalink to this headline">¶</a></h2>
+<p>Resources are only created. If a resource already exists in Coral, it will not be updated</p>
+</div>
+<div class="section" id="organizations-import-rules">
+<span id="organizations-import-rules"></span><h2>Organizations import rules<a class="headerlink" href="#organizations-import-rules" title="Permalink to this headline">¶</a></h2>
+<p>If an organization is specified for a given resource, the import tool will check if the organization already exists. If not, it will be created. In both cases, the resource will be attached to it.
+Organizations import works wheter the organization module is used or not.
+If multiple organizations with the same name exists in Coral, the import tool will not attach the resource, and a warning will be issued.
+A role can be specified.</p>
+</div>
+<div class="section" id="parent-resources-import-rules">
+<span id="parent-resources-import-rules"></span><h2>Parent resources import rules<a class="headerlink" href="#parent-resources-import-rules" title="Permalink to this headline">¶</a></h2>
+<p>If a parent resource is specified for a given resource, the import tool will check if the parent resource already exists. If not, it will be created. In both cases, the resource will be attached to it.</p>
+</div>
+<div class="section" id="pending-pull-request-57">
+<span id="pending-pull-request-57"></span><h2>Pending (pull request #57)<a class="headerlink" href="#pending-pull-request-57" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="resource-import">
+<span id="resource-import"></span><h3>Resource import<a class="headerlink" href="#resource-import" title="Permalink to this headline">¶</a></h3>
+<p>Improvement: When a resource is imported, it is created if it doesn&#8217;t already exist with the same parent. So a resource can be duplicated.</p>
+</div>
+<div class="section" id="import-tool">
+<span id="id1"></span><h3>Import Tool<a class="headerlink" href="#import-tool" title="Permalink to this headline">¶</a></h3>
+<p>Import tool is common for all types of import (csv and GOKb for now).</p>
+<p>To use it, you need to operate a pretreatment on your data to call ImportTool-&gt;addResource($datas, $identifiers).</p>
+<p>$datas must be an array in which keys are resource attributes names and values are corresponding text, except for organizations, aliases, parent and resource type (see following section).</p>
+<p>$identifiers must be an array in which keys are the identifier type (optionnal), if there is no key, identifiers will be treated as ISxN.</p>
+</div>
+<div class="section" id="datas-array">
+<span id="datas-array"></span><h3>Datas array:<a class="headerlink" href="#datas-array" title="Permalink to this headline">¶</a></h3>
+<p>All resource object attributes can be considered as key in this array and values as the content of this attributes, except organization and aliases. example : $datas[&#8216;titleText&#8217;] = &#8220;name of the resource&#8221;;</p>
+<p>Organizations and aliases treatement are pretty different: $datas[&#8216;organization&#8217;] and $datas[&#8216;alias&#8217;] are arrays:</p>
+<p><strong>Organizations</strong>:</p>
+<p>This array has to be like that: &#8216;role&#8217; =&gt; &#8220;org name&#8221;</p>
+<p>example: $datas[&#8216;organization&#8217;] = array [ &#8216;provider&#8217; =&gt; &#8220;provider name&#8221; , &#8216;platform&#8217; =&gt; &#8220;platform name&#8221;];</p>
+<p><strong>Aliases</strong>:</p>
+<p>This array has to be like that: &#8216;type of alias&#8217; =&gt; array [&#8220;name&#8221;]</p>
+<p>example: $datas[&#8216;alias&#8217;] = array [ &#8216;alternateName&#8217; =&gt; array [ &#8220;alternate name 1&#8221; , &#8220;alternate name 2&#8221; ], &#8216;nameChange&#8217; =&gt; array [ &#8220;old name 1&#8221; , &#8220;old name 2&#8221; ] ]</p>
+<p><strong>Parent resource</strong>:</p>
+<p>resource-&gt;parentResource doesn&#8217;t exist as an attribute but, if there is a parent, you must add it in $datas like this : $datas[&#8216;parentResource&#8217;] = &#8220;parent name&#8221;;</p>
+<p><strong>Resource type</strong>:</p>
+<p>Same as parent, resource-&gt;resourceType doesn&#8217;t exist as an attribute but you must add it in $datas like this : $datas[&#8216;resourceType&#8217;] = &#8220;type of the resource&#8221;;</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Import Tool</a><ul>
+<li><a class="reference internal" href="#configuration">Configuration</a></li>
+<li><a class="reference internal" href="#csv-format">CSV Format</a></li>
+<li><a class="reference internal" href="#resources-import-rules">Resources import rules</a></li>
+<li><a class="reference internal" href="#organizations-import-rules">Organizations import rules</a></li>
+<li><a class="reference internal" href="#parent-resources-import-rules">Parent resources import rules</a></li>
+<li><a class="reference internal" href="#pending-pull-request-57">Pending (pull request #57)</a><ul>
+<li><a class="reference internal" href="#resource-import">Resource import</a></li>
+<li><a class="reference internal" href="#import-tool">Import Tool</a></li>
+<li><a class="reference internal" href="#datas-array">Datas array:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="authentication.html" title="previous chapter">Authentication</a></li>
+      <li>Next: <a href="terms.html" title="next chapter">Terms Tool User Guide</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016. <a href="https://www.gnu.org/licenses/fdl-1.3.en.html">GNU Free Documentation 1.3</a>.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

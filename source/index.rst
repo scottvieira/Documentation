@@ -7,31 +7,51 @@
 CORAL Documentation Project
 =============================
 
-Contents:
-
 .. toctree::
    :maxdepth: 3
 
    overview
+   basics
    resources
    licensing
    organizations
    usagestats
+   management
    technical
-   authentication
-   terms
    glossary
    faq
 
-Style Guide
-===========
-
-Contents:
+Appendix
+========
 
 .. toctree::
    :maxdepth: 3
 
-   styleguide
+   authentication
+   import
+   terms
+   translation
+   release
+   sushi
+
+Style Guides
+===========
+
+.. toctree::
+   :maxdepth: 3
+
+   codingguidelines
+   docstyleguide
+
+Projects
+========
+
+.. toctree::
+   :maxdepth: 3
+
+   merge
+   gokb
+   website
 
 Indices and tables
 ==================

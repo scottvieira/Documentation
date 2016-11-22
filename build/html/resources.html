@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>CORAL Resources Module User Guide &mdash; coral_documentation_project 0.0.1 documentation</title>
+    <title>CORAL Resources Module User Guide &#8212; coral_documentation_project 0.0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -23,9 +23,11 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
     <link rel="top" title="coral_documentation_project 0.0.1 documentation" href="index.html" />
     <link rel="next" title="CORAL Licensing User Guide" href="licensing.html" />
-    <link rel="prev" title="Overview: the Basics of CORAL" href="overview.html" />
+    <link rel="prev" title="System Requirements" href="basics.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -60,12 +62,13 @@ the top of each page.</p>
 <p>• Home</p>
 <p>• New Resource</p>
 <p>• My Queue</p>
+<p>• File Import</p>
 <p>• Admin</p>
 </div>
 <div class="section" id="home">
 <span id="home"></span><h2>Home<a class="headerlink" href="#home" title="Permalink to this headline">¶</a></h2>
 <p>========</p>
-<p><img alt="" src="media/image1.png" />{width=&#8221;6.5in&#8221; height=&#8221;4.0in&#8221;}</p>
+<p><img alt="Screenshot of Resources Home Page" src="_images/resourcesHome.png" /></p>
 <p>Home provides both search and AZ browse access to the resource records.
 The <em>Name (contains)</em> field searches against resource name, resource
 alias, parent resource name and organization name. Multiple fields can
@@ -73,7 +76,7 @@ be combined in a single search for more precise searching. Search
 results can be exported to a spreadsheet using the excel icon in the
 upper right corner. The exported file includes more fields than what are
 displayed on the search results page.</p>
-<p>New Resource <img alt="" src="media/image2.png" />{width=&#8221;6.5in&#8221; height=&#8221;3.986111111111111in&#8221;}</p>
+<p><img alt="Screenshot of New Resource Window" src="_images/resourcesAddNewResource.png" /></p>
 <p>All new resource records are added through this form. The form includes
 only select fields which are the most critical for processing new
 resource requests. The goal was to provide collection managers with a
@@ -101,7 +104,7 @@ another record with the same resource name already exists.</p>
 </div>
 <div class="section" id="product">
 <span id="product"></span><h2>Product<a class="headerlink" href="#product" title="Permalink to this headline">¶</a></h2>
-<p>[insert product image here)</p>
+<p><img alt="Screenshot of Product" src="_images/resourcesProduct.png" /></p>
 <p>The resource record contains seven tabs where the information about the
 resource is logically grouped. The first tab, <em>Product</em>, contains the
 descriptive information such as name, alias, issn, publisher, etc which
@@ -109,7 +112,7 @@ identifies and defines the resource.</p>
 </div>
 <div class="section" id="edit-product-details">
 <span id="edit-product-details"></span><h2>Edit product details<a class="headerlink" href="#edit-product-details" title="Permalink to this headline">¶</a></h2>
-<p><strong>[insert image here]</strong></p>
+<p><img alt="Screenshot of Edit Resource" src="_images/resourcesEditResource.png" /></p>
 <p>The information on the <em>Product</em> tab can be edited by following the
 edit product details link or by using the edit icon on the tab. The
 Name, Description, URL, Format and Resource Type fields come from the
@@ -138,7 +141,7 @@ a record in CORAL.</p>
 </div>
 <div class="section" id="add-new-note">
 <span id="add-new-note"></span><h2>Add new note<a class="headerlink" href="#add-new-note" title="Permalink to this headline">¶</a></h2>
-<p>[insert new note image here}</p>
+<p><img alt="Screenshot of Add New Note" src="_images/resourcesAddNewNote.png" /></p>
 <p>An additional notes feature has been added to the <em>Product</em>,
 <em>Acquisitions</em> and <em>Access</em> tab. The note will be visible only on the
 tab on which it is added. The Note Type field has been included to
@@ -147,13 +150,13 @@ customized through the <em>Admin</em> page.</p>
 </div>
 <div class="section" id="acquisitions">
 <span id="acquisitions"></span><h2>Acquisitions<a class="headerlink" href="#acquisitions" title="Permalink to this headline">¶</a></h2>
-<p>[insert image here]</p>
+<p><img alt="Screenshot of Acquisition" src="_images/resourcesAcquistion.png" /></p>
 <p>The Acquisitions tab contains details of the libraries’ acquisition of
 the resource such as order number, cost, fund, license status, etc.</p>
 </div>
 <div class="section" id="edit-acquisitions-information">
 <span id="edit-acquisitions-information"></span><h2>Edit acquisitions information<a class="headerlink" href="#edit-acquisitions-information" title="Permalink to this headline">¶</a></h2>
-<p><strong>[insert image here]</strong></p>
+<p><img alt="Screenshot of Edit Acquistion" src="_images/resourcesEditAcquistion.png" /></p>
 <p>The acquisitions information can be edited by using the edit
 acquisitions information link or the matching edit icon. The
 information here is meant to provide context to the local acquisitions
@@ -186,9 +189,13 @@ subscription end date. In order to implement the alerts feature the file
 sendAlerts.php will need to be run as a nightly cron. See the technical
 documentation and install guide for details.</p>
 </div>
+<div class="section" id="edit-cost-history">
+<span id="edit-cost-history"></span><h2>Edit Cost History<a class="headerlink" href="#edit-cost-history" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Screenshot of Edit Cost History" src="_images/resourcesEditCostInformation.png" /></p>
+</div>
 <div class="section" id="edit-license-and-status">
 <span id="edit-license-and-status"></span><h2>Edit license and status<a class="headerlink" href="#edit-license-and-status" title="Permalink to this headline">¶</a></h2>
-<p><strong>[insert image here]</strong></p>
+<p><img alt="Screenshot of Edit Licenses" src="_images/resourcesEditLicenses.png" /></p>
 <p>The <em>Acquisitions</em> tab includes information about the relevant
 license. Use the edit license and status link or the matching icon to
 update the license information. The values for the Licensing Status
@@ -205,7 +212,7 @@ of the resource record for quick navigation between modules.</p>
 </div>
 <div class="section" id="access">
 <span id="access"></span><h2>Access<a class="headerlink" href="#access" title="Permalink to this headline">¶</a></h2>
-<p>[insert image here]</p>
+<p><img alt="Screenshot of Access" src="_images/resourcesAccess.png" /></p>
 <p>The <em>Access</em> tab includes the information about how the resource is
 accessed including things such as IP versus username/password
 authentication, simultaneous user limits, authorized sites, etc. The
@@ -214,7 +221,7 @@ link or the matching edit icon.</p>
 </div>
 <div class="section" id="edit-access-information">
 <span id="edit-access-information"></span><h2>Edit access information<a class="headerlink" href="#edit-access-information" title="Permalink to this headline">¶</a></h2>
-<p><strong>[insert image here]</strong></p>
+<p><img alt="Screenshot of Edit Access" src="_images/resourcesEditAccess.png" /></p>
 <p>The values for all fields on the <em>Access</em> tab except for username and
 password can be customized through the Admin page. The Authorized Site
 field is intended to indicate the sites or libraries which are
@@ -238,7 +245,7 @@ administration. Administrative logins are to be stored on the
 </div>
 <div class="section" id="cataloging">
 <span id="cataloging"></span><h2>Cataloging<a class="headerlink" href="#cataloging" title="Permalink to this headline">¶</a></h2>
-<p>[insert image here]</p>
+<p><img alt="Screenshot of Cataloging" src="_images/resourcesCataloging.png" /></p>
 <p>The <em>Cataloging</em> tab includes data and workflow information related to
 cataloging the resource, including things such as the URL of where the
 cataloging records are coming from, cataloging type, cataloging
@@ -248,6 +255,7 @@ the matching edit icon.</p>
 </div>
 <div class="section" id="edit-cataloging-details">
 <span id="edit-cataloging-details"></span><h2>Edit Cataloging Details<a class="headerlink" href="#edit-cataloging-details" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Screenshot of Edit Cataloging" src="_images/resourcesEditCataloging.png" /></p>
 <p>The Cataloging Status and Cataloging Type fields can be customized
 through the Admin page. The Identifier is intended for [I have no
 idea]. The Source URL is intended to be the source of the catalog
@@ -260,7 +268,7 @@ resource is made available in OCLC [not sure??]</p>
 </div>
 <div class="section" id="contacts">
 <span id="contacts"></span><h2>Contacts<a class="headerlink" href="#contacts" title="Permalink to this headline">¶</a></h2>
-<p>[insert contacts image here]</p>
+<p><img alt="Screenshot of Contacts" src="_images/resourcesContacts.png" /></p>
 <p>The <em>Contacts</em> tab is the same as is found on an organization record in
 the Organizations Module. It is intended as a directory of contact
 information for publishers, vendors, etc. Contacts can be added directly
@@ -290,7 +298,7 @@ values for Login Type can be edited through the <em>Admin</em> page.</p>
 </div>
 <div class="section" id="attachments">
 <span id="attachments"></span><h2>Attachments<a class="headerlink" href="#attachments" title="Permalink to this headline">¶</a></h2>
-<p>[insert image here]</p>
+<p><img alt="Screenshot of Attachments" src="_images/resourcesAttachments.png" /></p>
 <p>Additional documents relevant to the resource can be uploaded and made
 available through the <em>Attachments</em> tab. The figure above shows a price
 quote which was received from the publisher. The arrow to the right of
@@ -305,7 +313,7 @@ The values for attachment Type can be edited through the <em>Admin</em> page.</p
 </div>
 <div class="section" id="routing">
 <span id="routing"></span><h2>Routing<a class="headerlink" href="#routing" title="Permalink to this headline">¶</a></h2>
-<p>[insert image here]</p>
+<p><img alt="Screenshot of Routing" src="_images/resourcesRouting.png" /></p>
 <p>The <em>Routing</em> tab shows the workflow through which the resource needs to
 follow. The workflow and routing rules can be customized through the
 <em>Admin</em> page. That process is described later on in this document.</p>
@@ -345,7 +353,7 @@ system for record keeping purposes only.</p>
 </div>
 <div class="section" id="my-queue">
 <span id="my-queue"></span><h2>My Queue<a class="headerlink" href="#my-queue" title="Permalink to this headline">¶</a></h2>
-<p>[insert my queue image here]</p>
+<p><img alt="Screenshot of My Queue" src="_images/resourcesMyQueue.png" /></p>
 <p>The <em>My Queue</em> page shows the user their recent activity and their
 outstanding tasks. The page is divided into three tabs; Saved Requests,
 Outstanding Tasks, and Submitted Requests. The <em>Saved Requests</em> tab
@@ -362,16 +370,20 @@ on their association with a workflow group. Resources are removed from
 the user’s queue once the outstanding workflow task on the resource’s
 <em>Routing</em> tab is marked as complete.</p>
 </div>
+<div class="section" id="file-import">
+<span id="file-import"></span><h2>File Import<a class="headerlink" href="#file-import" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Screenshot of File Import" src="_images/resourcesFileImport.png" /></p>
+</div>
 <div class="section" id="admin">
 <span id="admin"></span><h2>Admin<a class="headerlink" href="#admin" title="Permalink to this headline">¶</a></h2>
-<p>[insert admin image here]</p>
+<p><img alt="Screenshot of Admin" src="_images/resourcesAdmin.png" /></p>
 <p>The <em>Admin</em> page is available only to users with admin privileges. It is
 the page through which field values are customized and through which
 user privilege and access is set.</p>
 </div>
 <div class="section" id="edit-user">
 <span id="edit-user"></span><h2>Edit User<a class="headerlink" href="#edit-user" title="Permalink to this headline">¶</a></h2>
-<p>[insert edit user here]</p>
+<p><img alt="Screenshot of Edit User" src="_images/resourcesEditUser.png" /></p>
 <p>The first tab on the page is for editing user accounts. There are three
 privilege levels for the Resources Module; add/edit, view only, and
 admin. View only is the default privilege for all users who do not have
@@ -385,7 +397,7 @@ all other users the <em>Accounts</em> tab will be hidden.</p>
 </div>
 <div class="section" id="workflow-user-group">
 <span id="workflow-user-group"></span><h2>Workflow / User Group<a class="headerlink" href="#workflow-user-group" title="Permalink to this headline">¶</a></h2>
-<p>[insert workflow/user group here]</p>
+<p><img alt="Screenshot of Workflow User Group" src="_images/resourcesWorkflowUserGroup.png" /></p>
 <p>The <em>Workflow / User Group</em> tab contains the settings which control the
 workflow routing features. The Resources Module allows for the creation
 of multiple workflow rules based on resource type. The figure above
@@ -397,7 +409,7 @@ workflows are added using the add workflow link.</p>
 </div>
 <div class="section" id="edit-workflow">
 <span id="edit-workflow"></span><h2>Edit workflow<a class="headerlink" href="#edit-workflow" title="Permalink to this headline">¶</a></h2>
-<p>[insert edit workflow image here]</p>
+<p><img alt="Screenshot of Admin Edit Workflow" src="_images/resourcesAdminEditWorkflow.png" /></p>
 <p>The above figure shows the form through which workflows are created
 and edited. Here again the workflow being edited is for resources
 where the Acquisitions Type is ‘Paid’ and the Format is ‘Electronic’.
@@ -421,7 +433,7 @@ active once the parent step is marked as complete.</p>
 </div>
 <div class="section" id="edit-user-group">
 <span id="edit-user-group"></span><h2>Edit user group<a class="headerlink" href="#edit-user-group" title="Permalink to this headline">¶</a></h2>
-<p>[insert edit user group image here]</p>
+<p><img alt="Screenshot of Admin Edit User Group" src="_images/resourcesAdminEditUserGroup.png" /></p>
 <p>Each step or task in a workflow must be assigned to a user group. Enter
 a group name and a group email address. An email alert will be sent to
 this address when a new workflow step assigned to the group becomes
@@ -431,7 +443,6 @@ Queue pages.</p>
 </div>
 <div class="section" id="other-admin-settings">
 <span id="other-admin-settings"></span><h2>Other Admin Settings<a class="headerlink" href="#other-admin-settings" title="Permalink to this headline">¶</a></h2>
-<p>[insert other admin settings here]</p>
 <p>There are many other fields which can be customized through the <em>Admin</em>
 page. Select the field you wish to edit in the left hand column and then
 follow the ‘add new’ links or the edit and delete icons to customize the
@@ -442,7 +453,7 @@ Settings.</p>
 </div>
 <div class="section" id="alert-settings">
 <span id="alert-settings"></span><h2>Alert settings<a class="headerlink" href="#alert-settings" title="Permalink to this headline">¶</a></h2>
-<p>[insert alert settings here]</p>
+<p><img alt="Screenshot of Admin Alert Settings" src="_images/resourcesAdminAlertSettings.png" /></p>
 <p>These alert settings determine the functionality of the alert feature
 associated with the subscription period end date on the <em>Acquisitions</em>
 tab of the resource record. Enter the email address to which the alert
@@ -473,6 +484,7 @@ alert on the exact day of the subscription end date.</p>
 <li><a class="reference internal" href="#add-new-note">Add new note</a></li>
 <li><a class="reference internal" href="#acquisitions">Acquisitions</a></li>
 <li><a class="reference internal" href="#edit-acquisitions-information">Edit acquisitions information</a></li>
+<li><a class="reference internal" href="#edit-cost-history">Edit Cost History</a></li>
 <li><a class="reference internal" href="#edit-license-and-status">Edit license and status</a></li>
 <li><a class="reference internal" href="#access">Access</a></li>
 <li><a class="reference internal" href="#edit-access-information">Edit access information</a></li>
@@ -483,6 +495,7 @@ alert on the exact day of the subscription end date.</p>
 <li><a class="reference internal" href="#attachments">Attachments</a></li>
 <li><a class="reference internal" href="#routing">Routing</a></li>
 <li><a class="reference internal" href="#my-queue">My Queue</a></li>
+<li><a class="reference internal" href="#file-import">File Import</a></li>
 <li><a class="reference internal" href="#admin">Admin</a></li>
 <li><a class="reference internal" href="#edit-user">Edit User</a></li>
 <li><a class="reference internal" href="#workflow-user-group">Workflow / User Group</a></li>
@@ -497,7 +510,7 @@ alert on the exact day of the subscription end date.</p>
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="overview.html" title="previous chapter">Overview: the Basics of CORAL</a></li>
+      <li>Previous: <a href="basics.html" title="previous chapter">System Requirements</a></li>
       <li>Next: <a href="licensing.html" title="next chapter">CORAL Licensing User Guide</a></li>
   </ul></li>
 </ul>
@@ -520,7 +533,7 @@ alert on the exact day of the subscription end date.</p>
       &copy;2016. <a href="https://www.gnu.org/licenses/fdl-1.3.en.html">GNU Free Documentation 1.3</a>.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
       
     </div>

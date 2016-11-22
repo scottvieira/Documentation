@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Translation for CORAL &#8212; coral_documentation_project 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="coral_documentation_project 0.0.1 documentation" href="index.html" />
+    <link rel="next" title="Releasing a New Version of a Module" href="release.html" />
+    <link rel="prev" title="Terms Tool User Guide" href="terms.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="translation-for-coral">
+<span id="translation-for-coral"></span><h1>Translation for CORAL<a class="headerlink" href="#translation-for-coral" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="translation-of-erms-coral">
+<span id="translation-of-erms-coral"></span><h2>Translation of ERMS CORAL<a class="headerlink" href="#translation-of-erms-coral" title="Permalink to this headline">¶</a></h2>
+<p>All modules of this ERMS can be translated with the tool GNU gettext to continue with the use of free software. GNU gettext use internationalization and localization to display adapted information to the language required for the user. The internationalization is how the application is made to support multiple languages and the localization is how the application is adapted to the language required for the user.</p>
+</div>
+<div class="section" id="programming-languages-supported">
+<span id="programming-languages-supported"></span><h2>Programming languages supported<a class="headerlink" href="#programming-languages-supported" title="Permalink to this headline">¶</a></h2>
+<p>This tool is used to translate applications in different programming languages (you can find all programming languages here).</p>
+</div>
+<div class="section" id="how-it-works">
+<span id="how-it-works"></span><h2>How it works?<a class="headerlink" href="#how-it-works" title="Permalink to this headline">¶</a></h2>
+<p>We use the files .po which contains all strings to translate and the files .mo, these files are binaries which are used for the machine to translate the application, both files have all strings but in different languages, understandable for each user (human and machine). You should use a file .po for each language and located in a special folder which has the name of the language.</p>
+</div>
+<div class="section" id="structure-of-languages-supported">
+<span id="structure-of-languages-supported"></span><h2>Structure of languages supported<a class="headerlink" href="#structure-of-languages-supported" title="Permalink to this headline">¶</a></h2>
+<p>GNU gettext use the local names of the system with the structure &#8220;ll_CC&#8221; where ll is the code ISO 639 for the code of language and CC is the code ISO 3166 of the country, for example, if I live in Mexico the local name is &#8220;es_MX&#8221; where es is the code for the Spanish language and MX the code of Mexico.</p>
+<p>Also, there are many local names which support different characters encodings today is used UTF-8 in most cases but also exist ISO-8859-1. To add a character encoding in the locale name you use the next syntax: &#8220;ll_CC.encoding&#8221; where encoding is the name of the character encoding. For example, I would use UTF-8 with the French language, the local name for this example is: &#8220;fr_FR.UTF8&#8221;.</p>
+<p>You can find all codes ISO 639 here and the codes ISO 3166 here.</p>
+<p>You can see the complete documentation of GNU gettext here.</p>
+</div>
+<div class="section" id="folder-structure">
+<span id="folder-structure"></span><h2>Folder structure<a class="headerlink" href="#folder-structure" title="Permalink to this headline">¶</a></h2>
+<p>We recommend use the next structure for all languages:</p>
+<p>locale / ll_CC / LC_MESSAGES / file.po</p>
+<p>The folder locale is the main folder where all languages supported for the application stay.
+ll_CC is the local name of the translation, you must use this to difference between the other translations.
+LC_MESSAGES is the folder for the file .po, the name of this file is for your consideration.
+Example: locale / fr_FR / LC_MESSAGES / messages.po</p>
+<p>Note: This structure must be in the root folder of the application</p>
+<p>How to obtain the strings?</p>
+<p>This is easy you must change the string with this structure, this exemple use PHP:</p>
+<?php echo "This is a string"; ?> to <?php echo _("This is a string");?><p>The structure is not complicated only use _(&#8220;string&#8221;).</p>
+</div>
+<div class="section" id="install-gnu-gettext-in-php">
+<span id="install-gnu-gettext-in-php"></span><h2>Install GNU gettext in PHP<a class="headerlink" href="#install-gnu-gettext-in-php" title="Permalink to this headline">¶</a></h2>
+<p>You should install the option &#8220;gettext&#8221; in your server, because for default is not found, but most of hostings have installed this option. If you use a server with Debian, you can install gettext like this:</p>
+<p>sudo apt-get install php-gettext</p>
+<p>Another option to install this, is rebuild PHP with the option &#8211;with-gettext[=DIR] where DIR is the gettext install directory, defaults to /usr/local. Install GNU gettext in PHP.</p>
+</div>
+<div class="section" id="how-add-new-languages-in-a-module">
+<span id="how-add-new-languages-in-a-module"></span><h2>How add new languages in a module?<a class="headerlink" href="#how-add-new-languages-in-a-module" title="Permalink to this headline">¶</a></h2>
+<p>The first step to add a new language is create a new folder in locale with the code of language where the translation will be found.
+Do the translation of the strings according to the folder structure established
+In the file LangCodes.php add the new language code according to the syntax set up.
+For example, if I would add the Spanish language, in the method getLaunguage I must add &#8216;es&#8217;=&gt;&#8217;es_ES&#8217; and in getNameLang: &#8216;es&#8217;=&gt;_(&#8216;Spanish&#8217;).</p>
+<p>These are the steps to add a new language, is really easy.</p>
+</div>
+<div class="section" id="how-add-new-locales-in-the-system">
+<span id="how-add-new-locales-in-the-system"></span><h2>How add new locales in the system?<a class="headerlink" href="#how-add-new-locales-in-the-system" title="Permalink to this headline">¶</a></h2>
+<p>If you have added all files and folders, but the translation does not work, is a small problem in the system, very simple to resolve. GNU gettext use a function named setlocale(), this function use a variable of the system named locale, which is used to recognize the language for default in the system. To know how is the language in my system I must write in a console:</p>
+<p>locale -a</p>
+<p>This console command lists all languages are configured in the system, for example:</p>
+<p>C</p>
+<p>C.UTF-8</p>
+<p>en_US</p>
+<p>en_US.iso88591</p>
+<p>en_US.iso885915</p>
+<p>en_US.utf8</p>
+<p>POSIX</p>
+<p>If you use a server with a distribution Debian, you can add a new locale with the next console command:</p>
+<p>dpkg-reconfigure locales</p>
+<p>This command displays a menu with all locales, where you must select the locales to add (with the space bar you can select a locale). After selecting the locales, you must select the locale for default.</p>
+<p>Note: If you don&#8217;t want to change the locale for default in the system, you must select Ok without changing anything in the second menu. We recommended adding the locales with utf8 because is more extensive if you will use the special characters for the translation.</p>
+<p>The last step is verify if the locale was added in the system with the console command: locale -a</p>
+<p>I added French and the console displays:</p>
+<p>C</p>
+<p>C.UTF-8</p>
+<p>en_US</p>
+<p>en_US.iso88591</p>
+<p>en_US.iso885915</p>
+<p>en_US.utf8</p>
+<p>fr_FR.utf8</p>
+<p>POSIX</p>
+<p>And that&#8217;s all, if you have changed the locale for default, you must reboot the system to apply the change.</p>
+<p>Helpful links</p>
+<p>Add locales in Debian.</p>
+<p>Add locales in RedHat 7.</p>
+<p>Add locales in CentOS 6.</p>
+</div>
+<div class="section" id="implementation-in-coral">
+<span id="implementation-in-coral"></span><h2>Implementation in CORAL<a class="headerlink" href="#implementation-in-coral" title="Permalink to this headline">¶</a></h2>
+<p>The implementation of i18n in Coral will use all those tools. Here are the steps:</p>
+<p>Update all strings in php files to add the _(). Many patches, just containing this change everywhere will be submitted. Each patch can be merged independently. without anything else, those patches change nothing at all: the interface will still be in english
+generate the .po A tool like poedit can generate them easily.
+add a way to handle language selection. We propose to have it on the login page and also on each module, next to the module selection (top-right). For now French and English are supported. It&#8217;s easy to add a new language. A next improvement (that we expect to do in before june) will be to retrieve langages from the list of po files.
+last point to solve: messages that are retrieved through javascript/ajax: they are not detected by poedit. We&#8217;re still investigating how to solve this problem, there are different options, none of them looking good and easy for now.
+2 additional comments:</p>
+<p>The default language is automatically identified by CORAL but you can change the language if you prefer.</p>
+<p>Most modules of CORAL have the language chooser at the top-right on the page because this is visible for the user to change the language without interfering with the content of each page. For &#8220;auth&#8221; and &#8220;reports&#8221; the dropdown is at the bottom side because the top would be interfering with the dynamic content of these modules.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Translation for CORAL</a><ul>
+<li><a class="reference internal" href="#translation-of-erms-coral">Translation of ERMS CORAL</a></li>
+<li><a class="reference internal" href="#programming-languages-supported">Programming languages supported</a></li>
+<li><a class="reference internal" href="#how-it-works">How it works?</a></li>
+<li><a class="reference internal" href="#structure-of-languages-supported">Structure of languages supported</a></li>
+<li><a class="reference internal" href="#folder-structure">Folder structure</a></li>
+<li><a class="reference internal" href="#install-gnu-gettext-in-php">Install GNU gettext in PHP</a></li>
+<li><a class="reference internal" href="#how-add-new-languages-in-a-module">How add new languages in a module?</a></li>
+<li><a class="reference internal" href="#how-add-new-locales-in-the-system">How add new locales in the system?</a></li>
+<li><a class="reference internal" href="#implementation-in-coral">Implementation in CORAL</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="terms.html" title="previous chapter">Terms Tool User Guide</a></li>
+      <li>Next: <a href="release.html" title="next chapter">Releasing a New Version of a Module</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016. <a href="https://www.gnu.org/licenses/fdl-1.3.en.html">GNU Free Documentation 1.3</a>.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
