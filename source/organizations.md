@@ -3,7 +3,7 @@ CORAL Organizations User Guide
 
 ### About CORAL Organizations
 
-CORAL Organizations provides a way to manage contact and account information for variety of organizations customized by the user.  Some out-of-the-box organizations include publisher, provider, vendor and consortium.
+CORAL Organizations provides a way to manage contact and account information for variety of organizations customized by the user.  Some out-of-the-box organizations include publishers, providers, vendors and consortia.
 
 CORAL TIP: New installations pre-populate the Organizations module with numerous organization names.    
 
