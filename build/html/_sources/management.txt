@@ -26,7 +26,7 @@ Document records are listed alphabetically by name and the name field can be sea
 
 Select New Document from the main navigation to begin adding new document records. This will open the New Document pop-up window.
 
-![Screenshot of Organizations Home Page](img/management/managementNewDocument.png)
+![Screenshot of Management's New Document form](img/management/managementNewDocument.png)
 
 
 The ‘Name’ is the document name to be uploaded. The Management module only allows one active document per record so a document named Sample Letter to Excess Download Offender would only include a copy of the letter.
@@ -45,7 +45,7 @@ Selecting the ‘Browse…’ button opens the navigation pane used to browse an
 
 Selecting the ‘Add Optional Note’ link allows notes to be linked to the document by opening up two additional fields.
 
-![Screenshot of Organizations Home Page](img/management/managementAddOptionalNote.png)
+![Screenshot of Management's Editing a Document Record form](img/management/managementAddOptionalNote.png)
   
 ‘Note’ provides a space to add any notes about the document.
 
@@ -57,8 +57,7 @@ Selecting the ‘Add Optional Note’ link allows notes to be linked to the docu
 Once a document record has been created, the document record opens. A document record can also be opened by selecting it from the ‘Home’ screen.
 
 
-
-
+![Screenshot of Management's Editing a Document Record](img/management/managementEditDocumentRecord.png)
 
 
 The above record is for a License Agreement Checklist. Below the name is the description of the document, the associated categories, the documents creation date and creator, and the date the record was last updated and by whom. In this example, there are two archived versions of the checklist as evidenced by the “2 archive(s) available” note. Selecting ‘show archives’ makes these copies visible and accessible. To add another archived version, select ‘upload archived document’ and fill in the appropriate information. As previously mentioned, there can only be one current/active document. Therefore, to add a new version of a document, the current document must be archived first. Once that happens, an ‘upload new document’ link will display. Select this and complete the necessary information to add the new version.
