@@ -1,7 +1,7 @@
 CORAL Resources Module User Guide
 ---------------------------------
 
-### About CORAL Resources
+## About CORAL Resources
 
  A component of Hesburgh Libraries locally developed ERM, CORAL
  Resources aids in the management of the electronic resource workflow
@@ -11,9 +11,9 @@ CORAL Resources Module User Guide
  queue in which automated email alerts indicate to staff when new tasks
  are available.
 
-### Component Overview
+## Component Overview
 
- CORAL Resources has four major components in the primary navigation at
+ CORAL Resources has five major components in the primary navigation at
  the top of each page.
 
  • Home
@@ -26,7 +26,7 @@ CORAL Resources Module User Guide
 
  • Admin
 
-### Home
+## Home
 ========
 
 ![Screenshot of Resources Home Page](img/resources/resourcesHome.png)
@@ -51,7 +51,7 @@ only required fields are resource name, format and acquisition type.
 The *Format* field is meant to indicate the publication medium requested
 with the most obvious values being print and electronic. *Acquisition
 Type* is primarily meant to indicate the distinction between paid and
-free resources. *Resource Type* is optional and provides additional
+free resources. CORAL users may define their own Acquisition Type to meet the local needs. *Resource Type* is optional and provides additional
 context to the type of resource being requested. The values listed for
 all three of these fields can be edited through the Admin page detailed
 later in this user guide.
@@ -60,20 +60,19 @@ The form allows the option to either save or submit the information
 entered. The submit option will commit the new request and the system
 will initiate the workflow for that resource and will send out an email
 alert that a new resource has been entered. The save option will save
-the information to the user’s *My Queue* page where it can be completed
+the information to the user’s *My Queue* page *Saved Requests" where it can be completed
 and submitted at a later time.
 
 Please note that the system does allow duplicate records for the same
 resource to be entered. The form will however alert the user that
 another record with the same resource name already exists.
 
-### The Resource Record
-
+## The Resource Record
 ### Product
 
 ![Screenshot of Product](img/resources/resourcesProduct.png)
 
-The resource record contains seven tabs where the information about the
+The resource record contains nine tabs where the information about the
 resource is logically grouped. The first tab, *Product*, contains the
 descriptive information such as name, alias, issn, publisher, etc which
 identifies and defines the resource.
@@ -83,7 +82,7 @@ identifies and defines the resource.
 ![Screenshot of Edit Resource](img/resources/resourcesEditResource.png)
 
  The information on the *Product* tab can be edited by following the
- edit product details link or by using the edit icon on the tab. The
+ *Edit Product Details* link or by using the edit icon on the tab. The
  Name, Description, URL, Format and Resource Type fields come from the
  Add New Resource form. The Parent field identifies a related parent
  resource and includes an auto- complete feature populated by existing
@@ -132,26 +131,10 @@ customized through the *Admin* page.
 ![Screenshot of Edit Acquistion](img/resources/resourcesEditAcquistion.png)
 
  The acquisitions information can be edited by using the edit
- acquisitions information link or the matching edit icon. The
+ order information link or the matching edit icon. The
  information here is meant to provide context to the local acquisitions
  processes. The acquisition type field is the same as was entered on
- the add new resource form. The initial cost data also comes from the
- add new resource form. The cost type field is intended to distinguish
- between one time and ongoing payments. The values for the cost type
- field can be customized through the *Admin* page. This cost record is
- intended to be used for recording projected initial cost for the
- resource. CORAL Resources does not support the tracking of cost
- payments over time. That will be investigated as a future enhancement.
-
-Purchasing Site is intended to indicate the library or organization
-purchasing the resource. The values can be customized through the
-*Admin* page. Order number and System Number fields are meant to provide
-match points with the ILS. Order Number is intended for the ILS order
-number and system number for the ILS bib system number. A link to the
-resource record in the libraries’ web OPAC can be dynamically displayed
-on the *Acquisitions* tab when a bib system number is entered. See the
-technical documentation and install guide for the necessary settings in
-the /admin/configuration.ini file to enable this link.
+ the add new resource form.  
 
 The *Acquisitions* tab also includes the ability to track subscription
 periods and alert when the period expires. Enter a valid subscription
@@ -165,6 +148,17 @@ subscription end date. In order to implement the alerts feature the file
 sendAlerts.php will need to be run as a nightly cron. See the technical
 documentation and install guide for details.
 
+Order Number is intended for the ILS order
+number and system number for the ILS bib system number. A link to the
+resource record in the libraries’ web OPAC can be dynamically displayed
+on the *Acquisitions* tab when a bib system number is entered. See the
+technical documentation and install guide for the necessary settings in
+the /admin/configuration.ini file to enable this link. Purchasing Site is 
+intended to indicate the library or organization purchasing the resource. 
+The values can be customized through the *Admin* page. Order number and 
+System Number fields are meant to provide match points with the ILS. 
+
+
 ### Edit Cost History
 
 ![Screenshot of Edit Cost History](img/resources/resourcesEditCostInformation.png)
@@ -177,7 +171,7 @@ documentation and install guide for details.
  license. Use the edit license and status link or the matching icon to
  update the license information. The values for the Licensing Status
  field can be customized through the Admin page. Changes to the
- Licensing Status field are record in the History section. It is also
+ Licensing Status field are recorded in the History section. It is also
  possible through the Edit License window to associate the resource
  with all relevant license records in the Licensing Module. The License
  Record field includes an auto-complete feature that is populated by
@@ -240,14 +234,14 @@ link or the matching edit icon.
 ![Screenshot of Edit Cataloging](img/resources/resourcesEditCataloging.png)
 
  The Cataloging Status and Cataloging Type fields can be customized
- through the Admin page. The Identifier is intended for \[I have no
- idea\]. The Source URL is intended to be the source of the catalog
- records used. The Cataloging Status is intended to identify the
- current status of the cataloging work. Values might include:
- Completed, Ongoing, and Rejected. The Cataloging Type is intended to
+ through the Admin page. The Identifier can be an ILS bib record ID. 
+ The Source URL is intended to be the source of the catalog
+ records used. The Cataloging Type is intended to
  indicate the cataloging approach. Values might include: Batch, Manual,
- and MARCit. Checking the OCLC Holdings checkbox indicates that the
- resource is made available in OCLC \[not sure??\]
+ and MARCit. The Cataloging Status is intended to identify the
+ current status of the cataloging work. Values might include:
+ Completed, Ongoing, and Rejected. Checking the OCLC Holdings checkbox indicates that the
+ resource is made available in OCLC.
 
 ### Contacts
 
@@ -267,7 +261,7 @@ through the *Admin* page.
 
 ### Account
 
-\[insert image here\]
+![Screenshot of Accounts](img/resources/resourcesAccount.png)
 
 The *Accounts* tab is the same as is found on an organization record in
 the Organizations Module. It is intended to store the login credentials
@@ -280,6 +274,9 @@ the *Product* tab all accounts that exist for that specific organization
 will be inherited and displayed here on the *Accounts* tab. As with
 Organizations, the Resources Module includes a Login Type field. The
 values for Login Type can be edited through the *Admin* page.
+
+### Issues
+(to come ...)
 
 ### Attachments
 
@@ -343,7 +340,7 @@ feature is intended to be used in cases where the resource does not need
 to go through a workflow, as in cases where the record is added to the
 system for record keeping purposes only.
 
-### My Queue
+## My Queue
 
 ![Screenshot of My Queue](img/resources/resourcesMyQueue.png)
 
@@ -364,10 +361,28 @@ on their association with a workflow group. Resources are removed from
 the user’s queue once the outstanding workflow task on the resource’s
 *Routing* tab is marked as complete.
 
-### File Import
+## File Import
+
 ![Screenshot of File Import](img/resources/resourcesFileImport.png)
 
-### Admin
+File Import allows users to import a file into CORAL. Users are allowed to choose a file from a local drive. The file has to be a delimited CSV file with any of the three delimiter options: comma, semicolon or pipe delimited.
+The upload button loads the CSV into CORAL.  
+
+### File Import Configuration
+
+![Screenshot of File Import](img/resources/resourcesDelimitedFileImport.png)
+
+Next users need to configure the import settings in the Delimited File Import window. Users can select an existing import configuration, which is configured in Admin (see Admin section below for more details). Once selected, the column number will be populated in the form automatically. If you have not previously created an Import Configuration, then for each of the resource fields please input the number of the column in your CSV file that corresponds to the resource field. For example, if your import file has a second column called Name that corresponds to the Resource Title, then you would input 2 for the value for the Resource Title field. For columns with multiple values that are character-delimited, indicate the delimiter using *If delimited, delimited by field*. For fields with values across multiple columns, add additional sets using the *+Add another* links. Use the Dedupe on this column option for ISBN/ISSN sets to ignore any duplicate values that might occur across those columns. The Alias Types, Note Types, and Organization Roles that you can assign to your mapped columns can be configured on the Admin page. 
+
+Once submit, records in the file will be loaded into CORAL Resources and an import report is generated (see details below). 
+
+### File Import Report
+
+![Screenshot of Admin](img/resources/resourcesImportReport.png)
+
+The report summarizes the import settings and the results. In the example shown above, 3 records have been processed and added. One new parent record and two new organizations have been created. 
+
+## Admin
 
 ![Screenshot of Admin](img/resources/resourcesAdmin.png)
 
@@ -386,9 +401,7 @@ an existing user entry granting them additional privileges. New with the
 Resources Module is the addition of the ‘View Accounts’ setting. The
 *Accounts* tab on the resource record may contain sensitive login
 credentials that only a select few users need to see. Checking the ‘View
-Accounts’ box on
-
- the edit user form will allow the user to see the *Accounts* tab, for
+Accounts’ box on the edit user form will allow the user to see the *Accounts* tab, for
  all other users the *Accounts* tab will be hidden.
 
 ### Workflow / User Group
@@ -442,6 +455,17 @@ active. Users that are assigned to the group will then have the
 in-process resource appear on the *Outstanding Tasks* tabs of their My
 Queue pages.
 
+### Import Configuration
+
+![Screenshot of Admin Edit User Group](img/resources/resourcesImportConfiguration.png)
+
+Here, users can add a new import configuration or can edit an existing configuration. 
+
+![Screenshot of Admin Edit User Group](img/resources/resourcesAddImportConfiguration.png)
+
+The instruction for adding a new one or editing an existing one is the similar to what's in File Import section, except that Configuration Name can to be entered or edited. 
+
+ 
 ### Other Admin Settings
 
 There are many other fields which can be customized through the *Admin*
