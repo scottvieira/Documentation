@@ -29,7 +29,7 @@ CORAL Resources Module User Guide
 ## Home
 ========
 
-![Screenshot of Resources Home Page](img/resources/resourcesHome.png)
+![Screenshot of Resources Home Page](img/resources/resourcesHome.PNG)
 
 Home provides both search and AZ browse access to the resource records.
 The *Name (contains)* field searches against resource name, resource
@@ -39,7 +39,7 @@ results can be exported to a spreadsheet using the excel icon in the
 upper right corner. The exported file includes more fields than what are
 displayed on the search results page.
 
-![Screenshot of New Resource Window](img/resources/resourcesAddNewResource.png)
+![Screenshot of New Resource Window](img/resources/resourcesAddNewResource.PNG)
 
 
 All new resource records are added through this form. The form includes
@@ -70,7 +70,7 @@ another record with the same resource name already exists.
 ## The Resource Record
 ### Product
 
-![Screenshot of Product](img/resources/resourcesProduct.png)
+![Screenshot of Product](img/resources/resourcesProduct.PNG)
 
 The resource record contains nine tabs where the information about the
 resource is logically grouped. The first tab, *Product*, contains the
@@ -79,7 +79,7 @@ identifies and defines the resource.
 
 ### Edit product details
 
-![Screenshot of Edit Resource](img/resources/resourcesEditResource.png)
+![Screenshot of Edit Resource](img/resources/resourcesEditResource.PNG)
 
  The information on the *Product* tab can be edited by following the
  *Edit Product Details* link or by using the edit icon on the tab. The
@@ -111,7 +111,7 @@ a record in CORAL.
 
 ### Add new note
 
-![Screenshot of Add New Note](img/resources/resourcesAddNewNote.png)
+![Screenshot of Add New Note](img/resources/resourcesAddNewNote.PNG)
 
 An additional notes feature has been added to the *Product*,
 *Acquisitions* and *Access* tab. The note will be visible only on the
@@ -121,14 +121,14 @@ customized through the *Admin* page.
 
 ### Acquisitions
 
-![Screenshot of Acquisition](img/resources/resourcesAcquistion.png)
+![Screenshot of Acquisition](img/resources/resourcesAcquistion.PNG)
 
  The Acquisitions tab contains details of the libraries’ acquisition of
  the resource such as order number, cost, fund, license status, etc.
 
 ### Edit acquisitions information
 
-![Screenshot of Edit Acquistion](img/resources/resourcesEditAcquistion.png)
+![Screenshot of Edit Acquistion](img/resources/resourcesEditAcquistion.PNG)
 
  The acquisitions information can be edited by using the edit
  order information link or the matching edit icon. The
@@ -161,11 +161,11 @@ System Number fields are meant to provide match points with the ILS.
 
 ### Edit Cost History
 
-![Screenshot of Edit Cost History](img/resources/resourcesEditCostInformation.png)
+![Screenshot of Edit Cost History](img/resources/resourcesEditCostInformation.PNG)
 
 ### Edit license and status
 
-![Screenshot of Edit Licenses](img/resources/resourcesEditLicenses.png)
+![Screenshot of Edit Licenses](img/resources/resourcesEditLicenses.PNG)
 
  The *Acquisitions* tab includes information about the relevant
  license. Use the edit license and status link or the matching icon to
@@ -183,7 +183,7 @@ System Number fields are meant to provide match points with the ILS.
 
 ### Access
 
-![Screenshot of Access](img/resources/resourcesAccess.png)
+![Screenshot of Access](img/resources/resourcesAccess.PNG)
 
 The *Access* tab includes the information about how the resource is
 accessed including things such as IP versus username/password
@@ -193,7 +193,7 @@ link or the matching edit icon.
 
 ### Edit access information
 
-![Screenshot of Edit Access](img/resources/resourcesEditAccess.png)
+![Screenshot of Edit Access](img/resources/resourcesEditAccess.PNG)
 
  The values for all fields on the *Access* tab except for username and
  password can be customized through the Admin page. The Authorized Site
@@ -220,7 +220,7 @@ link or the matching edit icon.
 
 ### Cataloging
 
- ![Screenshot of Cataloging](img/resources/resourcesCataloging.png)
+ ![Screenshot of Cataloging](img/resources/resourcesCataloging.PNG)
 
  The *Cataloging* tab includes data and workflow information related to
  cataloging the resource, including things such as the URL of where the
@@ -231,7 +231,7 @@ link or the matching edit icon.
 
 ### Edit Cataloging Details
 
-![Screenshot of Edit Cataloging](img/resources/resourcesEditCataloging.png)
+![Screenshot of Edit Cataloging](img/resources/resourcesEditCataloging.PNG)
 
  The Cataloging Status and Cataloging Type fields can be customized
  through the Admin page. The Identifier can be an ILS bib record ID. 
@@ -245,7 +245,7 @@ link or the matching edit icon.
 
 ### Contacts
 
-![Screenshot of Contacts](img/resources/resourcesContacts.png)
+![Screenshot of Contacts](img/resources/resourcesContacts.PNG)
 
 The *Contacts* tab is the same as is found on an organization record in
 the Organizations Module. It is intended as a directory of contact
@@ -261,7 +261,7 @@ through the *Admin* page.
 
 ### Account
 
-![Screenshot of Accounts](img/resources/resourcesAccount.png)
+![Screenshot of Accounts](img/resources/resourcesAccount.PNG)
 
 The *Accounts* tab is the same as is found on an organization record in
 the Organizations Module. It is intended to store the login credentials
@@ -280,7 +280,7 @@ values for Login Type can be edited through the *Admin* page.
 
 ### Attachments
 
-![Screenshot of Attachments](img/resources/resourcesAttachments.png)
+![Screenshot of Attachments](img/resources/resourcesAttachments.PNG)
 
 Additional documents relevant to the resource can be uploaded and made
 available through the *Attachments* tab. The figure above shows a price
@@ -297,7 +297,7 @@ file. Multiple attachments are grouped and sorted by attachment type.
 
 ### Routing
 
-![Screenshot of Routing](img/resources/resourcesRouting.png)
+![Screenshot of Routing](img/resources/resourcesRouting.PNG)
 
 The *Routing* tab shows the workflow through which the resource needs to
 follow. The workflow and routing rules can be customized through the
@@ -342,7 +342,7 @@ system for record keeping purposes only.
 
 ## My Queue
 
-![Screenshot of My Queue](img/resources/resourcesMyQueue.png)
+![Screenshot of My Queue](img/resources/resourcesMyQueue.PNG)
 
 The *My Queue* page shows the user their recent activity and their
 outstanding tasks. The page is divided into three tabs; Saved Requests,
@@ -363,14 +363,14 @@ the user’s queue once the outstanding workflow task on the resource’s
 
 ## File Import
 
-![Screenshot of File Import](img/resources/resourcesFileImport.png)
+![Screenshot of File Import](img/resources/resourcesFileImport.PNG)
 
 File Import allows users to import a file into CORAL. Users are allowed to choose a file from a local drive. The file has to be a delimited CSV file with any of the three delimiter options: comma, semicolon or pipe delimited.
 The upload button loads the CSV into CORAL.  
 
 ### File Import Configuration
 
-![Screenshot of File Import](img/resources/resourcesDelimitedFileImport.png)
+![Screenshot of File Import](img/resources/resourcesDelimitedFileImport.PNG)
 
 Next users need to configure the import settings in the Delimited File Import window. Users can select an existing import configuration, which is configured in Admin (see Admin section below for more details). Once selected, the column number will be populated in the form automatically. If you have not previously created an Import Configuration, then for each of the resource fields please input the number of the column in your CSV file that corresponds to the resource field. For example, if your import file has a second column called Name that corresponds to the Resource Title, then you would input 2 for the value for the Resource Title field. For columns with multiple values that are character-delimited, indicate the delimiter using *If delimited, delimited by field*. For fields with values across multiple columns, add additional sets using the *+Add another* links. Use the Dedupe on this column option for ISBN/ISSN sets to ignore any duplicate values that might occur across those columns. The Alias Types, Note Types, and Organization Roles that you can assign to your mapped columns can be configured on the Admin page. 
 
@@ -378,13 +378,13 @@ Once submit, records in the file will be loaded into CORAL Resources and an impo
 
 ### File Import Report
 
-![Screenshot of Admin](img/resources/resourcesImportReport.png)
+![Screenshot of Admin](img/resources/resourcesImportReport.PNG)
 
 The report summarizes the import settings and the results. In the example shown above, 3 records have been processed and added. One new parent record and two new organizations have been created. 
 
 ## Admin
 
-![Screenshot of Admin](img/resources/resourcesAdmin.png)
+![Screenshot of Admin](img/resources/resourcesAdmin.PNG)
 
 The *Admin* page is available only to users with admin privileges. It is
 the page through which field values are customized and through which
@@ -392,7 +392,7 @@ user privilege and access is set.
 
 ### Edit User
 
-![Screenshot of Edit User](img/resources/resourcesEditUser.png)
+![Screenshot of Edit User](img/resources/resourcesEditUser.PNG)
 
 The first tab on the page is for editing user accounts. There are three
 privilege levels for the Resources Module; add/edit, view only, and
@@ -406,7 +406,7 @@ Accounts’ box on the edit user form will allow the user to see the *Accounts* 
 
 ### Workflow / User Group
 
-![Screenshot of Workflow User Group](img/resources/resourcesWorkflowUserGroup.png)
+![Screenshot of Workflow User Group](img/resources/resourcesWorkflowUserGroup.PNG)
 
 The *Workflow / User Group* tab contains the settings which control the
 workflow routing features. The Resources Module allows for the creation
@@ -419,7 +419,7 @@ workflows are added using the add workflow link.
 
 ### Edit workflow
 
-![Screenshot of Admin Edit Workflow](img/resources/resourcesAdminEditWorkflow.png)
+![Screenshot of Admin Edit Workflow](img/resources/resourcesAdminEditWorkflow.PNG)
 
  The above figure shows the form through which workflows are created
  and edited. Here again the workflow being edited is for resources
@@ -446,7 +446,7 @@ active once the parent step is marked as complete.
 
 ### Edit user group
 
-![Screenshot of Admin Edit User Group](img/resources/resourcesAdminEditUserGroup.png)
+![Screenshot of Admin Edit User Group](img/resources/resourcesAdminEditUserGroup.PNG)
 
 Each step or task in a workflow must be assigned to a user group. Enter
 a group name and a group email address. An email alert will be sent to
@@ -457,11 +457,11 @@ Queue pages.
 
 ### Import Configuration
 
-![Screenshot of Admin Edit User Group](img/resources/resourcesImportConfiguration.png)
+![Screenshot of Admin Edit User Group](img/resources/resourcesImportConfiguration.PNG)
 
 Here, users can add a new import configuration or can edit an existing configuration. 
 
-![Screenshot of Admin Edit User Group](img/resources/resourcesAddImportConfiguration.png)
+![Screenshot of Admin Edit User Group](img/resources/resourcesAddImportConfiguration.PNG)
 
 The instruction for adding a new one or editing an existing one is the similar to what's in File Import section, except that Configuration Name can to be entered or edited. 
 
@@ -478,7 +478,7 @@ Settings.
 
 ### Alert settings
 
-![Screenshot of Admin Alert Settings](img/resources/resourcesAdminAlertSettings.png)
+![Screenshot of Admin Alert Settings](img/resources/resourcesAdminAlertSettings.PNG)
 
 These alert settings determine the functionality of the alert feature
 associated with the subscription period end date on the *Acquisitions*
