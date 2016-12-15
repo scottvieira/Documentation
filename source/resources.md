@@ -29,7 +29,7 @@ CORAL Resources Module User Guide
 ## Home
 ========
 
-![Screenshot of Resources Home Page](img/resources/resourcesHome.PNG)
+![Screenshot of Resources Home Page](img/resources/resourcesHome.png)
 
 Home provides both search and AZ browse access to the resource records.
 The *Name (contains)* field searches against resource name, resource

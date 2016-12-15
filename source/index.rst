@@ -12,6 +12,7 @@ CORAL Documentation Project
 
    overview
    basics
+   install
    resources
    licensing
    organizations

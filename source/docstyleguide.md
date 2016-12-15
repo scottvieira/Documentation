@@ -26,4 +26,8 @@ For example, the following folder name for organizations.md
 
 For example: **organizationsAccountsView.png** for a a screenshot of the Organization's module accounts form.
 
+WARNING! Image file names are case sensitive.  This includes the file extensions.  Be consistent in keeping all file extensions in lowercase.  For example **sampleFile.png**
+
+3) Add reusuable images such as icons to the /img/general folder.
+
 
