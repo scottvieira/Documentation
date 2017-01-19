@@ -173,8 +173,9 @@ names in the specific license record. This is a required field.
 (interlibrary loan terms, course pack rights, etc). This is a required
 field.  This is a customizable field.  You can add types by clicking on Add Expression Type or going to Admin.  
  
-- **Qualifier:** This field will not be available if the selected expression type does not have a qualifier.  This is a customization field which can be used to qualify particular expressions. For example, a qualifier of 'Permitted' or 'Prohibited' may be appropriate for an interlibrary loan expression. You may choose to ignore this field or choose to use it in a different fashion for other expression types.  The software comes with qualifiers added for Coursepacks and Interlibrary Loan.  
- 
+- **Qualifier:** This field will not be available if the selected expression type does not have a qualifier.  This is a customization field which can be used to qualify particular expressions. For example, a qualifier of 'Permitted' or 'Prohibited' may be appropriate for an interlibrary loan expression. You may choose to ignore this field as it may not be appropriate for certain expression types or choose to use it in a different fashion for other expression types.  The software comes with qualifiers added for Coursepacks and Interlibrary Loan.  
+
+
 - **Document Text:** The actual text of the license clause. An
  interlibrary loan expression has been added in the following figure.
 
@@ -225,33 +226,23 @@ off as explained in the technical documentation guide. This will also
 remove the display note checkbox and email functionality. It will also
 remove the 'Terms Tool' tab which is explained next.
 
-### Completed Expression
 
-The above figure is the completed expression with document text,
-qualifier and display notes. Qualifier may not be appropriate for
-certain expression types. The intended use of the qualifier is to
-further document permitted/prohibited distinctions such as
-interlibrary loan, course packs and ereserves. You may continue to add
-as many expressions as needed for some or all documents.
-
-### SFX Links
+### Terms Tool
 
 Once the expressions or terms of the license are known, the next
 question to ask is ‘Which journals are covered by these terms?’.
-That’s where the SFX Links tab comes into play. Using this tab it is
-possible to relate a specific license to the covered journals in a
-specific SFX target or package. In this example the Cambridge
-University Press Site License Agreement is being associated with the
+That’s where the Terms Tool tab comes into play. The Terms Tool currently works only with the SFX link resolver.  It is true that not every institution uses SFX.  The SFX Links tab could be renamed and/or repurposed for use with  other openurl resolvers or journal management systems. 
+
+Using this tab it is possible to relate a specific license to the covered journals in a specific SFX target or package. 
+
+![alt text](img/licensing/licensingTermsTool.png)
+
+In this example the Cambridge
+University Press License Agreement is being associated with the
 Cambridge Journals Online target in SFX (Cambridge Journals Online is
 the SFX target public name). This SFX – License connection allows for
 the delivery of license terms through the SFX menu as detailed in the
-Terms Tool User Guide. It is true that not every institution uses SFX.
-The SFX Links tab could be renamed and/or repurposed for use with
-other openurl resolvers or journal management systems. This
-
-tab is meant to be used in conjunction with the Terms Tool and can be
-disabled along with the *Terms Tool Report* page for those who do not
-wish to use it.
+Terms Tool User Guide. This tab is meant to be used in conjunction with the Terms Tool and can be disabled along with the *Terms Tool Report* page for those who do not wish to use it.
 
 ### Attachments
 
@@ -259,7 +250,9 @@ For any resource there may be documents in addition to the actual
 license that are important to retain. Title lists and email
 correspondence are two that may be the most common. The Attachments
 tab allows you to upload these additional documents to the license
-record. The above figure shows an email that has been uploaded with
+record. 
+
+The above figure shows an email that has been uploaded with
 the date and a description of the file. In this case the attachment is
 an email from the publisher detailing additional restrictions on the
 resource. The date field is not automatically entered by the system so
@@ -271,10 +264,12 @@ open the uploaded file.
 
 ### Licenses in Progress
 
+![alt text](img/licensing/licensingLicensesinProgress.png)
+
 The *Licenses in Progress* page will show the licenses that are not
 yet complete. It is intended to be used by the licensing staff as a
 queue of outstanding licenses. It has been coded to show licenses of
-status Awaiting Document or Editing Expressions and will also show new
+status 'Awaiting Document' or 'Editing Expressions' and will also show new
 licenses which have not yet been given any status. The hyperlinked
 License Name will take you into the license record.
 
@@ -327,51 +322,28 @@ terms to other systems.
 
 ### Admin
 
-The *Admin* page is where you will edit Expression Types, Document
-Types, Signature Types and
+The *Admin* page is where you will edit Document Types, Expression Types, Qualifiers, Signature Types, Licenses Statuses, and Calendar Settings.
+Each of these fields can have as many values as needed so that the system can better meet local needs. 
 
-License Statuses. Each of these fields can have as many values as
-needed so that the system can better
+*Admin* is also where you will edit and manage user permissions. CORAL Licensing has been built with the ability to limit access to select individuals given the confidential nature of license agreements. Users may not access CORAL Licensing until they are first set up with an account by an administrator. The following figure shows the ‘add new user’ window available from the *Admin* page.
 
-meet local needs. *Admin* is also where you will edit and manage user
-permissions. CORAL Licensing has been built with the ability to limit
-access to select individuals given the confidential nature of license
-agreements. Users may not access CORAL Licensing until they are first
-set up with an account by an administrator. The following figure shows
-the ‘add new user’ window available from the *Admin* page.
+![alt text](img/licensing/licensingAddNewUser.png)
 
-‘Login ID’ will be the user’s unique ID in your local campus
-authentication system. See the technical documentation for more
+**Login ID:**  The user’s unique ID.  If you're using your local campus's authentication system, the ID must match what is in there.  See the technical documentation for more
 details on authentication.
 
-‘Privilege’ is the user’s level of access (i.e. read only, etc).
+**Privilege:** The user’s level of access.  
 
-‘Terms Tool Email’ – Enter email address if you wish the user to
+- Admin users have complete add/edit rights and can remove licenses and associated fields.  They also have access to the *Admin* page, the Terms Tool tab on the license record and the terms tool checkbox. 
+ 
+- Add/Edit users can remove licenses and associated fields, but not have access to the Admin page and the Terms Tool.  
+
+- View Only users can view all license information and are allowed access to the uploaded documents.
+
+- Restricted users can view all license information but are not allowed access to the uploaded documents nor access the actual license agreements that have been uploaded to the system.  
+  
+
+**Terms Tool Email:** Enter email address if you wish the user to
 receive email notification when the terms tool box is checked for a
 given expression. Leave this blank for all others.
 
-The values available in the Privilege field deserve further
-explanation.
-
-Privileges
-
- • Admin users have complete add/edit rights and can remove licenses
- and associated fields.
-
- Access to the *Admin* page, the SFX Links tab on the license record
- and the terms tool checkbox is restricted to users with Admin
- privileges.
-
- • Add/Edit users can add, edit, or remove licenses and associated
- fields.
-
- • View Only users can view all license information and are allowed
- access to the uploaded documents.
-
- • Restricted users can view all license information but are not
- allowed access to the uploaded documents.
-
-Admin, Add/Edit and View Only are the same privileges used in the
-other CORAL modules. Restricted is an extra privilege used only in
-CORAL Licensing in order to restrict access to the actual license
-agreements that have been uploaded to the system.
