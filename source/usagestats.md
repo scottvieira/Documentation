@@ -86,7 +86,7 @@ been expanded to show the corresponding publishers. The ‘view/edit’ link
 brings the user to the following detailed information page for the
 publisher or platform selected.
 
-Image of Logins tab, Metapress example
+![image alt text](img/usage_stats/usageLoginsTab.png "Logins Tab")
 
 Seen here is the platform record for MetaPress. The information is
 separated among four tabs; Logins, Notes, Statistics and Titles. The
@@ -108,7 +108,7 @@ point of entry for all account logins within CORAL Organizations. Logins
 can however still be entered directly within CORAL Usage Statistics if
 preferred.
 
-image of Notes tab, Interface Notes for MetaPress
+![image alt text](img/usage_stats/usageInterfaceNotes.png "Add Interface Notes")
 
 The Notes tab allows the user to identify the years for which statistics
 are available as well as identifying which years are COUNTER compliant
@@ -117,7 +117,7 @@ field. This field is displayed to library personnel within the Usage
 Reporting Add-On page explained later in this document. It is meant for
 public notes that give added context to the statistics.
 
-image of Titles tab, Associated Titles and ISSNs
+![image alt text](img/usage_stats/usageTitlesTab.png "Titles")
 
 The Titles tab displays all of the titles that were included in the
 uploaded reports for each Platform and Publisher. A quick scan of this
@@ -134,7 +134,7 @@ order to see the full list of holdings. The link resolver base url is
 set in a configuration file. See the Usage Reporting Add-On Technical
 Documentation for instructions.
 
-image of Statistics Tab, Updated Statistics MetaPress example
+![image alt text](img/usage_stats/usageStatsManagementTab.png "Statistics Management")
 
 The Statistics tab shows all the statistics which have been loaded for
 the specific Platform or Publisher sorted with most recent year first.
@@ -164,7 +164,7 @@ and red with red being the worst and most extreme outliers.
 
 #### Admin
 
-image of Admin main screen
+![image alt text](img/usage_stats/usageAdminMain.png "Admin Main Screen")
 
 There are three sections on the CORAL Usage Statistics Admin page;
 Users, Email Addresses and Outlier Parameters. When adding new users to
@@ -198,7 +198,7 @@ of the percentage increase from the previous twelve month average.
 
 #### Report Options
 
-image Publisher/ Platform Reporting Administrative Update
+![image alt text](img/usage_stats/usageReportUpdate.png "Platform Reporting Administrative Update")
 
 If the Usage Reporting Add-on is installed, the Report Options page will
 appear. This page allows editing of the values that display in the
