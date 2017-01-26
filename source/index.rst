@@ -11,8 +11,8 @@ CORAL Documentation Project
    :maxdepth: 3
 
    overview
-   basics
    install
+   basics
    resources
    licensing
    organizations
