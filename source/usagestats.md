@@ -32,7 +32,7 @@ navigation at the top of each page.
 
 #### Home
 
-image of main Home screen
+![image alt text](img/usage_stats/usageHomeScreen.png "Home Screen")
 
 New statistics reports are uploaded through the Home page. CORAL Usage
 Statistics currently supports JR1 and JR1a reports or any report that
@@ -68,12 +68,11 @@ it is committed to the database. This allows the user a chance to scan
 the data for errors before deciding to either confirm the upload or to
 cancel.
 
-image of Usage Statistics File Upload: The file has been uploaded
-successfully.
+![image alt text](img/usage_stats/usageFileUploadSuccessful.png "Successful Upload")
 
-#### Publisher / Platform
+#### File Import / SUSHI
 
-image of Publisher/ Platform Update
+![image alt text](img/usage_stats/usageNewPlatform.png "New Platform")
 
 When a new file is loaded an entry for each Platform and Publisher
 combination listed in the file is created. It is through the Publisher /
