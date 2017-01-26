@@ -22,13 +22,13 @@ navigation at the top of each page.
 
 -   Home
 
--   Publisher/Platform
+-   File Import
+
+-   SUSHI
 
 -   Admin
 
 -   Report Options
-
--   Usage Reports Add-On
 
 #### Home
 
