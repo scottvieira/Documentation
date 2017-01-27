@@ -3,4 +3,4 @@
 #
 
 # exclude build directory
-**/build
+build/
