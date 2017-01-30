@@ -33,7 +33,7 @@ Installation section, below. Please note, a minimum version of PHP 5.5 is suppor
 #### Authentication 
 Authentication is required for CORAL since all users are given specific privilege levels (for more on
 privilege levels refer to the user guide). CORAL has two choices for authentication – either to tie in to
-your university/library’s authentication system or to install the CORAL Authentication Module. For more
+your university/library’s authentication system or to install the CORAL Authentication Module. The Authentication Module also has built in LDAP functionality. For more
 information on the CORAL Authentication module, please refer to the [Authentication Documentation](http://docs.coral-erm.org/en/latest/authentication.html).
 
 To utilize your library’s existing authentication system, you will need to know the Server Variable name
@@ -51,7 +51,8 @@ users’ login ID.
 
 Also, the `.htaccess` file should require your authentication system, or you should have another way to
 require authentication. If you have questions about this, contact your system administrator.
-CORAL has limited use directly with LDAP. Within all of the modules (except for Licensing) any user
+
+CORAL has limited LDAP username lookup available in most modules. This is different than the more complete LDAP integration present in the Auth module. Within each of the modules (except for Licensing) any user
 allowed by the `.htaccess` may visit the site; if LDAP has been set up in the `configuration.ini` it will display
 their name in the upper right hand corner. This connection is optional.
 
@@ -139,7 +140,7 @@ suffix
 
 ### Installation 
 Installation can occur in one of two ways – either through the web installation script or manually.  Web 
-installation will provide advantages over manual installation because it will check MySQL privileges and PHP version.
+installation will provide advantages over manual installation because it will check MySQL privileges and PHP version and directory permissions.
 
 #### Installing CORAL 2.0
 
@@ -151,7 +152,7 @@ Step 1: Download a copy of the [latest version at Github](https://github.com/Cor
 
 Step 2: If you use the option to download the compressed zipped file, expand this file in a working folder.
 
-Step 3: Copy the expanded folder to your webserver.  If using Apache, this would be your //var/www/html/ folder.  If CORAL will be in a sub folder on your webserver, change the folder name from "Coral-master" to, for example, "coral" or what name you choose.
+Step 3: Copy the expanded folder to your webserver.  If using Apache, this would be something like /var/www/html/ folder.  If CORAL will be in a sub folder on your webserver, change the folder name from "Coral-master" to, for example, "coral" or what name you choose.
 
 The web installation depends upon the index.php file found in the coral folder.  Your Apache settings should be set to include loading the index.php file.  
 
@@ -183,8 +184,9 @@ For example, for Ubuntu Linux you would have something similar to the following.
 
 When finished changing the permissions, click on "Try Again" button to continue the installation.
 
-Step 7: Following this you should see the following, setup CORAL with your MySQL.  Generally, this will be user root or an user that has the necessary privileges (i.e., select, insert, update and 
-delete privileges only (no create table privileges are necessary).  After adding any additions and changes click the "Continue Installing" button. 
+Step 7: Following this you should see the following, setup CORAL with your MySQL.  Generally, this will be user root or an user that has the necessary privileges (i.e., select, insert, update, 
+delete, and create table privileges). This user will not be remembered after the installation since part of the process is to create a new user for CORAL to use in day to day operation. 
+However, if you don't want to give the installer user credentials with create database permissions, you can provide one with permission only for specific databases, but you will need to manually create a database for each module and use the Advance MySQL Database Setup form to provide the database names to the installer. After providing the necessary information click the "Continue Installing" button. 
 
 ![Screenshot of MySQL Database Setup](img/install/installDatabaseSetup.png)
 
@@ -194,7 +196,7 @@ Optional - Advance MySQL Database Setup form as seen below will allow you to cus
 ![Screenshot of MySQL Database Setup Advanced](img/install/installDatabaseSetupAdvanced.png)
 
 
-Step 8: Setup a regular database user.  As noted this user will need SELECT, INSERT, UPDATE and DELETE privileges if CORAL does not have these rights.  When finished adding an user and password click the "Continue Installing" button. 
+Step 8: Setup a regular database user.  As noted this user will need SELECT, INSERT, UPDATE and DELETE privileges. If the MySQL username you already gave CORAL has permission to create a new user it will create the name and password you provide here. Otherwise you will need to provide a username and password that you have manually configured in the database already. When finished adding the username and password click the "Continue Installing" button. 
 
 ![Screenshot of Database User Setup](img/install/installDatabaseUserSetup.png)
 
