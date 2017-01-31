@@ -29,7 +29,7 @@ CORAL Resources Module User Guide
 ### Home
 ========
 
-![](media/image1.png){width="6.5in" height="4.0in"}
+![Screenshot of Resources Home Page](img/resources/resourcesHome.png)
 
 Home provides both search and AZ browse access to the resource records.
 The *Name (contains)* field searches against resource name, resource
@@ -39,7 +39,7 @@ results can be exported to a spreadsheet using the excel icon in the
 upper right corner. The exported file includes more fields than what are
 displayed on the search results page.
 
-New Resource ![](media/image2.png){width="6.5in" height="3.986111111111111in"}
+![Screenshot of New Resource Window](img/resources/resourcesAddNewResource.png)
 
 
 All new resource records are added through this form. The form includes
@@ -71,7 +71,7 @@ another record with the same resource name already exists.
 
 ### Product
 
-\[insert product image here)
+![Screenshot of Product](img/resources/resourcesProduct.png)
 
 The resource record contains seven tabs where the information about the
 resource is logically grouped. The first tab, *Product*, contains the
@@ -80,7 +80,7 @@ identifies and defines the resource.
 
 ### Edit product details
 
-**\[insert image here\]**
+![Screenshot of Edit Resource](img/resources/resourcesEditResource.png)
 
  The information on the *Product* tab can be edited by following the
  edit product details link or by using the edit icon on the tab. The
@@ -112,7 +112,7 @@ a record in CORAL.
 
 ### Add new note
 
-\[insert new note image here}
+![Screenshot of Add New Note](img/resources/resourcesAddNewNote.png)
 
 An additional notes feature has been added to the *Product*,
 *Acquisitions* and *Access* tab. The note will be visible only on the
@@ -122,14 +122,14 @@ customized through the *Admin* page.
 
 ### Acquisitions
 
-\[insert image here\]
+![Screenshot of Acquisition](img/resources/resourcesAcquistion.png)
 
  The Acquisitions tab contains details of the libraries’ acquisition of
  the resource such as order number, cost, fund, license status, etc.
 
 ### Edit acquisitions information
 
-**\[insert image here\]**
+![Screenshot of Edit Acquistion](img/resources/resourcesEditAcquistion.png)
 
  The acquisitions information can be edited by using the edit
  acquisitions information link or the matching edit icon. The
@@ -165,9 +165,13 @@ subscription end date. In order to implement the alerts feature the file
 sendAlerts.php will need to be run as a nightly cron. See the technical
 documentation and install guide for details.
 
+### Edit Cost History
+
+![Screenshot of Edit Cost History](img/resources/resourcesEditCostInformation.png)
+
 ### Edit license and status
 
-**\[insert image here\]**
+![Screenshot of Edit Licenses](img/resources/resourcesEditLicenses.png)
 
  The *Acquisitions* tab includes information about the relevant
  license. Use the edit license and status link or the matching icon to
@@ -185,7 +189,7 @@ documentation and install guide for details.
 
 ### Access
 
-\[insert image here\]
+![Screenshot of Access](img/resources/resourcesAccess.png)
 
 The *Access* tab includes the information about how the resource is
 accessed including things such as IP versus username/password
@@ -195,7 +199,7 @@ link or the matching edit icon.
 
 ### Edit access information
 
-**\[insert image here\]**
+![Screenshot of Edit Access](img/resources/resourcesEditAccess.png)
 
  The values for all fields on the *Access* tab except for username and
  password can be customized through the Admin page. The Authorized Site
@@ -222,7 +226,7 @@ link or the matching edit icon.
 
 ### Cataloging
 
- \[insert image here\]
+ ![Screenshot of Cataloging](img/resources/resourcesCataloging.png)
 
  The *Cataloging* tab includes data and workflow information related to
  cataloging the resource, including things such as the URL of where the
@@ -232,6 +236,8 @@ link or the matching edit icon.
  the matching edit icon.
 
 ### Edit Cataloging Details
+
+![Screenshot of Edit Cataloging](img/resources/resourcesEditCataloging.png)
 
  The Cataloging Status and Cataloging Type fields can be customized
  through the Admin page. The Identifier is intended for \[I have no
@@ -245,7 +251,7 @@ link or the matching edit icon.
 
 ### Contacts
 
-\[insert contacts image here\]
+![Screenshot of Contacts](img/resources/resourcesContacts.png)
 
 The *Contacts* tab is the same as is found on an organization record in
 the Organizations Module. It is intended as a directory of contact
@@ -277,7 +283,7 @@ values for Login Type can be edited through the *Admin* page.
 
 ### Attachments
 
-\[insert image here\]
+![Screenshot of Attachments](img/resources/resourcesAttachments.png)
 
 Additional documents relevant to the resource can be uploaded and made
 available through the *Attachments* tab. The figure above shows a price
@@ -294,7 +300,7 @@ file. Multiple attachments are grouped and sorted by attachment type.
 
 ### Routing
 
-\[insert image here\]
+![Screenshot of Routing](img/resources/resourcesRouting.png)
 
 The *Routing* tab shows the workflow through which the resource needs to
 follow. The workflow and routing rules can be customized through the
@@ -339,7 +345,7 @@ system for record keeping purposes only.
 
 ### My Queue
 
-\[insert my queue image here\]
+![Screenshot of My Queue](img/resources/resourcesMyQueue.png)
 
 The *My Queue* page shows the user their recent activity and their
 outstanding tasks. The page is divided into three tabs; Saved Requests,
@@ -358,9 +364,12 @@ on their association with a workflow group. Resources are removed from
 the user’s queue once the outstanding workflow task on the resource’s
 *Routing* tab is marked as complete.
 
+### File Import
+![Screenshot of File Import](img/resources/resourcesFileImport.png)
+
 ### Admin
 
-\[insert admin image here\]
+![Screenshot of Admin](img/resources/resourcesAdmin.png)
 
 The *Admin* page is available only to users with admin privileges. It is
 the page through which field values are customized and through which
@@ -368,7 +377,7 @@ user privilege and access is set.
 
 ### Edit User
 
-\[insert edit user here\]
+![Screenshot of Edit User](img/resources/resourcesEditUser.png)
 
 The first tab on the page is for editing user accounts. There are three
 privilege levels for the Resources Module; add/edit, view only, and
@@ -384,7 +393,7 @@ Accounts’ box on
 
 ### Workflow / User Group
 
-\[insert workflow/user group here\]
+![Screenshot of Workflow User Group](img/resources/resourcesWorkflowUserGroup.png)
 
 The *Workflow / User Group* tab contains the settings which control the
 workflow routing features. The Resources Module allows for the creation
@@ -397,7 +406,7 @@ workflows are added using the add workflow link.
 
 ### Edit workflow
 
- \[insert edit workflow image here\]
+![Screenshot of Admin Edit Workflow](img/resources/resourcesAdminEditWorkflow.png)
 
  The above figure shows the form through which workflows are created
  and edited. Here again the workflow being edited is for resources
@@ -424,7 +433,7 @@ active once the parent step is marked as complete.
 
 ### Edit user group
 
-\[insert edit user group image here\]
+![Screenshot of Admin Edit User Group](img/resources/resourcesAdminEditUserGroup.png)
 
 Each step or task in a workflow must be assigned to a user group. Enter
 a group name and a group email address. An email alert will be sent to
@@ -434,8 +443,6 @@ in-process resource appear on the *Outstanding Tasks* tabs of their My
 Queue pages.
 
 ### Other Admin Settings
-
-\[insert other admin settings here\]
 
 There are many other fields which can be customized through the *Admin*
 page. Select the field you wish to edit in the left hand column and then
@@ -447,7 +454,7 @@ Settings.
 
 ### Alert settings
 
-\[insert alert settings here\]
+![Screenshot of Admin Alert Settings](img/resources/resourcesAdminAlertSettings.png)
 
 These alert settings determine the functionality of the alert feature
 associated with the subscription period end date on the *Acquisitions*

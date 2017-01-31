@@ -16,6 +16,7 @@ CORAL Documentation Project
    licensing
    organizations
    usagestats
+   management
    technical
    glossary
    faq
