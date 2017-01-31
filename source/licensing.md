@@ -77,7 +77,7 @@ name, publisher/provider and consortia. Selecting *Edit Organization* next to th
 - *NLR:* No license required.
 
 License Status values can be edited, added or deleted through the
-*Admin* page detailed later in this document. The default values
+[*Admin*](#Admin) page detailed later in this document. The default values
 are simply suggestions for how an institution might consider tracking
 agreements.
 
@@ -106,7 +106,7 @@ The *Upload New Document* link opens the window in the below screenshot. Here yo
 
 - **Effective date:**  The effective date of the agreement, if identified and available.
  
-- **Document Type:** Identifies what type of document this is. This is a customizable field which allows each library to set their own terminology. The software comes with the following types included: *Agreement*, *Amendment*, *Countersigned Agreement*, *Internal Acknowledgment*, *Order Form*, and *SERU*. Select the *Add Document Type* link to add new document types.  You can also add a document type by going to the *Admin* page.  
+- **Document Type:** Identifies what type of document this is. This is a customizable field which allows each library to set their own terminology. The software comes with the following types included: *Agreement*, *Amendment*, *Countersigned Agreement*, *Internal Acknowledgment*, *Order Form*, and *SERU*. Select the *Add Document Type* link to add new document types.  You can also add a document type by going to the [*Admin*](#Admin) page.  
 
 - **Parent**: Identifies any parent document (ex. You may want to assign a parent document when uploading an amendment).
 
@@ -142,7 +142,7 @@ The *Add New Expression* link opens a pop-up window, where you can add expressio
 
 - **Document:** The document name for which you want to add a new expression. The drop-down is pre-populated from the existing document names in the specific license record. This is a required field.
  
-- **Expression Type:** The type of expression you wish to add (interlibrary loan terms, course pack rights, etc). This is a required field.  The software comes with the following expression types already defined: *Authorized Users*, *Confidentiality Clause*, *Course Packs*, *eReserves*, *General Notes*, *Interlibrary Loan*, *Jurisdiction*, *Multi-year Term*, *Post Cancellation Access*, and *Third Party Archiving*.  This field is customizable and you can add types by selecting *Add Expression Type* or going to *Admin*.  In the *Admin* page, you can specify which expression types are for internal use and which ones can be displayed.  
+- **Expression Type:** The type of expression you wish to add (interlibrary loan terms, course pack rights, etc). This is a required field.  The software comes with the following expression types already defined: *Authorized Users*, *Confidentiality Clause*, *Course Packs*, *eReserves*, *General Notes*, *Interlibrary Loan*, *Jurisdiction*, *Multi-year Term*, *Post Cancellation Access*, and *Third Party Archiving*.  This field is customizable and you can add types by selecting *Add Expression Type* or going to *Admin*.  In the [*Admin*](#Admin) page, you can specify which expression types are for internal use and which ones can be displayed.  
 
  
 - **Qualifier:** This field will not be available if the selected expression type does not have a qualifier.  This is a customization field which can be used to qualify particular expressions. For example, a qualifier of *Permitted* or *Prohibited* may be appropriate for an Interlibrary Loan expression. You may choose to ignore this field as it may not be appropriate for certain expression types or choose to use it in a different fashion for other expression types.  The software comes with qualifiers added for Coursepacks and Interlibrary Loan.  
@@ -158,7 +158,7 @@ to hold an interpretation of the text of the clause.
 
 There are two types of expression notes in CORAL Licensing: *Display
 Notes* and *Internal Notes*. You can set the note type to either Internal
-or Display for each expression type on the *Admin* page detailed later
+or Display for each expression type on the[*Admin*](#Admin) page detailed later
 in this document. Display notes are intended to be displayed outside the module, for instance in the Terms Tool, and there is a additional functionality built.  Internal Notes are for internal use only and do not have additional display functionalities built in.  
 
 
@@ -166,17 +166,17 @@ The *Add/view Display Notes* link opens a window which allows you to enter multi
 through this same window. 
 
 
-![alt text](img/licensing/licensingViewEditInternalNotes.png)
+![screenshot of internal notes window](img/licensing/licensingViewEditInternalNotes.png)
 
 
 In the below example, the Interlibrary Loan expression type has been set to use Display Notes and as such the expression is presented with an additional checkbox to the left of the Document Text. 
 
-![alt text](img/licensing/licensingInternalversusDisplayNote.png)
+![[screenshot of display notes window](img/licensing/licensingInternalversusDisplayNote.png)
 
 Internal Notes do not receive this checkbox. When the licensing librarian or other
 appropriate personnel has finished editing the expression
 he/she can check this box which indicates that the expression is
-finished and it makes the expression available through the Terms Tool. An email is then generated by the system indicating that a new expression has been completed and is ready for display. You can edit the recipients of this email in the *Admin* page.
+finished and it makes the expression available through the Terms Tool. An email is then generated by the system indicating that a new expression has been completed and is ready for display. You can edit the recipients of this email in the [*Admin*](#Admin) page.
 
 
 ### Terms Tool
@@ -187,7 +187,7 @@ That’s where the *Terms Tool* tab comes into play. The Terms Tool currently wo
 
 Using this tab it is possible to relate a specific license to the covered journals in a specific SFX target or package. 
 
-![alt text](img/licensing/licensingTermsTool.png)
+![screenshot of terms tool tab](img/licensing/licensingTermsTool.png)
 
 In this example, the Cambridge
 University Press License Agreement is being associated with the
@@ -204,7 +204,7 @@ correspondence are two that may be the most common. The Attachments
 tab allows you to upload these additional documents to the license
 record. 
 
-![alt text](img/licensing/licensingAttachments.png)
+![screen shot of attachments tab.](img/licensing/licensingAttachments.png)
 
 The date field is not automatically entered by the system. The intention of the date field was to be the date the
 attached document was received but since the date is manually chosen
@@ -213,7 +213,7 @@ open the uploaded file.
 
 ### Licenses in Progress
 
-![alt text](img/licensing/licensingLicensesinProgress.png)
+![screenshot of Licenses in progress section.  There is a table of licenses in progress.](img/licensing/licensingLicensesinProgress.png)
 
 The *Licenses in Progress* page will show the licenses that are not
 yet complete. It is intended to be used by the licensing staff as a
@@ -229,7 +229,8 @@ specific expression type across all documents in a single screen or
 view. The *Limit by Expression Type* dropdown allows the user to
 select from among all defined expression types. 
 
-MISSING SCREENSHOT  [put lorem ipsum gibberish in place of real text]
+
+![screenshot of expression comparison section](img/licensing/licensingExpressionComparison.png)
 
 This allows licensing or relevant personnel to compare language for each expression type across all documents. It could be an immensely powerful tool when attempting to
 come up with recommended language during negotiations. The user may
@@ -242,26 +243,31 @@ may only need access to specific types of expressions and this
 particular page may be information overload. 
 
 ###ONIX-PL File Import
-You can upload licensing terms using the *ONIX-PL File Import*. ONIX-PL is a standardized XML format used to express license terms.  
 
 
+![screenshot of ONIX-PL File Import section](img/licensing/licensingONIX-PL.png)
+
+You can upload licensing terms using the *ONIX-PL File Import*. ONIX-PL is a standardized XML format used to express license terms.  The upload will create a new licenses with imported documents (in HTML format) and expressions.   You can find such files in [GOKb](http://gokb.org/), an open data platform that provides information about electronic resources.  
+
+<a name="Admin"></a>
 ### Admin
 
-The *Admin* page is where you will edit Document Types, Expression Types, Qualifiers, Signature Types, Licenses Statuses, and Calendar Settings.
+The [*Admin*](#Admin) page is where you will edit Document Types, Expression Types, Qualifiers, Signature Types, Licenses Statuses, and Calendar Settings.
+
 Each of these fields can have as many values as needed so that the system can better meet local needs. 
 
-*Admin* is also where you will edit and manage user permissions. CORAL Licensing has been built with the ability to limit access to select individuals given the confidential nature of license agreements. Users may not access CORAL Licensing until they are first set up with an account by an administrator. The following figure shows the ‘add new user’ window available from the *Admin* page.
+*Admin* is also where you will edit and manage user permissions. CORAL Licensing has been built with the ability to limit access to select individuals given the confidential nature of license agreements. Users may not access CORAL Licensing until they are first set up with an account by an administrator. The following figure shows the ‘add new user’ window available from the [*Admin*](#Admin) page.
 
-![alt text](img/licensing/licensingAddNewUser.png)
+![screenshot of the add new user window](img/licensing/licensingAddNewUser.png)
 
 **Login ID:**  The user’s unique ID.  If you're using your local campus's authentication system, the ID must match what is in there.  See the technical documentation for more
 details on authentication.
 
 **Privilege:** The user’s level of access.  
 
-- Admin users have complete add/edit rights and can remove licenses and associated fields.  They also have access to the *Admin* page, the Terms Tool tab on the license record and the terms tool checkbox. 
+- Admin users have complete add/edit rights and can remove licenses and associated fields.  They also have access to the [*Admin*](#Admin) page, the Terms Tool tab on the license record and the terms tool checkbox. 
  
-- Add/Edit users can remove licenses and associated fields, but not have access to the Admin page and the Terms Tool.  
+- Add/Edit users can remove licenses and associated fields, but not have access to the [*Admin*](#Admin) page and the Terms Tool.  
 
 - View Only users can view all license information and are allowed access to the uploaded documents.
 
