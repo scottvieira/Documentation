@@ -33,7 +33,7 @@ Installation section, below. Please note, a minimum version of PHP 5.5 is suppor
 #### Authentication 
 Authentication is required for CORAL since all users are given specific privilege levels (for more on
 privilege levels refer to the user guide). CORAL has two choices for authentication – either to tie in to
-your university/library’s authentication system or to install the CORAL Authentication Module. For more
+your university/library’s authentication system or to install the CORAL Authentication Module. The Authentication Module also has built in LDAP functionality. For more
 information on the CORAL Authentication module, please refer to the [Authentication Documentation](http://docs.coral-erm.org/en/latest/authentication.html).
 
 To utilize your library’s existing authentication system, you will need to know the Server Variable name
@@ -51,7 +51,8 @@ users’ login ID.
 
 Also, the `.htaccess` file should require your authentication system, or you should have another way to
 require authentication. If you have questions about this, contact your system administrator.
-CORAL has limited use directly with LDAP. Within all of the modules (except for Licensing) any user
+
+CORAL has limited LDAP username lookup available in most modules. This is different than the more complete LDAP integration present in the Auth module. Within each of the modules (except for Licensing) any user
 allowed by the `.htaccess` may visit the site; if LDAP has been set up in the `configuration.ini` it will display
 their name in the upper right hand corner. This connection is optional.
 
@@ -139,7 +140,7 @@ suffix
 
 ### Installation 
 Installation can occur in one of two ways – either through the web installation script or manually.  Web 
-installation will provide advantages over manual installation because it will check MySQL privileges and PHP version.
+installation will provide advantages over manual installation because it will check MySQL privileges and PHP version and directory permissions.
 
 #### Installing CORAL 2.0
 
@@ -151,7 +152,7 @@ Step 1: Download a copy of the [latest version at Github](https://github.com/Cor
 
 Step 2: If you use the option to download the compressed zipped file, expand this file in a working folder.
 
-Step 3: Copy the expanded folder to your webserver.  If using Apache, this would be your //var/www/html/ folder.  If CORAL will be in a sub folder on your webserver, change the folder name from "Coral-master" to, for example, "coral" or what name you choose.
+Step 3: Copy the expanded folder to your webserver.  If using Apache, this would be something like /var/www/html/ folder.  If CORAL will be in a sub folder on your webserver, change the folder name from "Coral-master" to, for example, "coral" or what name you choose.
 
 The web installation depends upon the index.php file found in the coral folder.  Your Apache settings should be set to include loading the index.php file.  
 
@@ -183,8 +184,9 @@ For example, for Ubuntu Linux you would have something similar to the following.
 
 When finished changing the permissions, click on "Try Again" button to continue the installation.
 
-Step 7: Following this you should see the following, setup CORAL with your MySQL.  Generally, this will be user root or an user that has the necessary privileges (i.e., select, insert, update and 
-delete privileges only (no create table privileges are necessary).  After adding any additions and changes click the "Continue Installing" button. 
+Step 7: Following this you should see the following, setup CORAL with your MySQL.  Generally, this will be user root or an user that has the necessary privileges (i.e., select, insert, update, 
+delete, and create table privileges). This user will not be remembered after the installation since part of the process is to create a new user for CORAL to use in day to day operation. 
+However, if you don't want to give the installer user credentials with create database permissions, you can provide one with permission only for specific databases, but you will need to manually create a database for each module and use the Advance MySQL Database Setup form to provide the database names to the installer. After providing the necessary information click the "Continue Installing" button. 
 
 ![Screenshot of MySQL Database Setup](img/install/installDatabaseSetup.png)
 
@@ -194,7 +196,7 @@ Optional - Advance MySQL Database Setup form as seen below will allow you to cus
 ![Screenshot of MySQL Database Setup Advanced](img/install/installDatabaseSetupAdvanced.png)
 
 
-Step 8: Setup a regular database user.  As noted this user will need SELECT, INSERT, UPDATE and DELETE privileges if CORAL does not have these rights.  When finished adding an user and password click the "Continue Installing" button. 
+Step 8: Setup a regular database user.  As noted this user will need SELECT, INSERT, UPDATE and DELETE privileges. If the MySQL username you already gave CORAL has permission to create a new user it will create the name and password you provide here. Otherwise you will need to provide a username and password that you have manually configured in the database already. When finished adding the username and password click the "Continue Installing" button. 
 
 ![Screenshot of Database User Setup](img/install/installDatabaseUserSetup.png)
 
@@ -419,21 +421,11 @@ Step 8: Secure or move the install folder for the latest 1.x Usage module to a s
 Presently, v.1.0.0 is the only version of the Reports module, so there is no need to upgrade this module.
 
 
-#### Notes for Installing CORAL Manually
+#### Notes for Installing CORAL 2.0 Manually
 
-When you first [download the scripts](http://coral-erm.org/download), it is recommended to place each one into a parent `/coral/` directory if your server is sharing space with other applications.  This is optional but it helps group all of the coral applications together. 
+When you first [download the code](http://coral-erm.org/download), you will want to place the unzipped 2.0 code in your web server directory. 
 
-For example you may have:  
-```
-/coral/resources/
-/coral/licensing/
-/coral/organizations/
-/coral/usage/
-/coral/reports/
-/coral/auth/
-```
-
-**NOTE:** You will need to copy the CORAL-Main module files directly into the `/coral/` directory. This will provide an `index.php` file which displays links to the modules you have installed.
+You will need to configure each module individually. 
 
 Depending on whether the module allows you to upload attachments or documents you may also need 
 to `chmod 777` some directories:  
@@ -447,90 +439,108 @@ For Resources – `/resources/attachments/`
 
 Step 1: Create new database schema (recommended name is `coral_modulename_prod`)
 
-Step 2: Apply the SQL file to your new database
+Step 2: Apply the SQL file to your new database. These can typically be found in the /module/install/ directory.
 
-Step 3: Manually add an admin user into User table – this is required for the first person to administer users.   
-    
-	
+Step 3: Manually add an admin user into User table – this is required for the first person to administer users. If you are going to use the auth module you will need to add the admin user there as well as each other module's User table. 
+
 - Open your MySQL client
 - Navigate to your database (`coral_modulename_prod`) and to the User table
-- Insert  your LoginID (your externally authenticated login ID) with a  Privilege ID of 1 (equates to admin) and your first and last name, if desired.
+- Insert  your LoginID (either the one you've already added to the Authentication Module, or your externally authenticated login ID) with a  Privilege ID of 1 (equates to admin) and your first and last name, if desired.
 - This is the user who will have access to the Admin page to first administer other users.  From the Admin Page, you can designate another user with the admin privilege for that person to also administer users.
 
-**Update `/admin/configuration.ini`**
-
+**Update Configuration.ini files**
+For each module follow these steps.
 Step 1: Rename `/admin/configuration_sample.ini` to `/admin/configuration.ini`
 
-Step 2:  Under [settings] 
- 
-- organizationsModule=, cancellationModule=, licensingModule=, resourcesModule=, usageModule=
+Step 2: Edit the `/admin/configuration.ini` file under `[settings]`
+
+**Interoperability Flags**
+- `organizationsModule=`
+- `authModule=`
+- `licensingModule=`
+- `resourcesModule=`
+- `usageModule=`
   
 These switches define whether you have the other CORAL modules installed and would like the interoperability turned on.  The switch will also turn on/off the link to other modules (the Change Module drop down menu in the upper right-hand corner).  Valid values are Y or N.  Interoperability currently occurs between:
  
 
-> - Resources to Licensing and Organizations 
+- Resources to Licensing and Organizations 
 - Organizations and Licensing (both directions) 
 - Usage Statistics to Organizations
 
-- organizationsDatabaseName=, licensingDatabaseName=  
+**Interoperability Database Names**
+- `organizationsDatabaseName=`
+- `licensingDatabaseName=`
+- etc.
+
 When you have interoperability turned on between Organizations and Licensing database or Organizations 
 and Usage Statistics you must supply the database name (e.g. `coral_organizations_prod`) for the connection.  Also note that the user you connect with must have select, insert, 
-update and delete privileges to this database.
+update and delete privileges to this database. 
   
--[resources only] defaultCurrency=  
+- [resources only] `defaultCurrency=`
+
 This will set the currency that is selected by default in the Resource Payment section.  Default currency needs to be a valid Code in the Currency tab on the Admin page.
   
--[resources only] enableAlerts=  
+- [resources only] `enableAlerts=`
+
 This will turn on the alerting checkbox on the Acquisitions tab on the Resource page for subscription end dates.  The days in advance 
 and email addresses can be set in the Alert Settings on the Admin page.  Also note this requires a scheduled job, see below on Resources Alerts Scheduling.
  
--[resources only] catalogURL=  
+- [resources only] `catalogURL=`
+
 If you would like to include a link directly into your catalog 
 from the Resource page you can place your URL with the parameter for the System Number at the very end.  For example, ours is: 
 "http://alephprod.library.nd.edu/F/?func=direct&doc_number="
  
--[resources only] feedbackEmailAddress=  
+-[resources only] `feedbackEmailAddress=`
+
 This is the global email address for all 
 workflow notifications - starting, queue entries and completion.  Emails for specific steps can be set in the User Group section on Workflow/User Group tab of the Admin page.  The feedback email address also shows on the Resource Right Panel.  It is optional.
  
--[licensing only] useSFXTermsToolFunctionality=  
+- [licensing only] `useSFXTermsToolFunctionality=`
+
 This will turn on/off the SFX tab and 
 Terms Tool Report in the licensing module.  Valid values are Y/N.
   
--[usage only] reportingModule=  
+- [usage only] `reportingModule=`
+
 This will turn on/off the reporting link in the usage 
 statistics module.  Set to Y if you are using the reporting module add-on (this is a separate install).  Valid values are Y/N.
 
--[usage only] useOutliers=  
+- [usage only] `useOutliers=`  
+
 This will turn on/off the outlier flagging feature.  This feature 
 will calculate abnormal spikes in usage and color code them red, orange or yellow based on the formula defined in the admin tab.  Valid values are Y/N.
   
--[usage only] baseURL=  
+-[usage only] `baseURL=`
+
 This will turn on or off a created link within the module to your open URL.
  
--remoteAuthVariableName=  
+- `remoteAuthVariableName=`
+
 This is the server variable used by php to determine the 
 user authorized to log in.  For example, we use `$HTTP_SERVER_VARS['REMOTE_USER']`, `$_SERVER['PHP_AUTH_USER']`, or `$_SERVER['WEBAUTH_USER']` may be other names.
 
--[resources only] defaultsort=  
+- [resources only] `defaultsort=  `
+
 Changes the default sort order for the resources.  Example: defaultsort=\"TRIM(LEADING 'THE ' FROM UPPER(R.titleText)) asc\"  It is optional.
 
-Step 3: Under [database] 
+Step 3: Under `[database] `
 
--type=mysql  
+- `type=mysql  `
 currently only MySQL is supported but other database types could be supported if modifications to the generic database classes are made
  
--host=  
+- `host=  `
 MySQL server could be localhost as well
  
--name=  
+- `name=  `
 Database name (e.g. coral_resources_prod)
  
--username=  
+- `username=  `
 recommended to have a single user with select, update, insert, delete 
 access to all CORAL modules 
 
--password=  
+- `password=  `
 password for above mentioned user
  
 Step 4:  Under \[ldap] (optional – not for Licensing Module or Usage Statistics Module) 
@@ -552,6 +562,16 @@ Name of the field that LDAP uses for last name – for us it’s “sn”
 side until both modules are installed.
 1. Join the listserv used for product updates, support, and general discussion by sending an email to listserv@listserv.nd.edu. Leave the subject line blank and include 'SUBSCRIBE CORAL-ERM Your Name' in the body; ex. SUBSCRIBE CORAL-ERM John Smith.
 
+
+**CORAL 2.0 Configuration.ini**
+There is one last configuration.ini file that you'll need to edit. In the root coral directory you will see a /common/ directory. Inside is a `configuration_sample.ini` file which you will want to copy or rename to `configuration.ini`
+
+- `[installation_details]` has a `version = ` which should be set to `"2.0.0"`
+- `[database]` has the same values that you entered for that section in the specific modules
+- each module has it's own entry like `[licensing]` with `enabled=` and `installed=` flags which can be set to `"Y"` or `"N"` 
+
+
+## Additional Server Configuration
 ### Resources Alerts Scheduling 
 The Resources module includes a script called `sendAlerts.php` that can be run nightly to send out 
 subscription alerts. To set it up via cron job, you will need to invoke php. You need to access the alerts page via curl or wget in order to generate emails with functional links:
