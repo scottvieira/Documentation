@@ -26,289 +26,175 @@ resource.*
 
 ### Component Overview
 
-CORAL Licensing has six major components in the primary navigation at
+CORAL Licensing has seven major components in the main navigation at
 the top of each page.
 
- • Home
-
- • New License
-
- • Licenses in Progress
-
- • Expression Comparison
-
- • Terms Tool Report
-
- • Admin
+- Home
+- New License
+- Licenses in Progress
+- Expression Comparison
+- Calendar
+- ONIX-PL File Import
+- Admin
 
 ### Home
 
-![image alt text](img/licensing/image_0.png)
+![image of home screen for Licensing modules.  Search features are on the left and a table of licenses on the right.](img/licensing/licensingHome.png)
 
-Search has been placed on the *Home* page as the primary point of
-entry into the license records. The search runs against the fields
-license name, document name, and publisher/provider. The fields are
-defined in the next section as we look at creating a new license
-record.
+
+The home screen contains a search on the left and a list of license records on the right. The search runs against the following fields: license name, publisher/provider, consortium, license status, document type, and expression type.   
 
 ### New License
 
-Select *New License* from the main navigation to begin adding new
-license records. The link will present the window on the
-right.![image alt test](img/licensing/image_1.png)
+Select *New License* from the main navigation to begin adding new licensing records.  This will open the License pop-up window. 
 
-**License Name:** Name of the license record. A license record can group
-together all licenses that are either related to each other or related
-to the same resource. If you have licensed a package of electronic
-journals from Springer and have over the years collected several
-licenses and amendments for that package. You can place all of those
-documents on the same license record and then you need to give the
-license record a name which gives some indication as to the documents
-found on that record. In this example ‘Springer Online Journals’ may be
-a valid license name. If you have a license record that contains license
-documents for Springer eBooks, you can rename the license to something
-like “Springer Online Products”
+![screenshot of Add License form. There are three fields.](img/licensing/licensingAddNewLicense.png)
 
-**Publisher/Provider:** Name of the licensing organization. In this
-example Springer would be the publisher/provider.
+- **License Name:** Name of the license record. A license record can group together all licenses that are either related to each other or related to the same resource. If you have licensed a package of electronic journals from Springer and have over the years collected several licenses and amendments for that package, you can place all of those documents on the same license record.  Then, you need to give the license record a name which gives some indication as to the documents found on that record. In this example ‘Springer Online Journals’ may be a valid license name. If you have license documents for Springer eBooks, you can rename the license to something like 'Springer Online Products'
 
-**Consortium:** Consortium through which a licensed resource is
-obtained. The consortiums dropdown is populated with any organization
-assigned a consortium organization type in the Organizations module.
+- **Publisher/Provider:** Name of the licensing organization. In this example Springer would be the publisher/provider.  The publisher/provider field has an auto-fill feature which is populated from the organizations listed in CORAL Organizations. 
+ 
+- **Consortium:** The consortium through which a licensed resource is obtained. The consortium dropdown is populated with any organization assigned a consortium organization type in the Organizations module.
 
-*Interoperability note:* The publisher/provider field has an auto-fill
-feature which is populated from the organizations listed in CORAL
-Organizations. CORAL Licensing will manage publisher/provider names on
-its own if you have not installed CORAL Organizations or have disabled
-the interoperability. The publisher/provider names are managed and
-edited in the CORAL Licensing *Admin* area when the interoperability
-is disabled.
+
 
 ### Adding / Editing New License Record
 
-Here is a new license record which has just been created for
-*Cambridge University Press Online Journals*. To the right of the
+![screenshot of the License Record.](img/licensing/licensingLicenseRecord.png)
+Here is a license record which has been created for
+'Cambridge University Press Online Journals'. To the right of the
 license name are the options to remove the license or to edit the
-name, publisher/provider and consortia. The publisher/provider name is
-hyperlinked and will take the user to the Cambridge University Press
-record within CORAL Organizations. Here you can also enter a license
-record status in the ‘License Status’ field to the far right of the
-license name. CORAL Licensing includes the following default statuses.
+name, publisher/provider and consortia. Selecting *Edit Organization* next to the publisher/provider name takes you to the Cambridge University Press record within CORAL Organizations. To the far right is the *License Status* dropdown field where you can assign a license record status.  CORAL Licensing includes the following default statuses.
 
-License Status (definition)
+- *Awaiting Document:* License record created but scanned license not yet added.
 
- • Awaiting Document (license record created but scanned license not
- yet added)
+- *Complete:* License record is complete, no additional work required.
+ 
+- *Document Only:* Document loaded with expressions not identified or loaded.
 
- • Complete (license record is complete, no additional work required)
+- *Editing Expressions:* Document loaded and currently adding license terms/expressions.
 
- • Document Only (document loaded with expressions not identified or
- loaded)
-
- • Editing Expressions (document loaded and currently adding license
- terms/expressions)
-
- • NLR (no license required)
+- *NLR:* No license required.
 
 License Status values can be edited, added or deleted through the
-*Admin* section detailed later in this document. The default values
+[*Admin*](#Admin) page detailed later in this document. The default values
 are simply suggestions for how an institution might consider tracking
-agreements and to indicate the purpose of the field.
+agreements.
 
-The license record has four sections located on the left-hand column;
-Documents, Expressions, Terms Tool, and Attachments
+The license record has four sections located on the left-hand column:
+
+- *Documents*
+
+- *Expressions*
+
+- *Terms Tool*
+
+- *Attachments*
 
 ### Documents
 
 The Documents tab contains all the documents for each license record.
 Any document may be uploaded to the system including licenses,
 amendments, order forms, purchase requests, or any other important
-document. Select ‘upload new document’ to begin.
+document. Select *Upload New Document* to begin.
 
-### Adding New Documents
+#### Adding New Documents
 
-The ‘upload new document’ link opens the window on the right. Here you
-can fill out the initial details of the document and upload the actual
-file. Document Name is the only required field.
+The *Upload New Document* link opens the window in the below screenshot. Here you can fill out the initial details of the document and upload the actual file. Document Name is the only required field.
 
-‘Effective date’ is the effective date of the agreement, if identified
-and available.
+![screenshot of Document Upload form.  There are 6 fields.](img/licensing/licensingUploadNewDocument.png)
 
-‘Document Type’ identifies what type of document this is (ex. Agreement,
-amendment, order form, etc).
+- **Effective date:**  The effective date of the agreement, if identified and available.
+ 
+- **Document Type:** Identifies what type of document this is. This is a customizable field which allows each library to set their own terminology. The software comes with the following types included: *Agreement*, *Amendment*, *Countersigned Agreement*, *Internal Acknowledgment*, *Order Form*, and *SERU*. Select the *Add Document Type* link to add new document types.  You can also add a document type by going to the [*Admin*](#Admin) page.  
 
-‘Parent’ identifies any parent document (ex. A parent document would be
-assigned when uploading an amendment).
+- **Parent**: Identifies any parent document (ex. You may want to assign a parent document when uploading an amendment).
 
-‘Name’ is the title of the document, usually taken directly from the
-license document (ex. Cambridge University Press Site License
-Agreement).
+- **Name:** The title of the document, usually taken directly from the license document.
+ 
+- **File:** Browse and upload a scanned copy of the actual document.
 
-‘File’- browse and upload a scanned copy of the actual document.
-
-‘Archived’ is used to identify documents which are no longer current
+- **Archived:** Used to identify documents which are no longer current
 or have been superseded by another agreement. Archived documents are
 sorted separate from current documents and are collapsed beneath a
 show/hide link to save screen space. Archiving a document does not
 delete it from the system. It also does not delete any expressions
 attached to that document.
 
-‘Document Type’ is another customizable field which allows each
-library to set their own terminology. The software comes with the
-following types included.
 
- *Document Type*:
+#### Editing Documents
 
- • Agreement
-
- • Amendment
-
- • Countersigned Agreement
-
- • Internal Acknowledgement
-
- • Order Form
-
- • SERU
-
-### Editing Documents
-
-Once added the documents will display on the Documents tab sorted
-first by Document Type (agreements sort together, order forms sort
-together, etc) and then by signature date with most recent first.
+Once added, the documents will display on the *Documents* tab sorted
+first by Document Type and then by signature date with most recent first.
 Multiple signatures for both licensee and licensor can be added using
-the ‘add signatures’ link. On the right hand column are the links to
-view, edit, and delete each document. Now that the documents are
-loaded the next step is to begin adding expressions. Please note that
-Expressions are not required. You should however assign an appropriate
-License Status to the record that indicates it is a document only
-record.
+the *Add Signatures* link. On the right side of the table are links to
+view, edit, and delete each document. 
 
-### Adding Expressions
+### Expressions
+The *Expressions tab* is where the expressions or clauses of the license
+are entered.  Expressions are not required. You should however assign an appropriate
+*License Status* to the record that indicates it is a document only
+record. 
 
-The Expressions tab is where the expressions or clauses of the license
-are entered. You may enter any expression type that you wish. The
-software comes with the following expression types already defined but
-again the field is customizable and allows you to enter the types of
-your choice.
+#### Adding Expressions
+The *Add New Expression* link opens a pop-up window, where you can add expressions for the documents that have been previously loaded.
+![screenshot of the Expressions form.  There are 3 fields.](img/licensing/licensingAddNewExpression.png)
 
- Expression Type:
+- **Document:** The document name for which you want to add a new expression. The drop-down is pre-populated from the existing document names in the specific license record. This is a required field.
+ 
+- **Expression Type:** The type of expression you wish to add (interlibrary loan terms, course pack rights, etc). This is a required field.  The software comes with the following expression types already defined: *Authorized Users*, *Confidentiality Clause*, *Course Packs*, *eReserves*, *General Notes*, *Interlibrary Loan*, *Jurisdiction*, *Multi-year Term*, *Post Cancellation Access*, and *Third Party Archiving*.  This field is customizable and you can add types by selecting *Add Expression Type* or going to *Admin*.  In the [*Admin*](#Admin) page, you can specify which expression types are for internal use and which ones can be displayed.  
 
- • Authorized Users
+ 
+- **Qualifier:** This field will not be available if the selected expression type does not have a qualifier.  This is a customization field which can be used to qualify particular expressions. For example, a qualifier of *Permitted* or *Prohibited* may be appropriate for an Interlibrary Loan expression. You may choose to ignore this field as it may not be appropriate for certain expression types or choose to use it in a different fashion for other expression types.  The software comes with qualifiers added for Coursepacks and Interlibrary Loan.  
 
- • Confidentiality Clause
 
- • Course Packs
+- **Document Text:** The actual text of the license clause. 
 
- • eReserves
 
- • General Notes
+#### Adding Display / Internal Notes
 
- • Interlibrary Loan
+Actual legal text can be quite confusing so the next step is to add Display or Internal Notes
+to hold an interpretation of the text of the clause.  
 
- • Jurisdiction
+There are two types of expression notes in CORAL Licensing: *Display
+Notes* and *Internal Notes*. You can set the note type to either Internal
+or Display for each expression type on the[*Admin*](#Admin) page detailed later
+in this document. Display notes are intended to be displayed outside the module, for instance in the Terms Tool, and there is a additional functionality built.  Internal Notes are for internal use only and do not have additional display functionalities built in.  
 
- • Multi-year Term
 
- • Post Cancellation Access
+The *Add/view Display Notes* link opens a window which allows you to enter multiple display notes. It also displays the Document Text on that same window so that you can refer back to it while adding the notes. The sort order of multiple notes can also be adjusted
+through this same window. 
 
- • Third Party Archiving
 
-### Adding Expressions
+![screenshot of internal notes window](img/licensing/licensingViewEditInternalNotes.png)
 
-The ‘add new expression’ link opens the window on the right. From this
-window you can add expressions for the documents that have been
-previously loaded.
 
-‘Document’ is the document name for which you want to add a new
-expression. The drop-down is pre-populated from the existing document
-names in the specific license record. This is a required field.
+In the below example, the Interlibrary Loan expression type has been set to use Display Notes and as such the expression is presented with an additional checkbox to the left of the Document Text. 
 
-‘Expression Type’ is the type of expression you wish to add
-(interlibrary loan terms, course pack rights, etc). This is a required
-field.
+![[screenshot of display notes window](img/licensing/licensingInternalversusDisplayNote.png)
 
-‘Qualifier’ is another customizable field which can be used to qualify
-particular expressions. For example, a qualifier of *Permitted* or
-*Prohibited* may be appropriate for an Interlibrary Loan expression.
-You may choose to ignore this field or choose to use it in a different
-fashion for other expression types.
-
-‘Document Text’ is for the actual text of the license clause. An
-interlibrary loan expression has been added in the following figure.
-
-### Adding Display Notes
-
-In this example an Interlibrary Loan expression has been added along
-with a snippet of the license text and a qualifier of *Permitted* has
-been added noting that the item does allow for ILL. The
-
-actual legal text can be quite confusing so the next step is to add a
-Display Note which can hold an interpretation of the text of the
-clause that can be used for public display.
-
-### Adding Display / Internal Notes
-
-The ‘add/view display notes’ link opens a window which allows you to
-enter multiple display notes. It also displays the Document Text on
-that same window so that you can refer back to it while adding the
-notes. The sort order of multiple display notes can also be adjusted
-through this same window. The following figure shows a completed
-Display Notes window.
-
-There are two types of expression notes in CORAL Licensing; Display
-Notes and Internal Notes. You can set the note type to either Internal
-or Display for each expression type on the ‘Admin’ page detailed later
-in this document. The two note types (internal and display) were added
-so that a distinction could be made between expressions and notes that
-were intended to be displayed outside the module, for instance in one
-of the terms tools, and those that were for internal use only. The
-Display Notes which are intended to be shared have additional
-functionality built in that the Internal Notes lack. In the following
-figure you will see the completed interlibrary loan expression. In
-this example the Interlibrary Loan expression type has en set to use
-Display Notes and as such the expression is presented with an
-additional checkbox to the left of the Document Text. Internal Notes
-do not receive this checkbox. When the licensing librarian or other
-appropriate personnel has finished editing the notes and expression
+Internal Notes do not receive this checkbox. When the licensing librarian or other
+appropriate personnel has finished editing the expression
 he/she can check this box which indicates that the expression is
-finished and it makes the expression available through he *Terms Tool
-Report* page. An email is then generated by the system indicating that
-a new expression has been completed and is ready for display. You can
-edit the recipients of this email in the *Admin* page.
+finished and it makes the expression available through the Terms Tool. An email is then generated by the system indicating that a new expression has been completed and is ready for display. You can edit the recipients of this email in the [*Admin*](#Admin) page.
 
-If you choose not to use the *Terms Tool Report* page you may turn it
-off as explained in the technical documentation guide. This will also
-remove the display note checkbox and email functionality. It will also
-remove the SFX Links tab which is explained next.
 
-### Completed Expression
-
-The above figure is the completed expression with document text,
-qualifier and display notes. Qualifier may not be appropriate for
-certain expression types. The intended use of the qualifier is to
-further document permitted/prohibited distinctions such as
-interlibrary loan, course packs and ereserves. You may continue to add
-as many expressions as needed for some or all documents.
-
-### SFX Links
+### Terms Tool
 
 Once the expressions or terms of the license are known, the next
 question to ask is ‘Which journals are covered by these terms?’.
-That’s where the SFX Links tab comes into play. Using this tab it is
-possible to relate a specific license to the covered journals in a
-specific SFX target or package. In this example the Cambridge
-University Press Site License Agreement is being associated with the
+That’s where the *Terms Tool* tab comes into play. The Terms Tool currently works only with the SFX link resolver.  It is true that not every institution uses SFX.  The *Terms Tool* tab could be renamed and/or repurposed for use with  other openurl resolvers or journal management systems. 
+
+Using this tab it is possible to relate a specific license to the covered journals in a specific SFX target or package. 
+
+![screenshot of terms tool tab](img/licensing/licensingTermsTool.png)
+
+In this example, the Cambridge
+University Press License Agreement is being associated with the
 Cambridge Journals Online target in SFX (Cambridge Journals Online is
 the SFX target public name). This SFX – License connection allows for
 the delivery of license terms through the SFX menu as detailed in the
-Terms Tool User Guide. It is true that not every institution uses SFX.
-The SFX Links tab could be renamed and/or repurposed for use with
-other openurl resolvers or journal management systems. This
-
-tab is meant to be used in conjunction with the Terms Tool and can be
-disabled along with the *Terms Tool Report* page for those who do not
-wish to use it.
+Terms Tool User Guide. This tab is meant to be used in conjunction with the Terms Tool and can be disabled for those who do not wish to use it.
 
 ### Attachments
 
@@ -316,119 +202,79 @@ For any resource there may be documents in addition to the actual
 license that are important to retain. Title lists and email
 correspondence are two that may be the most common. The Attachments
 tab allows you to upload these additional documents to the license
-record. The above figure shows an email that has been uploaded with
-the date and a description of the file. In this case the attachment is
-an email from the publisher detailing additional restrictions on the
-resource. The date field is not automatically entered by the system so
-it does not have to be the date the file was loaded into CORAL
-Licensing. The intention of the date field was to be the date the
+record. 
+
+![screen shot of attachments tab.](img/licensing/licensingAttachments.png)
+
+The date field is not automatically entered by the system. The intention of the date field was to be the date the
 attached document was received but since the date is manually chosen
-it can be any date of your choice. The ‘view attachment 1’ link will
+it can be any date of your choice. The *View Attachment 1* link will
 open the uploaded file.
 
 ### Licenses in Progress
 
+![screenshot of Licenses in progress section.  There is a table of licenses in progress.](img/licensing/licensingLicensesinProgress.png)
+
 The *Licenses in Progress* page will show the licenses that are not
 yet complete. It is intended to be used by the licensing staff as a
 queue of outstanding licenses. It has been coded to show licenses of
-status Awaiting Document or Editing Expressions and will also show new
+status *Awaiting Document* or *Editing Expressions* and will also show new
 licenses which have not yet been given any status. The hyperlinked
-License Name will take you into the license record.
+*License Name* will take you into the license record.
 
 ### Expression Comparison
 
 *Expression Comparison* allows the user to see all the instances of a
 specific expression type across all documents in a single screen or
-view. The 'Limit by Expression Type' dropdown allows the user to
-select from among all defined expression types. In the figure above
-the display notes and document text have been removed for reasons of
-confidentiality. In place of &lt; Display Notes removed &gt; and &lt;
-Document Text removed &gt; users would see the actual notes and
-document text that were entered. This allows licensing or relevant
-personnel to compare language for each expression type across all
-documents. It could be an immensely powerful tool when attempting to
+view. The *Limit by Expression Type* dropdown allows the user to
+select from among all defined expression types. 
+
+
+![screenshot of expression comparison section](img/licensing/licensingExpressionComparison.png)
+
+This allows licensing or relevant personnel to compare language for each expression type across all documents. It could be an immensely powerful tool when attempting to
 come up with recommended language during negotiations. The user may
-also add new display notes, open the license record and open the
+also add new internal/display notes, open the license record and open the
 actual document from this page.
 
 *Expression Comparison* is intended for personnel that need quick
 access to all expressions in the system. Other library staff however,
 may only need access to specific types of expressions and this
-particular page may be information overload. The *Terms Tool Report*
-page was developed for these other users.
+particular page may be information overload. 
 
-### Terms Tool Report
+###ONIX-PL File Import
 
-Once again the notes and document text have been removed from the
-screenshot. *Terms Tool Report* provides access to only the
-expressions using display notes and which have been identified as
-being complete by the licensing librarian using the terms tool
-checkbox mentioned earlier. As such it will not display unfinished
-expressions which the licensing librarian may still be working on.
-Another difference between *Terms Tool Report* and *Expression
-Comparison* is that this page does not offer any links for editing the
-record. While similar in function to *Expression Comparison* this page
-was added in order to serve a user group which does not need the full
-access provided by the *Expression Comparison* page.
 
-The main points to remember for this page are that it displays
-expressions which use display notes but only those that have been
-approved for display. It is possible to turn off *Terms Tool Report*
-and hide it from display if you do not wish to use it. Turning off the
-*Terms Tool Report* will also disable the SFX Links tab on the license
-record as well as the terms tool checkbox used to indicate that a
-Display Note has been completed and approved for display. Please see
-the Terms Tool User Guide for more information on how *Terms Tool
-Report* can be used and on how it can be used to push out license
-terms to other systems.
+![screenshot of ONIX-PL File Import section](img/licensing/licensingONIX-PL.png)
 
+You can upload licensing terms using the *ONIX-PL File Import*. ONIX-PL is a standardized XML format used to express license terms.  The upload will create a new licenses with imported documents (in HTML format) and expressions.   You can find such files in [GOKb](http://gokb.org/), an open data platform that provides information about electronic resources.  
+
+<a name="Admin"></a>
 ### Admin
 
-The *Admin* page is where you will edit Expression Types, Document
-Types, Signature Types and
+The [*Admin*](#Admin) page is where you will edit Document Types, Expression Types, Qualifiers, Signature Types, Licenses Statuses, and Calendar Settings.
 
-License Statuses. Each of these fields can have as many values as
-needed so that the system can better
+Each of these fields can have as many values as needed so that the system can better meet local needs. 
 
-meet local needs. *Admin* is also where you will edit and manage user
-permissions. CORAL Licensing has been built with the ability to limit
-access to select individuals given the confidential nature of license
-agreements. Users may not access CORAL Licensing until they are first
-set up with an account by an administrator. The following figure shows
-the ‘add new user’ window available from the *Admin* page.
+*Admin* is also where you will edit and manage user permissions. CORAL Licensing has been built with the ability to limit access to select individuals given the confidential nature of license agreements. Users may not access CORAL Licensing until they are first set up with an account by an administrator. The following figure shows the ‘add new user’ window available from the [*Admin*](#Admin) page.
 
-‘Login ID’ will be the user’s unique ID in your local campus
-authentication system. See the technical documentation for more
+![screenshot of the add new user window](img/licensing/licensingAddNewUser.png)
+
+**Login ID:**  The user’s unique ID.  If you're using your local campus's authentication system, the ID must match what is in there.  See the technical documentation for more
 details on authentication.
 
-‘Privilege’ is the user’s level of access (i.e. read only, etc).
+**Privilege:** The user’s level of access.  
 
-‘Terms Tool Email’ – Enter email address if you wish the user to
+- Admin users have complete add/edit rights and can remove licenses and associated fields.  They also have access to the [*Admin*](#Admin) page, the Terms Tool tab on the license record and the terms tool checkbox. 
+ 
+- Add/Edit users can remove licenses and associated fields, but not have access to the [*Admin*](#Admin) page and the Terms Tool.  
+
+- View Only users can view all license information and are allowed access to the uploaded documents.
+
+- Restricted users can view all license information but are not allowed access to the uploaded documents nor access the actual license agreements that have been uploaded to the system.  
+  
+
+**Terms Tool Email:** Enter email address if you wish the user to
 receive email notification when the terms tool box is checked for a
 given expression. Leave this blank for all others.
 
-The values available in the Privilege field deserve further
-explanation.
-
-Privileges
-
- • Admin users have complete add/edit rights and can remove licenses
- and associated fields.
-
- Access to the *Admin* page, the SFX Links tab on the license record
- and the terms tool checkbox is restricted to users with Admin
- privileges.
-
- • Add/Edit users can add, edit, or remove licenses and associated
- fields.
-
- • View Only users can view all license information and are allowed
- access to the uploaded documents.
-
- • Restricted users can view all license information but are not
- allowed access to the uploaded documents.
-
-Admin, Add/Edit and View Only are the same privileges used in the
-other CORAL modules. Restricted is an extra privilege used only in
-CORAL Licensing in order to restrict access to the actual license
-agreements that have been uploaded to the system.
