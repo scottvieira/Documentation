@@ -3,7 +3,11 @@ Overview: the CORAL Project
 
 ### Introduction
 
+CORAL is an open source [Electronic Resource Management system (ERM)](https://en.wikipedia.org/wiki/Electronic_resource_management).   
+
 ### History
+
+CORAL was originally developed locally by Hesburgh Libraries at the University of Notre Dame, but since then, the development and support for CORAL has expanded into an international community with contributions coming from a variety of libraries and vendors.    
 
 ### The Team
 
@@ -15,27 +19,31 @@ The steering committee consists of the individuals and libraries that have decid
 
 ##### Who is on the committee?
 
-Current members: [as of 6/29/2016]
+Current members: [as of 1/6/2017]
+
+- Steve Oberg, Wheaton College (Chair of Steering Committee, Assistant Professor of Library Science)
+
+- Tommy Keswick, CalTech (Digital Technologies Development Librarian)
+
+- Heather Wilson, CalTech (Acquisitions and Electronic Resources Librarian)
+
+- Remington Steed, Calvin College (Developer)
+
+- Katherine Swart, Calvin College (Collection Development Librarian)
+
+- Emma Cryer, Duke Medical Center Library (Associate Director)
+
+- Scott Vieira, Rice University (Chair of Web Committee, Electronic Resources Librarian)
+
+- Mang Sun, Rice University (Systems Librarian)
 
 - Eric Hartnett, Texas A&M (Electronic Resources Librarian)
 
 - Doug Hahn, Texas A&M (Developer)
 
-- Remington Steed, Calvin College (Developer)
- 
-- Katherine Swart, Calvin College (Collection Development Librarian)
- 
-- Emma Cryer, Duke Medical Center Library (Associate Director)
-
 - Benjamin Heet, TRLN (Technology Program Officer)
 
-- Steve Oberg, Wheaton College (Chair of Steering Committee, Assistant Professor of Library Science)
-
 - Jeffrey Mudge, Wheaton College (Developer)
-
-- Scott Vieira, Rice University (Chair of Web Committee, Electronic Resources Librarian)
-
-- Mang Sun, Rice University (Systems Librarian)
 
 
 Affiliate Members:
@@ -68,21 +76,15 @@ The web committee consists of the individuals and libraries that have decided to
 
 Who is on the committee?
 
-Current members are as follows. [as of 6/29/2016]
+Current members are as follows. [as of 2/10/2017]
 
 - Nathan Ahlstrom, Medtronic
-
-- Tuya Dutton, VCSU
-
-- Ben Heet, TRLN
 
 - Katherine Landry, SHSU
 
 - Lauren Mueller, Rice
 
 - Louisa Choy, Wheelock College
-
-- Paul Poulain, BibLibre
 
 - Yan Song, NCSU
 
