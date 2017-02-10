@@ -348,7 +348,7 @@ Step 6: Secure or move the `install` folder under the latest Organizations modul
 
 **Licensing Module**
 
-Step 1: [Download the latest 1.x Licensing Module (v1.4.1)](https://github.com/ndlibersa/licensing/archive/v1.4.1.zip) and unzip the file into a webserver folder.
+Step 1: [Download the latest 1.x Licensing Module (v1.4.2)](https://github.com/ndlibersa/licensing/archive/v1.4.2.zip) and unzip the file into a webserver folder.
 
 Step 2: Copy the `configuration.ini` file from the `admin` folder of your current Licensing module into the `admin` folder of the latest Licensing module.
 
@@ -356,21 +356,19 @@ Step 3: Copy the content of the `attachments` folder from your current Licensing
 
 Step 4: Copy the content of the `documents` folder from your Licensing module into the `documents` folder of the latest Licensing module.
 
-Step 5: Due to an issue with the v.1.4.1 updater it is recommended to work around this by downloading [v.1.3.0 updater](https://github.com/ndlibersa/licensing/archive/v1.3.0.zip).  Following the download unzip the downloaded file to a working folder.    
-
-Step 6: Open up a browser and enter the URL pointing to your v.1.3.0 Licensing module followed by `/install/update.php` and hit enter.  You should see the following.
+Step 5: Open up a browser and enter the URL pointing to your v.1.4.2 Licensing module followed by `/install/update.php` and hit enter.  You should see the following.
 
 ![Screenshot of CORAL Licensing update for Version 1.2](img/install/installLicensingUpdate1.png)
 
-Step 7: Click the "Run Update 1.2" button.
+Step 6: Click the "Run Update 1.2" button.
 
 ![Screenshot of CORAL Licensing update for Version 1.3](img/install/installLicensingUpdate2.png)
 
-Step 8: Click the "Run Update 1.3" button.
+Step 7: Click the "Run Update 1.3" button.
 
 ![Screenshot of CORAL Licensing showing successful update up to Version 1.3](img/install/installLicensingSuccessful.png)
 
-Step 9: Now you can switch back to v.1.4.1 using git checkout or by simply moving the v1.3.1 folder to another location to help secure your CORAL installation.  Since there are no database changes since v.1.3.0, your installation is updated to v.1.4.1.  Secure your CORAL installation by moving the latest 1.x `install` folder for your Licensing module to another location.
+Step 8: Since there are no database changes since v.1.3.0, your installation is updated to v.1.4.2.  Secure your CORAL installation by moving the latest 1.x `install` folder for your Licensing module to another location.
 
 **Management Module**
 
