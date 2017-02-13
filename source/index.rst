@@ -30,6 +30,7 @@ Appendix
 
    authentication
    import
+   manual
    terms
    translation
    release
