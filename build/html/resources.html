@@ -45,8 +45,9 @@
             
   <div class="section" id="coral-resources-module-user-guide">
 <span id="coral-resources-module-user-guide"></span><h1>CORAL Resources Module User Guide<a class="headerlink" href="#coral-resources-module-user-guide" title="Permalink to this headline">¶</a></h1>
+</div>
 <div class="section" id="about-coral-resources">
-<span id="about-coral-resources"></span><h2>About CORAL Resources<a class="headerlink" href="#about-coral-resources" title="Permalink to this headline">¶</a></h2>
+<span id="about-coral-resources"></span><h1>About CORAL Resources<a class="headerlink" href="#about-coral-resources" title="Permalink to this headline">¶</a></h1>
 <p>A component of Hesburgh Libraries locally developed ERM, CORAL
 Resources aids in the management of the electronic resource workflow
 from the initial request through the acquisition process and into
@@ -56,8 +57,8 @@ queue in which automated email alerts indicate to staff when new tasks
 are available.</p>
 </div>
 <div class="section" id="component-overview">
-<span id="component-overview"></span><h2>Component Overview<a class="headerlink" href="#component-overview" title="Permalink to this headline">¶</a></h2>
-<p>CORAL Resources has four major components in the primary navigation at
+<span id="component-overview"></span><h1>Component Overview<a class="headerlink" href="#component-overview" title="Permalink to this headline">¶</a></h1>
+<p>CORAL Resources has five major components in the primary navigation at
 the top of each page.</p>
 <p>• Home</p>
 <p>• New Resource</p>
@@ -66,7 +67,7 @@ the top of each page.</p>
 <p>• Admin</p>
 </div>
 <div class="section" id="home">
-<span id="home"></span><h2>Home<a class="headerlink" href="#home" title="Permalink to this headline">¶</a></h2>
+<span id="home"></span><h1>Home<a class="headerlink" href="#home" title="Permalink to this headline">¶</a></h1>
 <p>========</p>
 <p><img alt="Screenshot of Resources Home Page" src="_images/resourcesHome.png" /></p>
 <p>Home provides both search and AZ browse access to the resource records.
@@ -85,7 +86,7 @@ only required fields are resource name, format and acquisition type.</p>
 <p>The <em>Format</em> field is meant to indicate the publication medium requested
 with the most obvious values being print and electronic. <em>Acquisition
 Type</em> is primarily meant to indicate the distinction between paid and
-free resources. <em>Resource Type</em> is optional and provides additional
+free resources. CORAL users may define their own Acquisition Type to meet the local needs. <em>Resource Type</em> is optional and provides additional
 context to the type of resource being requested. The values listed for
 all three of these fields can be edited through the Admin page detailed
 later in this user guide.</p>
@@ -93,19 +94,18 @@ later in this user guide.</p>
 entered. The submit option will commit the new request and the system
 will initiate the workflow for that resource and will send out an email
 alert that a new resource has been entered. The save option will save
-the information to the user’s <em>My Queue</em> page where it can be completed
+the information to the user’s <em>My Queue</em> page *Saved Requests&#8221; where it can be completed
 and submitted at a later time.</p>
 <p>Please note that the system does allow duplicate records for the same
 resource to be entered. The form will however alert the user that
 another record with the same resource name already exists.</p>
 </div>
 <div class="section" id="the-resource-record">
-<span id="the-resource-record"></span><h2>The Resource Record<a class="headerlink" href="#the-resource-record" title="Permalink to this headline">¶</a></h2>
-</div>
+<span id="the-resource-record"></span><h1>The Resource Record<a class="headerlink" href="#the-resource-record" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="product">
 <span id="product"></span><h2>Product<a class="headerlink" href="#product" title="Permalink to this headline">¶</a></h2>
 <p><img alt="Screenshot of Product" src="_images/resourcesProduct.png" /></p>
-<p>The resource record contains seven tabs where the information about the
+<p>The resource record contains nine tabs where the information about the
 resource is logically grouped. The first tab, <em>Product</em>, contains the
 descriptive information such as name, alias, issn, publisher, etc which
 identifies and defines the resource.</p>
@@ -114,7 +114,7 @@ identifies and defines the resource.</p>
 <span id="edit-product-details"></span><h2>Edit product details<a class="headerlink" href="#edit-product-details" title="Permalink to this headline">¶</a></h2>
 <p><img alt="Screenshot of Edit Resource" src="_images/resourcesEditResource.png" /></p>
 <p>The information on the <em>Product</em> tab can be edited by following the
-edit product details link or by using the edit icon on the tab. The
+<em>Edit Product Details</em> link or by using the edit icon on the tab. The
 Name, Description, URL, Format and Resource Type fields come from the
 Add New Resource form. The Parent field identifies a related parent
 resource and includes an auto- complete feature populated by existing
@@ -158,25 +158,10 @@ the resource such as order number, cost, fund, license status, etc.</p>
 <span id="edit-acquisitions-information"></span><h2>Edit acquisitions information<a class="headerlink" href="#edit-acquisitions-information" title="Permalink to this headline">¶</a></h2>
 <p><img alt="Screenshot of Edit Acquistion" src="_images/resourcesEditAcquistion.png" /></p>
 <p>The acquisitions information can be edited by using the edit
-acquisitions information link or the matching edit icon. The
+order information link or the matching edit icon. The
 information here is meant to provide context to the local acquisitions
 processes. The acquisition type field is the same as was entered on
-the add new resource form. The initial cost data also comes from the
-add new resource form. The cost type field is intended to distinguish
-between one time and ongoing payments. The values for the cost type
-field can be customized through the <em>Admin</em> page. This cost record is
-intended to be used for recording projected initial cost for the
-resource. CORAL Resources does not support the tracking of cost
-payments over time. That will be investigated as a future enhancement.</p>
-<p>Purchasing Site is intended to indicate the library or organization
-purchasing the resource. The values can be customized through the
-<em>Admin</em> page. Order number and System Number fields are meant to provide
-match points with the ILS. Order Number is intended for the ILS order
-number and system number for the ILS bib system number. A link to the
-resource record in the libraries’ web OPAC can be dynamically displayed
-on the <em>Acquisitions</em> tab when a bib system number is entered. See the
-technical documentation and install guide for the necessary settings in
-the /admin/configuration.ini file to enable this link.</p>
+the add new resource form.</p>
 <p>The <em>Acquisitions</em> tab also includes the ability to track subscription
 periods and alert when the period expires. Enter a valid subscription
 end date and then check the ‘Enable Alert’ checkbox in cases where a
@@ -188,6 +173,15 @@ can be set to activate on a specific number of days prior to the
 subscription end date. In order to implement the alerts feature the file
 sendAlerts.php will need to be run as a nightly cron. See the technical
 documentation and install guide for details.</p>
+<p>Order Number is intended for the ILS order
+number and system number for the ILS bib system number. A link to the
+resource record in the libraries’ web OPAC can be dynamically displayed
+on the <em>Acquisitions</em> tab when a bib system number is entered. See the
+technical documentation and install guide for the necessary settings in
+the /admin/configuration.ini file to enable this link. Purchasing Site is
+intended to indicate the library or organization purchasing the resource.
+The values can be customized through the <em>Admin</em> page. Order number and
+System Number fields are meant to provide match points with the ILS.</p>
 </div>
 <div class="section" id="edit-cost-history">
 <span id="edit-cost-history"></span><h2>Edit Cost History<a class="headerlink" href="#edit-cost-history" title="Permalink to this headline">¶</a></h2>
@@ -200,7 +194,7 @@ documentation and install guide for details.</p>
 license. Use the edit license and status link or the matching icon to
 update the license information. The values for the Licensing Status
 field can be customized through the Admin page. Changes to the
-Licensing Status field are record in the History section. It is also
+Licensing Status field are recorded in the History section. It is also
 possible through the Edit License window to associate the resource
 with all relevant license records in the Licensing Module. The License
 Record field includes an auto-complete feature that is populated by
@@ -257,14 +251,14 @@ the matching edit icon.</p>
 <span id="edit-cataloging-details"></span><h2>Edit Cataloging Details<a class="headerlink" href="#edit-cataloging-details" title="Permalink to this headline">¶</a></h2>
 <p><img alt="Screenshot of Edit Cataloging" src="_images/resourcesEditCataloging.png" /></p>
 <p>The Cataloging Status and Cataloging Type fields can be customized
-through the Admin page. The Identifier is intended for [I have no
-idea]. The Source URL is intended to be the source of the catalog
-records used. The Cataloging Status is intended to identify the
-current status of the cataloging work. Values might include:
-Completed, Ongoing, and Rejected. The Cataloging Type is intended to
+through the Admin page. The Identifier can be an ILS bib record ID.
+The Source URL is intended to be the source of the catalog
+records used. The Cataloging Type is intended to
 indicate the cataloging approach. Values might include: Batch, Manual,
-and MARCit. Checking the OCLC Holdings checkbox indicates that the
-resource is made available in OCLC [not sure??]</p>
+and MARCit. The Cataloging Status is intended to identify the
+current status of the cataloging work. Values might include:
+Completed, Ongoing, and Rejected. Checking the OCLC Holdings checkbox indicates that the
+resource is made available in OCLC.</p>
 </div>
 <div class="section" id="contacts">
 <span id="contacts"></span><h2>Contacts<a class="headerlink" href="#contacts" title="Permalink to this headline">¶</a></h2>
@@ -283,7 +277,7 @@ through the <em>Admin</em> page.</p>
 </div>
 <div class="section" id="account">
 <span id="account"></span><h2>Account<a class="headerlink" href="#account" title="Permalink to this headline">¶</a></h2>
-<p>[insert image here]</p>
+<p><img alt="Screenshot of Accounts" src="_images/resourcesAccount.png" /></p>
 <p>The <em>Accounts</em> tab is the same as is found on an organization record in
 the Organizations Module. It is intended to store the login credentials
 used for administrative tasks such as registering ip addresses,
@@ -295,6 +289,10 @@ the <em>Product</em> tab all accounts that exist for that specific organization
 will be inherited and displayed here on the <em>Accounts</em> tab. As with
 Organizations, the Resources Module includes a Login Type field. The
 values for Login Type can be edited through the <em>Admin</em> page.</p>
+</div>
+<div class="section" id="issues">
+<span id="issues"></span><h2>Issues<a class="headerlink" href="#issues" title="Permalink to this headline">¶</a></h2>
+<p>(to come ...)</p>
 </div>
 <div class="section" id="attachments">
 <span id="attachments"></span><h2>Attachments<a class="headerlink" href="#attachments" title="Permalink to this headline">¶</a></h2>
@@ -351,8 +349,9 @@ feature is intended to be used in cases where the resource does not need
 to go through a workflow, as in cases where the record is added to the
 system for record keeping purposes only.</p>
 </div>
+</div>
 <div class="section" id="my-queue">
-<span id="my-queue"></span><h2>My Queue<a class="headerlink" href="#my-queue" title="Permalink to this headline">¶</a></h2>
+<span id="my-queue"></span><h1>My Queue<a class="headerlink" href="#my-queue" title="Permalink to this headline">¶</a></h1>
 <p><img alt="Screenshot of My Queue" src="_images/resourcesMyQueue.png" /></p>
 <p>The <em>My Queue</em> page shows the user their recent activity and their
 outstanding tasks. The page is divided into three tabs; Saved Requests,
@@ -371,16 +370,28 @@ the user’s queue once the outstanding workflow task on the resource’s
 <em>Routing</em> tab is marked as complete.</p>
 </div>
 <div class="section" id="file-import">
-<span id="file-import"></span><h2>File Import<a class="headerlink" href="#file-import" title="Permalink to this headline">¶</a></h2>
+<span id="file-import"></span><h1>File Import<a class="headerlink" href="#file-import" title="Permalink to this headline">¶</a></h1>
 <p><img alt="Screenshot of File Import" src="_images/resourcesFileImport.png" /></p>
+<p>File Import allows users to import a file into CORAL. Users are allowed to choose a file from a local drive. The file has to be a delimited CSV file with any of the three delimiter options: comma, semicolon or pipe delimited.
+The upload button loads the CSV into CORAL.</p>
+<div class="section" id="file-import-configuration">
+<span id="file-import-configuration"></span><h2>File Import Configuration<a class="headerlink" href="#file-import-configuration" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Screenshot of File Import" src="_images/resourcesDelimitedFileImport.png" /></p>
+<p>Next users need to configure the import settings in the Delimited File Import window. Users can select an existing import configuration, which is configured in Admin (see Admin section below for more details). Once selected, the column number will be populated in the form automatically. If you have not previously created an Import Configuration, then for each of the resource fields please input the number of the column in your CSV file that corresponds to the resource field. For example, if your import file has a second column called Name that corresponds to the Resource Title, then you would input 2 for the value for the Resource Title field. For columns with multiple values that are character-delimited, indicate the delimiter using <em>If delimited, delimited by field</em>. For fields with values across multiple columns, add additional sets using the <em>+Add another</em> links. Use the Dedupe on this column option for ISBN/ISSN sets to ignore any duplicate values that might occur across those columns. The Alias Types, Note Types, and Organization Roles that you can assign to your mapped columns can be configured on the Admin page.</p>
+<p>Once submit, records in the file will be loaded into CORAL Resources and an import report is generated (see details below).</p>
+</div>
+<div class="section" id="file-import-report">
+<span id="file-import-report"></span><h2>File Import Report<a class="headerlink" href="#file-import-report" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Screenshot of Admin" src="_images/resourcesImportReport.png" /></p>
+<p>The report summarizes the import settings and the results. In the example shown above, 3 records have been processed and added. One new parent record and two new organizations have been created.</p>
+</div>
 </div>
 <div class="section" id="admin">
-<span id="admin"></span><h2>Admin<a class="headerlink" href="#admin" title="Permalink to this headline">¶</a></h2>
+<span id="admin"></span><h1>Admin<a class="headerlink" href="#admin" title="Permalink to this headline">¶</a></h1>
 <p><img alt="Screenshot of Admin" src="_images/resourcesAdmin.png" /></p>
 <p>The <em>Admin</em> page is available only to users with admin privileges. It is
 the page through which field values are customized and through which
 user privilege and access is set.</p>
-</div>
 <div class="section" id="edit-user">
 <span id="edit-user"></span><h2>Edit User<a class="headerlink" href="#edit-user" title="Permalink to this headline">¶</a></h2>
 <p><img alt="Screenshot of Edit User" src="_images/resourcesEditUser.png" /></p>
@@ -391,8 +402,7 @@ an existing user entry granting them additional privileges. New with the
 Resources Module is the addition of the ‘View Accounts’ setting. The
 <em>Accounts</em> tab on the resource record may contain sensitive login
 credentials that only a select few users need to see. Checking the ‘View
-Accounts’ box on</p>
-<p>the edit user form will allow the user to see the <em>Accounts</em> tab, for
+Accounts’ box on the edit user form will allow the user to see the <em>Accounts</em> tab, for
 all other users the <em>Accounts</em> tab will be hidden.</p>
 </div>
 <div class="section" id="workflow-user-group">
@@ -441,6 +451,13 @@ active. Users that are assigned to the group will then have the
 in-process resource appear on the <em>Outstanding Tasks</em> tabs of their My
 Queue pages.</p>
 </div>
+<div class="section" id="import-configuration">
+<span id="import-configuration"></span><h2>Import Configuration<a class="headerlink" href="#import-configuration" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Screenshot of Admin Edit User Group" src="_images/resourcesImportConfiguration.png" /></p>
+<p>Here, users can add a new import configuration or can edit an existing configuration.</p>
+<p><img alt="Screenshot of Admin Edit User Group" src="_images/resourcesAddImportConfiguration.png" /></p>
+<p>The instruction for adding a new one or editing an existing one is the similar to what&#8217;s in File Import section, except that Configuration Name can to be entered or edited.</p>
+</div>
 <div class="section" id="other-admin-settings">
 <span id="other-admin-settings"></span><h2>Other Admin Settings<a class="headerlink" href="#other-admin-settings" title="Permalink to this headline">¶</a></h2>
 <p>There are many other fields which can be customized through the <em>Admin</em>
@@ -474,11 +491,11 @@ alert on the exact day of the subscription end date.</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">CORAL Resources Module User Guide</a><ul>
+<li><a class="reference internal" href="#">CORAL Resources Module User Guide</a></li>
 <li><a class="reference internal" href="#about-coral-resources">About CORAL Resources</a></li>
 <li><a class="reference internal" href="#component-overview">Component Overview</a></li>
 <li><a class="reference internal" href="#home">Home</a></li>
-<li><a class="reference internal" href="#the-resource-record">The Resource Record</a></li>
+<li><a class="reference internal" href="#the-resource-record">The Resource Record</a><ul>
 <li><a class="reference internal" href="#product">Product</a></li>
 <li><a class="reference internal" href="#edit-product-details">Edit product details</a></li>
 <li><a class="reference internal" href="#add-new-note">Add new note</a></li>
@@ -492,15 +509,23 @@ alert on the exact day of the subscription end date.</p>
 <li><a class="reference internal" href="#edit-cataloging-details">Edit Cataloging Details</a></li>
 <li><a class="reference internal" href="#contacts">Contacts</a></li>
 <li><a class="reference internal" href="#account">Account</a></li>
+<li><a class="reference internal" href="#issues">Issues</a></li>
 <li><a class="reference internal" href="#attachments">Attachments</a></li>
 <li><a class="reference internal" href="#routing">Routing</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#my-queue">My Queue</a></li>
-<li><a class="reference internal" href="#file-import">File Import</a></li>
-<li><a class="reference internal" href="#admin">Admin</a></li>
+<li><a class="reference internal" href="#file-import">File Import</a><ul>
+<li><a class="reference internal" href="#file-import-configuration">File Import Configuration</a></li>
+<li><a class="reference internal" href="#file-import-report">File Import Report</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#admin">Admin</a><ul>
 <li><a class="reference internal" href="#edit-user">Edit User</a></li>
 <li><a class="reference internal" href="#workflow-user-group">Workflow / User Group</a></li>
 <li><a class="reference internal" href="#edit-workflow">Edit workflow</a></li>
 <li><a class="reference internal" href="#edit-user-group">Edit user group</a></li>
+<li><a class="reference internal" href="#import-configuration">Import Configuration</a></li>
 <li><a class="reference internal" href="#other-admin-settings">Other Admin Settings</a></li>
 <li><a class="reference internal" href="#alert-settings">Alert settings</a></li>
 </ul>

@@ -11,6 +11,7 @@ CORAL Documentation Project
    :maxdepth: 3
 
    overview
+   install
    basics
    resources
    licensing
@@ -29,6 +30,7 @@ Appendix
 
    authentication
    import
+   manual
    terms
    translation
    release

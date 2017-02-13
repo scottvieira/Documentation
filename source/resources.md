@@ -1,7 +1,7 @@
 CORAL Resources Module User Guide
 ---------------------------------
 
-### About CORAL Resources
+## About CORAL Resources
 
  A component of Hesburgh Libraries locally developed ERM, CORAL
  Resources aids in the management of the electronic resource workflow
@@ -11,9 +11,9 @@ CORAL Resources Module User Guide
  queue in which automated email alerts indicate to staff when new tasks
  are available.
 
-### Component Overview
+## Component Overview
 
- CORAL Resources has four major components in the primary navigation at
+ CORAL Resources has five major components in the primary navigation at
  the top of each page.
 
  • Home
@@ -26,10 +26,10 @@ CORAL Resources Module User Guide
 
  • Admin
 
-### Home
+## Home
 ========
 
-![Screenshot of Resources Home Page](img/resources/resourcesHome.png)
+![Screenshot of Resources Home Page](img/resources/resourcesHome.PNG)
 
 Home provides both search and AZ browse access to the resource records.
 The *Name (contains)* field searches against resource name, resource
@@ -39,7 +39,7 @@ results can be exported to a spreadsheet using the excel icon in the
 upper right corner. The exported file includes more fields than what are
 displayed on the search results page.
 
-![Screenshot of New Resource Window](img/resources/resourcesAddNewResource.png)
+![Screenshot of New Resource Window](img/resources/resourcesAddNewResource.PNG)
 
 
 All new resource records are added through this form. The form includes
@@ -51,7 +51,7 @@ only required fields are resource name, format and acquisition type.
 The *Format* field is meant to indicate the publication medium requested
 with the most obvious values being print and electronic. *Acquisition
 Type* is primarily meant to indicate the distinction between paid and
-free resources. *Resource Type* is optional and provides additional
+free resources. CORAL users may define their own Acquisition Type to meet the local needs. *Resource Type* is optional and provides additional
 context to the type of resource being requested. The values listed for
 all three of these fields can be edited through the Admin page detailed
 later in this user guide.
@@ -60,30 +60,29 @@ The form allows the option to either save or submit the information
 entered. The submit option will commit the new request and the system
 will initiate the workflow for that resource and will send out an email
 alert that a new resource has been entered. The save option will save
-the information to the user’s *My Queue* page where it can be completed
+the information to the user’s *My Queue* page *Saved Requests* where it can be completed
 and submitted at a later time.
 
 Please note that the system does allow duplicate records for the same
 resource to be entered. The form will however alert the user that
 another record with the same resource name already exists.
 
-### The Resource Record
-
+## The Resource Record
 ### Product
 
-![Screenshot of Product](img/resources/resourcesProduct.png)
+![Screenshot of Product](img/resources/resourcesProduct.PNG)
 
-The resource record contains seven tabs where the information about the
+The resource record contains nine tabs where the information about the
 resource is logically grouped. The first tab, *Product*, contains the
 descriptive information such as name, alias, issn, publisher, etc which
 identifies and defines the resource.
 
 ### Edit product details
 
-![Screenshot of Edit Resource](img/resources/resourcesEditResource.png)
+![Screenshot of Edit Resource](img/resources/resourcesEditResource.PNG)
 
  The information on the *Product* tab can be edited by following the
- edit product details link or by using the edit icon on the tab. The
+ *Edit Product Details* link or by using the edit icon on the tab. The
  Name, Description, URL, Format and Resource Type fields come from the
  Add New Resource form. The Parent field identifies a related parent
  resource and includes an auto- complete feature populated by existing
@@ -112,7 +111,7 @@ a record in CORAL.
 
 ### Add new note
 
-![Screenshot of Add New Note](img/resources/resourcesAddNewNote.png)
+![Screenshot of Add New Note](img/resources/resourcesAddNewNote.PNG)
 
 An additional notes feature has been added to the *Product*,
 *Acquisitions* and *Access* tab. The note will be visible only on the
@@ -122,36 +121,20 @@ customized through the *Admin* page.
 
 ### Acquisitions
 
-![Screenshot of Acquisition](img/resources/resourcesAcquistion.png)
+![Screenshot of Acquisition](img/resources/resourcesAcquistion.PNG)
 
  The Acquisitions tab contains details of the libraries’ acquisition of
  the resource such as order number, cost, fund, license status, etc.
 
 ### Edit acquisitions information
 
-![Screenshot of Edit Acquistion](img/resources/resourcesEditAcquistion.png)
+![Screenshot of Edit Acquistion](img/resources/resourcesEditAcquistion.PNG)
 
  The acquisitions information can be edited by using the edit
- acquisitions information link or the matching edit icon. The
+ order information link or the matching edit icon. The
  information here is meant to provide context to the local acquisitions
- processes. The acquisition type field is the same as was entered on
- the add new resource form. The initial cost data also comes from the
- add new resource form. The cost type field is intended to distinguish
- between one time and ongoing payments. The values for the cost type
- field can be customized through the *Admin* page. This cost record is
- intended to be used for recording projected initial cost for the
- resource. CORAL Resources does not support the tracking of cost
- payments over time. That will be investigated as a future enhancement.
-
-Purchasing Site is intended to indicate the library or organization
-purchasing the resource. The values can be customized through the
-*Admin* page. Order number and System Number fields are meant to provide
-match points with the ILS. Order Number is intended for the ILS order
-number and system number for the ILS bib system number. A link to the
-resource record in the libraries’ web OPAC can be dynamically displayed
-on the *Acquisitions* tab when a bib system number is entered. See the
-technical documentation and install guide for the necessary settings in
-the /admin/configuration.ini file to enable this link.
+ processes. The *Acquisition Type* field is the same as was entered on
+ the add new resource form.  
 
 The *Acquisitions* tab also includes the ability to track subscription
 periods and alert when the period expires. Enter a valid subscription
@@ -165,19 +148,32 @@ subscription end date. In order to implement the alerts feature the file
 sendAlerts.php will need to be run as a nightly cron. See the technical
 documentation and install guide for details.
 
+Order Number is intended for the ILS order
+number and system number for the ILS bib system number. A link to the
+resource record in the libraries’ web OPAC can be dynamically displayed
+on the *Acquisitions* tab when a bib system number is entered. See the
+technical documentation and install guide for the necessary settings in
+the /admin/configuration.ini file to enable this link. Purchasing Site is 
+intended to indicate the library or organization purchasing the resource. 
+The values can be customized through the *Admin* page. Order number and 
+System Number fields are meant to provide match points with the ILS. 
+
+
 ### Edit Cost History
 
-![Screenshot of Edit Cost History](img/resources/resourcesEditCostInformation.png)
+![Screenshot of Edit Cost History](img/resources/resourcesEditCostInformation.PNG)
+
+Additional cost history can be added through the *Edit Cost History* link. This allows to track cost history for the same resource. 
 
 ### Edit license and status
 
-![Screenshot of Edit Licenses](img/resources/resourcesEditLicenses.png)
+![Screenshot of Edit Licenses](img/resources/resourcesEditLicenses.PNG)
 
  The *Acquisitions* tab includes information about the relevant
- license. Use the edit license and status link or the matching icon to
+ license. Use the *Edit license and status* link or the matching icon to
  update the license information. The values for the Licensing Status
- field can be customized through the Admin page. Changes to the
- Licensing Status field are record in the History section. It is also
+ field can be customized through the *Admin* page. Changes to the
+ Licensing Status field are recorded in the History section. It is also
  possible through the Edit License window to associate the resource
  with all relevant license records in the Licensing Module. The License
  Record field includes an auto-complete feature that is populated by
@@ -189,7 +185,7 @@ documentation and install guide for details.
 
 ### Access
 
-![Screenshot of Access](img/resources/resourcesAccess.png)
+![Screenshot of Access](img/resources/resourcesAccess.PNG)
 
 The *Access* tab includes the information about how the resource is
 accessed including things such as IP versus username/password
@@ -199,10 +195,10 @@ link or the matching edit icon.
 
 ### Edit access information
 
-![Screenshot of Edit Access](img/resources/resourcesEditAccess.png)
+![Screenshot of Edit Access](img/resources/resourcesEditAccess.PNG)
 
  The values for all fields on the *Access* tab except for username and
- password can be customized through the Admin page. The Authorized Site
+ password can be customized through the *Admin* page. The Authorized Site
  field is intended to indicate the sites or libraries which are
  permitted to use the resource. Administering Site is intended to
  indicate the site or library which is responsible for managing the
@@ -226,32 +222,32 @@ link or the matching edit icon.
 
 ### Cataloging
 
- ![Screenshot of Cataloging](img/resources/resourcesCataloging.png)
+ ![Screenshot of Cataloging](img/resources/resourcesCataloging.PNG)
 
  The *Cataloging* tab includes data and workflow information related to
  cataloging the resource, including things such as the URL of where the
  cataloging records are coming from, cataloging type, cataloging
  status, and the number of records available and loaded. The cataloging
- information can be edited by using the edit cataloging details link or
+ information can be edited by using the *Edit Cataloging Details* link or
  the matching edit icon.
 
 ### Edit Cataloging Details
 
-![Screenshot of Edit Cataloging](img/resources/resourcesEditCataloging.png)
+![Screenshot of Edit Cataloging](img/resources/resourcesEditCataloging.PNG)
 
  The Cataloging Status and Cataloging Type fields can be customized
- through the Admin page. The Identifier is intended for \[I have no
- idea\]. The Source URL is intended to be the source of the catalog
- records used. The Cataloging Status is intended to identify the
- current status of the cataloging work. Values might include:
- Completed, Ongoing, and Rejected. The Cataloging Type is intended to
+ through the *Admin* page. The Identifier can be an ILS bib record ID. 
+ The Source URL is intended to be the source of the catalog
+ records used. The Cataloging Type is intended to
  indicate the cataloging approach. Values might include: Batch, Manual,
- and MARCit. Checking the OCLC Holdings checkbox indicates that the
- resource is made available in OCLC \[not sure??\]
+ and MARCit. The Cataloging Status is intended to identify the
+ current status of the cataloging work. Values might include:
+ Completed, Ongoing, and Rejected. Checking the OCLC Holdings checkbox indicates that the
+ resource is made available in OCLC.
 
 ### Contacts
 
-![Screenshot of Contacts](img/resources/resourcesContacts.png)
+![Screenshot of Contacts](img/resources/resourcesContacts.PNG)
 
 The *Contacts* tab is the same as is found on an organization record in
 the Organizations Module. It is intended as a directory of contact
@@ -267,7 +263,7 @@ through the *Admin* page.
 
 ### Account
 
-\[insert image here\]
+![Screenshot of Accounts](img/resources/resourcesAccount.PNG)
 
 The *Accounts* tab is the same as is found on an organization record in
 the Organizations Module. It is intended to store the login credentials
@@ -281,17 +277,40 @@ will be inherited and displayed here on the *Accounts* tab. As with
 Organizations, the Resources Module includes a Login Type field. The
 values for Login Type can be edited through the *Admin* page.
 
+### Issues
+
+![Screenshot of Attachments](img/resources/resourcesIssues.PNG)
+
+Issues related to a resource can be recorded in the *Issues* tab. Users can report an issue, view open issues or view archived issues. Downtime can also be recorded under Downtime section, where users may report a new downtime, or view current/upcoming downtime or view archived downtime.  
+
+![Screeshot of Report New Problem](img/resources/resourcesReportNewProblem.PNG)
+
+The *Report New Issue* link allows users to enter a new issue. There are several required fields marked with a red star. To add a contact, use the *Add Contact* link. Users may choose to CC themselves or add additional CCs. All contacts and CCs will receive an email alert about the issue. Fill in the Subject field and a brief description about the issue in the Body field. The *Applies to* check box has three options and users can select only one of them. For the *Applies to all Elsevier resources* option (shown in the example here), the issues will be recorded for all Elsevier resource records in CORAL. If *Applies to selected Elsevier resources* option is selected (as shown in the figure), a list of the available resources from the same organization will show up and users can select one or multiple items on the list. In the example shown, both items on the list are selected. 
+
+![Screenshot of View Open Issues](img/resources/resourcesViewOpenIssues.PNG)
+
+To look at all open issues, users can click on *View Open Issues* link and all open issues will be expanded below the linking text. Open issues can be closed by clicking on the *Close* link in the same view. See screenshot above. Open issues can be downloaded in a csv file by clicking on the excel icon beside the text View Open Issues. 
+
+The *View Archived Issues* link will display all archived/closed issues. Users can also download closed issues in a csv file by clicking on the excel icon. 
+
+![Screenshot of Resource Downtime Report](img/resources/resourcesResourceDowntimeReport.PNG)
+
+Users can record downtime related to the resource record via the *Report New Downtime* link. The downtime report includes downtime start date, downtime resolution date, problem type and some notes. Please note, when it reaches the downtime resolution date, the downtime report will be archived automatically. If the Downtime Resolution date is not entered here, a *Resolve* link will show in the *View Current/Upcoming Downtime* link shown the figure below. Problem Type can be configured in *Admin* Downtime Type tab. 
+
+![Screenshot of View current Downtime](img/resources/resourcesViewCurrentDowntime.PNG)
+
+The *View Current/Upcoming Downtime* will display all current or upcoming downtime reports, either organizational level or resource level. To archive/close a downtime report, click on the *resolve* link and the archived downtime should appear in the *View Archived Downtime* section. Please note, there is a bug here, resolved downtime reports are not displaying in the designated section. A bug fix is in progress. Organization related downtime should be entered in the *Organization* module. 
+
 ### Attachments
 
-![Screenshot of Attachments](img/resources/resourcesAttachments.png)
+![Screenshot of Attachment](img/resources/resourcesAttachments.PNG)
 
 Additional documents relevant to the resource can be uploaded and made
-available through the *Attachments* tab. The figure above shows a price
-quote which was received from the publisher. The arrow to the right of
-the attachment name ‘American Politics Research Price Quote’ opens the
-file. Multiple attachments are grouped and sorted by attachment type.
+available through the *Attachments* tab. Multiple attachments are grouped and sorted by attachment type.
 
- New attachments are added using the add new attachment link. The Name
+![Screenshot of Add New Attachment](img/resources/resourcesAddNewAttachment.PNG)
+
+ New attachments are added using the *Add New Attachment* link. The Name
  field is intended to be a descriptive name for the attachment. The
  Details field allows for any additional information that further
  explains the attachment. The attachment Type field (email, title list,
@@ -300,7 +319,7 @@ file. Multiple attachments are grouped and sorted by attachment type.
 
 ### Routing
 
-![Screenshot of Routing](img/resources/resourcesRouting.png)
+![Screenshot of Routing](img/resources/resourcesRouting.PNG)
 
 The *Routing* tab shows the workflow through which the resource needs to
 follow. The workflow and routing rules can be customized through the
@@ -310,16 +329,14 @@ The figure above shows a sample workflow. The first column ‘Step’ is the
 name of the task which needs to be performed. The second column ‘Group’
 identifies the group responsible for the task. Individuals are assigned
 to these groups through the *Admin* page. The ‘Start Date’ identifies
-the date at which the task became active. An email is sent to the
+the date at which the task become active. An email is sent to the
 assigned group when the task becomes active alerting the group members
-that they now have a task to perform. The Order Processing task has no
-
- start date listed in the figure above because it has not yet become
- active. In this example the Order Processing task will not become
- active until after the Licensing task is completed. The last column
- ‘Complete’ will identify the date the task was completed and the
- person who completed the task. Clicking the ‘mark complete’ link will
- mark the task as complete.
+that they now have a task to perform. The fourth column
+‘Complete’ will identify the date when the task is completed and the
+person who complete the task. Clicking the ‘mark complete’ link will
+mark the task as complete. The last column "Delete" allows users to delete
+any unnecessary step. Please note the deleted steps only apply to this local resource record
+and it will not overwrite the workflow steps in *Admin* tab. 
 
 There are two additional steps which happen as part of each workflow
 that are not identified as tasks on the *Routing* tab. An email alert is
@@ -334,22 +351,34 @@ through the use of template files. The templates exist in the
 /admin/emails/ directory. See the technical documentation and
 installation guide for more information on editing the email templates.
 
-The *Routing* tab includes two additional features displayed as links on
-the bottom of the page as seen in the figure above. The ‘restart
-workflow’ link allows anyone with admin privilege to restart the entire
-workflow process. The ‘mark entire workflow complete’ link will mark the
-entire workflow as complete even if there are unfinished tasks. This
-feature is intended to be used in cases where the resource does not need
-to go through a workflow, as in cases where the record is added to the
-system for record keeping purposes only.
+![Screenshot of Reassign Resource Step](img/resources/resourcesReassignResouceStep.PNG)
 
-### My Queue
+Workflow steps can be reassigned to a group by clicking on the pencil icon beside the group name.
+As shown in the figure above, selecting a group from the dropdown list will assign the step to a selected group. 
+The reassignment can apply to all later steps if the checkbox 
+"Apply to all later steps" is selected. 
+ 
+The *Routing* tab includes four additional features displayed as links on
+the bottom of the page as seen in the screenshot of Routing. The *restart
+workflow* link allows anyone with admin privilege to restart the entire
+workflow process, either in-progress workflows or completed workflows. 
+All completed workflows will be archived automatically and can be viewed 
+through the *Display Archived Workflows* link. The *mark entire workflow complete* link marks the
+entire workflow as complete even if there are unfinished tasks.
 
-![Screenshot of My Queue](img/resources/resourcesMyQueue.png)
+![Screenshot of Routing](img/resources/resourcesEditWorkflow.PNG)
+
+The *Edit The Current Workflow* link will open a Edit Workflow window, where users can make changes to the workflow. Available edit options include: add a new step, delete a step, assign a group to a step, assign parent step, move a step up or down and configure the number of days for the email reminder for any step.
+Task reminders are often seen in task management software. The email reminder function will remind users after the configured number of days when the step is assigned to the assigned group/member. It's worth noting that the edits made here will not overwrite the workflow configuration in *Admin* tab. 
+
+
+## My Queue
+
+![Screenshot of My Queue](img/resources/resourcesMyQueue.PNG)
 
 The *My Queue* page shows the user their recent activity and their
-outstanding tasks. The page is divided into three tabs; Saved Requests,
-Outstanding Tasks, and Submitted Requests. The *Saved Requests* tab
+outstanding tasks. The page is divided into three tabs: Outstanding Tasks, Saved Requests,
+and Submitted Requests. The *Saved Requests* tab
 displays new resource records which the user has saved to their queue
 but not yet submitted. The *Submitted Requests* tab displays the user’s
 recently submitted records which are still in process. Once the
@@ -364,12 +393,30 @@ on their association with a workflow group. Resources are removed from
 the user’s queue once the outstanding workflow task on the resource’s
 *Routing* tab is marked as complete.
 
-### File Import
-![Screenshot of File Import](img/resources/resourcesFileImport.png)
+## File Import
 
-### Admin
+![Screenshot of File Import](img/resources/resourcesFileImport.PNG)
 
-![Screenshot of Admin](img/resources/resourcesAdmin.png)
+File Import allows users to import a file into CORAL. Users may choose a file from a local drive. The file has to be a delimited CSV file with any of the three delimiter options: comma, semicolon or pipe delimited.
+The upload button loads the CSV into CORAL.  
+
+### File Import Configuration
+
+![Screenshot of File Import](img/resources/resourcesDelimitedFileImport.PNG)
+
+Next users need to configure the import settings in the Delimited File Import window. Users can select an existing import configuration, which is configured in *Admin* (see Admin section below for more details). Once selected, the column number will be populated in the form automatically. If users have not previously created an Import Configuration, then for each of the resource fields please input the number of the corresponding column in your CSV file. For example, if your import file contains Name in the second column that corresponds to the Resource Title, then you would enter 2 for the value for the Resource Title field. For columns with multiple values that are character-delimited, indicate the delimiter using *If delimited, delimited by field*. For fields with values across multiple columns, add additional sets using the *+Add another* links. Use the *Dedupe on this column* option for ISBN/ISSN sets to ignore any duplicate values that might occur across those columns. The Alias Types, Note Types, and Organization Roles that you can assign to your mapped columns can be configured on the Admin page. 
+
+Once submit, records in the file will be loaded into CORAL Resources module and an import report is generated (shown in the screenshot below). 
+
+### File Import Report
+
+![Screenshot of Admin](img/resources/resourcesImportReport.PNG)
+
+The report summarizes the import settings and the results. In the example shown above, 3 records have been processed and added, one new parent record and two new organizations have been created. 
+
+## Admin
+
+![Screenshot of Admin](img/resources/resourcesAdmin.PNG)
 
 The *Admin* page is available only to users with admin privileges. It is
 the page through which field values are customized and through which
@@ -377,36 +424,29 @@ user privilege and access is set.
 
 ### Edit User
 
-![Screenshot of Edit User](img/resources/resourcesEditUser.png)
+![Screenshot of Edit User](img/resources/resourcesEditUser.PNG)
 
 The first tab on the page is for editing user accounts. There are three
 privilege levels for the Resources Module; add/edit, view only, and
 admin. View only is the default privilege for all users who do not have
-an existing user entry granting them additional privileges. New with the
-Resources Module is the addition of the ‘View Accounts’ setting. The
+an existing user entry granting them additional privileges. The
 *Accounts* tab on the resource record may contain sensitive login
 credentials that only a select few users need to see. Checking the ‘View
-Accounts’ box on
-
- the edit user form will allow the user to see the *Accounts* tab, for
- all other users the *Accounts* tab will be hidden.
+Accounts’ box on the edit user form will allow the user to see the *Accounts* tab, for
+all other users the *Accounts* tab will be hidden.
 
 ### Workflow / User Group
 
-![Screenshot of Workflow User Group](img/resources/resourcesWorkflowUserGroup.png)
+![Screenshot of Workflow User Group](img/resources/resourcesWorkflowUserGroup.PNG)
 
 The *Workflow / User Group* tab contains the settings which control the
 workflow routing features. The Resources Module allows for the creation
 of multiple workflow rules based on resource type. The figure above
-shows that a workflow has been created for all resources where the
-Acquisition Type is ‘Paid’ and the Resource Format is ‘electronic’. In
-this way an alternate workflow could be created for all Free resources
-that would be different than the workflow for Paid resources. New
-workflows are added using the add workflow link.
+shows three workflows including one for paid electronic resources, one for free electronic resources and one for paid electronic monographs. New workflows are added using the add workflow link.
 
 ### Edit workflow
 
-![Screenshot of Admin Edit Workflow](img/resources/resourcesAdminEditWorkflow.png)
+![Screenshot of Admin Edit Workflow](img/resources/resourcesAdminEditWorkflow.PNG)
 
  The above figure shows the form through which workflows are created
  and edited. Here again the workflow being edited is for resources
@@ -433,20 +473,31 @@ active once the parent step is marked as complete.
 
 ### Edit user group
 
-![Screenshot of Admin Edit User Group](img/resources/resourcesAdminEditUserGroup.png)
+![Screenshot of Admin Edit User Group](img/resources/resourcesAdminEditUserGroup.PNG)
 
 Each step or task in a workflow must be assigned to a user group. Enter
 a group name and a group email address. An email alert will be sent to
 this address when a new workflow step assigned to the group becomes
 active. Users that are assigned to the group will then have the
-in-process resource appear on the *Outstanding Tasks* tabs of their My
-Queue pages.
+in-process resource appear on the *Outstanding Tasks* tabs of their *My
+Queue* pages.
 
+### Import Configuration
+
+![Screenshot of Admin Edit User Group](img/resources/resourcesImportConfiguration.PNG)
+
+Here, users can add a new import configuration or edit an existing configuration. 
+
+![Screenshot of Admin Edit User Group](img/resources/resourcesAddImportConfiguration.PNG)
+
+The instruction for adding a new one or editing an existing one is similar to what's in File Import section described earlier and a configuration name can be entered here. The corresponding column number in the importing csv file can be entered for any field shown in the screenshot. 
+
+ 
 ### Other Admin Settings
 
 There are many other fields which can be customized through the *Admin*
 page. Select the field you wish to edit in the left hand column and then
-follow the ‘add new’ links or the edit and delete icons to customize the
+follow the *add new* links or the edit and delete icons to customize the
 field values. The fields have each been described in context earlier in
 this document. There is however an additional setting managed here on
 the *Admin* page which needs to be described in more detail; Alert
@@ -454,7 +505,7 @@ Settings.
 
 ### Alert settings
 
-![Screenshot of Admin Alert Settings](img/resources/resourcesAdminAlertSettings.png)
+![Screenshot of Admin Alert Settings](img/resources/resourcesAdminAlertSettings.PNG)
 
 These alert settings determine the functionality of the alert feature
 associated with the subscription period end date on the *Acquisitions*
