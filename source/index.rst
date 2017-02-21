@@ -14,6 +14,7 @@ CORAL Documentation Project
    install
    basics
    resources
+   api
    licensing
    organizations
    usagestats
@@ -21,8 +22,7 @@ CORAL Documentation Project
    technical
    glossary
    faq
-   api
-
+ 
 Appendix
 ========
 
