@@ -14,7 +14,6 @@ CORAL Documentation Project
    install
    basics
    resources
-   api
    licensing
    organizations
    usagestats
@@ -28,7 +27,8 @@ Appendix
 
 .. toctree::
    :maxdepth: 3
-
+   
+   api
    authentication
    import
    manual
