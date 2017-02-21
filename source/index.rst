@@ -21,6 +21,7 @@ CORAL Documentation Project
    technical
    glossary
    faq
+   api
 
 Appendix
 ========
