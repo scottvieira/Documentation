@@ -5,10 +5,18 @@ CORAL Documentation Style Guide
 
 The purpose of the style guide is to help keep the documentation consistent in style while at the same time providing tips for contributing to the CORAL Documentation Project (CDP) and other relevant information.
 
+### Helping Out
+
+The CDP is a great way to participate in a small or big way as time allows.  Take something in the documentation that you would like to improve and help out, whether it is editing, adding new content, or just sharing a tip.  All the information needed to get started is found below.  When finished you will need to submit a pull request in GitHub for any changes.  The Web Committee will review these pull requests and merge them into the documentation as they are approved.  For any suggestions or questions about helping out, please email us at [help@coral-erm.org](mailto:help@coral-erm.org).  
+
 ### Setting Up ###
 
 The CDP is managed in a repo on GitHub found at [https://github.com/Coral-erm 
-](https://github.com/Coral-erm  "https://github.com/Coral-erm ").  The project uses the [Sphinx Python Documentation Generator](http://www.sphinx-doc.org/en/stable/) and [ReCommonMark](http://recommonmark.readthedocs.io/en/latest/).  The documentation files are edited in a combination of [reStructuredText](https://en.wikipedia.org/wiki/ReStructuredText) and [Markdown](https://en.wikipedia.org/wiki/Markdown), both markup languages supported by GitHub.  In addition, [Read the Docs](https://readthedocs.org/) is used for hosting the documentation and providing additional documentation conversion and indexing tools.   
+](https://github.com/Coral-erm  "https://github.com/Coral-erm ").  The project uses the [Sphinx Python Documentation Generator](http://www.sphinx-doc.org/en/stable/) and [ReCommonMark](http://recommonmark.readthedocs.io/en/latest/).  The documentation files are edited in a combination of [reStructuredText](https://en.wikipedia.org/wiki/ReStructuredText) and [Markdown](https://en.wikipedia.org/wiki/Markdown), both markup languages supported by GitHub.  In addition, [Read the Docs](https://readthedocs.org/) is used for hosting the documentation and providing additional documentation conversion and indexing tools.  
+
+### Editing Markdown
+
+There are a lot of great resources online about Markdown, but to get started you may want to use a Markdown editor.  There are many available free, but the best one for you will depend on your operating system.  One suggestion for Microsoft Windows would be [MarkdownPad](http://markdownpad.com/).      
 
 ### Basic Instructions on Getting Started with GitHub
 
@@ -36,9 +44,9 @@ Running this command will do a few things including identifying what github acco
 
 7. You should now be in the master branch of the repo.  You can use **`git status`** to see what branch is currently selected.  You could make changes to the master branch, but when you copy these changes back to github you would be directly merging your changes into the master branch of the repo.  Instead what you want to do is create a branch of the master version, so that later on when you copy your changes back to github, you have to go through another step, in github lingo a "push request," to request that your changes be merged into the master branch.  This allows for you to make sure you don’t inadvertently write over another person’s changes in the master branch.  Use the following command to create a new branch from the master.  Command: **`git checkout –b <branchname>`**   (If the branch name already exists use **`git checkout <branchname>`**).  You can now start making changes to your files.  Feel  free to do this by commandline or gui.  For us we are going to use Windows Explorer to navigate to the following folder.  Taking our example earlier.  **`C:\Work\Documentation\Source`**
 
-You will notice that there are two folders under Documentation.  Build and Source.  You will be working primarily with the Source.  This is where the individual files for the documentation are to found.  There are two files types of importance:  .md = Markdown files and .rst = Restructured Files.  Restructured Files are Python files used by the Sphinx Documentation Generator.  We are using only one of these files at this time.  This file is being used primarily to create our Table of Contents structure.  For now, you will be editing primarily the Markdown files.  Use the recommended MarkPad 2 for Windows application to open the files.
+You will notice that there are two folders under Documentation.  Build and Source.  Most users will be working exclusively with the Source.  This is where the individual files for the documentation are to found.  There are two files types of importance:  .md = Markdown files and .rst = Restructured Files.  Restructured Files are Python files used by the Sphinx Documentation Generator.  We are using only one of these files at this time.  This file is being used primarily to create our Table of Contents structure.  For now, you will be editing primarily the Markdown files.  If using Microsoft Windows, you can use the recommended MarkPad 2 for Windows application to open the files.
 
-8. Make whatever edits you need to the Markdown files and be sure to save your changes.  Be sure to save your changes.  Once finished you are now ready to build your HTML files from your Markdown files.
+8. Make whatever edits you need to the Markdown files and be sure to save your changes.  Be sure to save your changes.  
 
 9. Go back to your command line and change your working directory to the following.  For our example,  **`C:\Work\Documentation`**
 
@@ -60,7 +68,7 @@ The command **`git push` **will work alone when you have an established connecti
 
 17. You should receive the message "This branch has no conflicts with the base branch."  If so, and you have permission to do so, go ahead and select the green “Merge pull request” button to merge your changes into the master.  Other options here include adding a comment or closing the pull request.  
 
-Note:  If you are more comfortable having someone else merge the code, feel free to request this via the comment field.  Likewise, admin rights are required to merge the pull request.  Only members on the Web Committee and Steering Committee will be granted these rights, so in this case outside parties submitting a pull request will require someone on our committee to review, approve, and merge.  
+Note:  Admin rights are required to merge the pull request.  Only members on the Web Committee and Steering Committee have these rights, so in this case outside parties submitting a pull request will require someone on our committee to review, approve, and merge the changes.  
 
 18. After clicking on the "Merge pull request" button click the “Confirm merge” button.  You should receive the message “Pull request successfully merged and closed.”  Go ahead and delete your branch by pushing the “Delete branch” button.  Doing this will keep your workflow cleaner.  Likewise, creating a new branch when needed will keep your working files closer to the master branch.   Once you have committed your changes they will be updated in generally less than a minute at [http://docs.coral-erm.org/](http://docs.coral-erm.org/).  If changes don’t appear right away, try refreshing the cache in your browser.
 

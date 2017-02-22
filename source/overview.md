@@ -15,7 +15,7 @@ CORAL was originally developed locally by Hesburgh Libraries at the University o
 
 ##### What is the Steering Committee?
 
-The steering committee consists of the individuals and libraries that have decided to contribute their time to developing coral and with assisting others by answering questions on this list. There is a level of commitment made for this work which in turn gives the group members the chance to help plan and manage coral's future development. It is our attempt at sharing ownership among interested and motivated parties without having to rely one just one institution to manage the product.
+The steering committee consists of the individuals and libraries that have decided to contribute their time to developing CORAL and with assisting others by answering questions on this list. There is a level of commitment made for this work which in turn gives the group members the chance to help plan and manage CORAL's future development. It is our attempt at sharing ownership among interested and motivated parties without having to rely on just one institution to manage the product.
 
 ##### Who is on the committee?
 
