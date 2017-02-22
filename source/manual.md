@@ -3,7 +3,7 @@ Installing CORAL Manually
 
 ### Notes for Installing CORAL 2.0 Manually
 
-When you first [download the code](http://coral-erm.org/download), you will want to place the unzipped 2.0 code in your web server directory. 
+When you first [download the code](https://github.com/Coral-erm/Coral/releases), you will want to place the unzipped 2.0 code in your web server directory. 
 
 You will need to configure each module individually. 
 
