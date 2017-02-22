@@ -21,13 +21,14 @@ CORAL Documentation Project
    technical
    glossary
    faq
-
+ 
 Appendix
 ========
 
 .. toctree::
    :maxdepth: 3
-
+   
+   api
    authentication
    import
    manual

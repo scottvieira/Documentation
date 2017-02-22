@@ -281,7 +281,7 @@ values for Login Type can be edited through the *Admin* page.
 
 ![Screenshot of Attachments](img/resources/resourcesIssues.PNG)
 
-Issues related to a resource can be recorded in the *Issues* tab. Users can report an issue, view open issues or view archived issues. Downtime can also be recorded under Downtime section, where users may report a new downtime, or view current/upcoming downtime or view archived downtime.  
+Issues related to a resource can be recorded in the *Issues* tab. Users can report an issue, view open issues or view archived issues. Downtime can also be recorded under Downtime section, where users may report a new downtime, or view current/upcoming downtime or view archived downtime.    
 
 ![Screeshot of Report New Problem](img/resources/resourcesReportNewProblem.PNG)
 
@@ -295,7 +295,7 @@ The *View Archived Issues* link will display all archived/closed issues. Users c
 
 ![Screenshot of Resource Downtime Report](img/resources/resourcesResourceDowntimeReport.PNG)
 
-Users can record downtime related to the resource record via the *Report New Downtime* link. The downtime report includes downtime start date, downtime resolution date, problem type and some notes. Please note, when it reaches the downtime resolution date, the downtime report will be archived automatically. If the Downtime Resolution date is not entered here, a *Resolve* link will show in the *View Current/Upcoming Downtime* link shown the figure below. Problem Type can be configured in *Admin* Downtime Type tab. 
+Users can record downtime related to the resource record via the *Report New Downtime* link. The downtime report includes downtime start date, downtime resolution date, problem type and some notes. Please note, when it reaches the downtime resolution date, the downtime report will be archived automatically. If the Downtime Resolution date is not entered here, a *Resolve* link will show in the *View Current/Upcoming Downtime* link shown the figure below. Problem Type can be configured in *Admin* Downtime Type tab. New downtime can also be entered in the Organizations Module. Please note Report New Downtime in Organizations module is an optional feature, which can be turned on by updating the Organization module configuration file (resourceIssues=Y).
 
 ![Screenshot of View current Downtime](img/resources/resourcesViewCurrentDowntime.PNG)
 

@@ -11,7 +11,7 @@ Note: For upgrading to CORAL 2.0 see the following section [Upgrading to CORAL](
 
 New to CORAL 2.0 is the Unified Installer which simplifies the web installation.
 
-Step 1: Download a copy of the [latest version at Github](https://github.com/Coral-erm/Coral).
+Step 1: Download a copy of the [latest version at Github](https://github.com/Coral-erm/Coral/releases).
 
 Step 2: If you use the option to download the compressed zipped file, expand this file in a working folder.
 
@@ -285,7 +285,7 @@ Presently, v.1.0.0 is the only version of the Reports module, so there is no nee
 
 Once you have updated all your existing modules to the latest 1.x version you are ready to start the CORAL 2.0 upgrade.
 
-Step 9: Download a copy of the [latest version at Github](https://github.com/Coral-erm/Coral).
+Step 9: Download a copy of the [latest version at Github](https://github.com/Coral-erm/Coral/releases).
 
 Step 10: If you use the option to download the compressed zipped file, expand this file in a working folder.
 
