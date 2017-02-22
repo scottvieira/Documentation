@@ -7,7 +7,7 @@ The API is based on [Flight](http://flightphp.com/), a simple and extensible fra
 
 ![Screenshot of API Client Form](img/api/apiClientForm.PNG)
 
-The client form is based on [unirest]( http://unirest.io/php.html ). Users can enter resource information in the form. In this example, Product information is entered in several text fields including Title, Description, Provider, etc. For Format, Acquistion Type, Resource Type, and other fields, what's showing on the form are populated from the data predefined in Coral Admin tab. For fields with data filled in, they are mapped to the existing CORAL fields including Title, Description, URL, Alt URL, Fund Code, Cost, Format, Acquisition Type, and Resource Type. Other fields without a matching CORAL fields are loaded into CORAL as general notes. If a specific note type is created in CORAL, they can be mapped to the desired note type.  
+This is a sample of a client form, which is based on [unirest]( http://unirest.io/php.html ). Users can enter resource information in the form. In this example, Product information is entered in several text fields including Title, Description, Provider, etc. For Format, Acquistion Type, Resource Type, and other fields, what's showing on the form are populated from the data predefined in Coral Admin tab. For fields with data filled in, they are mapped to the existing CORAL fields including Title, Description, URL, Alt URL, Fund Code, Cost, Format, Acquisition Type, and Resource Type. Other fields without a matching CORAL fields are loaded into CORAL as general notes. If a specific note type is created in CORAL, they can be mapped to the desired note type.  
 
 ![Screenshot of API Client Form Submit Report](img/api/apiClientFormSubmitReport.PNG)
 
