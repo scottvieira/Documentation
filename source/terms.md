@@ -11,7 +11,7 @@ An add-on to CORAL Licensing, the Terms Tool enables key stakeholders such as in
 
 The process of using the Terms Tool begins with the license record within [CORAL Licensing](http://coral-documentation.readthedocs.io/en/latest/licensing.html). The first step is for the licensing personnel to create a license record with completed expressions as in the following screenshot.
 
-![screenshot of Expressions table.](img/termstool/termstoolCompletedExpressions.png)
+![screenshot of Expressions table.](img/terms/termsCompletedExpressions.png)
 
 This license record  shows both the *Coursepacks* and *Interlibrary Loan *expressions for the license agreement titled "Cambridge University Press License Agreement". There are two important items to note about these expressions that directly impact the terms tool:
 
@@ -21,7 +21,7 @@ This license record  shows both the *Coursepacks* and *Interlibrary Loan *expres
  checkbox is selected.
 
 
-![screenshot of the update user information pop-up](img/termstool/termstoolToolEmail.png)
+![screenshot of the update user information pop-up](img/terms/termsToolEmail.png)
 
 ### Mapping License Terms to Resources
 
@@ -33,7 +33,7 @@ In SFX for example this is accomplished by  activating all the journals covered 
 Terms Tool tab of CORAL Licensing the link can be entered between
 the document "Cambridge University Press License Agreement" and the SFX target named "Cambridge University Press Journals Complete". The Terms Tool will now know that all journals available within the "Cambridge University Press Journals Complete" target are covered by the terms of this specific license agreement.
 
-![screenshot of table of terms tool resource links](img/termstool/termstoolResourceLink.png)
+![screenshot of table of terms tool resource links](img/terms/termsResourceLink.png)
 
 
 The Terms Tool now has the information it needs to operate. The scenario is as follows. The Terms Tool receives an ISSN via the url *http://.../coral/terms/?issn=XXXX-XXXX*. The Terms Tool sends a query with the provided issn to the library’s openURL resolver. The openURL  resolver returns an xml reply listing all of the provider names (SFX’s target public name or SerialsSolutions’ databaseName) for the provided ISSN. The Terms Tool queries CORAL Licensing for all license  agreements which have been mapped to each provider name and retrieves  all of the associated license terms from the identified license agreements. The terms are then displayed on screen to the user.
@@ -42,11 +42,11 @@ The Terms Tool now has the information it needs to operate. The scenario is as f
 
 The following screenshot shows the Terms Tool display for the journal "American Political Science Review" (issn 0003-0554).  This screenshot is taken from a live in-use terms tool instance that has customized expression types that differentiate between print and electronic.  
 
-![screenshot of terms tool display of links to terms.](img/termstool/termstoolTermsDisplayLinks.png)
+![screenshot of terms tool display of links to terms.](img/terms/termsTermsDisplayLinks.png)
 
 At this point the Terms Tool has already queried both the openURL resolver and then CORAL Licensing and identified that Coursepack, Course Reserves, and Interlibrary Loan terms are available for this journal. The link for Interlibrary Loan leads to the following screenshot.  
 
-![screenshot of terms tool display of terms](img/termstool/termstoolTermsDisplay.png)
+![screenshot of terms tool display of terms](img/terms/termsTermsDisplay.png)
 
 And in the above screenshot the user now sees the specific interlibrary loan license terms for this journal. Access to this journal is available via Cambridge University Press and interlibrary loan use is *Not Clear* (note that this is fabricated data).  
 
@@ -55,7 +55,7 @@ The *Display Notes* from the license record detail how the interlibrary loan is 
 The Terms Tool will display terms for all providers when the library does have access through multiple providers.  In this example, access is also provided through Proquest Education Journals.  If no interlibrary loan license terms are available for a provider the Terms Tool will show that as well as in the
 following example:
 
-![screenshot of terms tool display of providers with no entered license terms](img/termstool/termstoolProviderNoTerms.png)
+![screenshot of terms tool display of providers with no entered license terms](img/terms/termsProviderNoTerms.png)
 
 
 Again, please note that the license terms in these screenshots are all
@@ -81,7 +81,7 @@ provider’s real license agreements. In the *American Political Science Review*
  each library to determine how they wish to create the necessary
  ISSN/ISBN links.
 
-![screenshot of SFX Menu with License Terms Link..](img/termstool/termstoolSFXMenuLink.png)
+![screenshot of SFX Menu with License Terms Link..](img/terms/termsSFXMenuLink.png)
 
 
 ### Technical Documentation
