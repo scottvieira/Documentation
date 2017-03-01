@@ -187,14 +187,12 @@ That’s where the *Terms Tool* tab comes into play. The Terms Tool currently wo
 
 Using this tab it is possible to relate a specific license to the covered journals in a specific SFX target or package. 
 
-![screenshot of terms tool tab](img/licensing/licensingTermsTool.png)
+![screenshot of display notes window](img/licensing/licensingTermsTool.png)
 
-In this example, the Cambridge
-University Press License Agreement is being associated with the
-Cambridge Journals Online target in SFX (Cambridge Journals Online is
-the SFX target public name). This SFX – License connection allows for
-the delivery of license terms through the SFX menu as detailed in the
-Terms Tool User Guide. This tab is meant to be used in conjunction with the Terms Tool and can be disabled for those who do not wish to use it.
+
+In this example, the Cambridge University Press License Agreement is being associated with the 'Cambridge University Press Journals Complete' target in SFX ('Cambridge University Press Journals Complete' is the SFX target public name). This SFX – License connection allows for the delivery of license terms through the SFX menu as detailed in the Terms Tool User Guide. This tab is meant to be used in conjunction with the Terms Tool and can be disabled for those who do not wish to use it.
+
+For more information on the Terms Tool, go to the [Terms Tool documentation](http://coral-documentation.readthedocs.io/en/latest/licensing.html#terms-tool).  
 
 ### Attachments
 
@@ -252,11 +250,11 @@ You can upload licensing terms using the *ONIX-PL File Import*. ONIX-PL is a sta
 <a name="Admin"></a>
 ### Admin
 
-The [*Admin*](#Admin) page is where you will edit Document Types, Expression Types, Qualifiers, Signature Types, Licenses Statuses, and Calendar Settings.
+The Admin page is where you will edit Document Types, Expression Types, Qualifiers, Signature Types, Licenses Statuses, and Calendar Settings.
 
 Each of these fields can have as many values as needed so that the system can better meet local needs. 
 
-*Admin* is also where you will edit and manage user permissions. CORAL Licensing has been built with the ability to limit access to select individuals given the confidential nature of license agreements. Users may not access CORAL Licensing until they are first set up with an account by an administrator. The following figure shows the ‘add new user’ window available from the [*Admin*](#Admin) page.
+*Admin* is also where you will edit and manage user permissions. CORAL Licensing has been built with the ability to limit access to select individuals given the confidential nature of license agreements. Users may not access CORAL Licensing until they are first set up with an account by an administrator. The following figure shows the ‘add new user’ window available from the Admin page.
 
 ![screenshot of the add new user window](img/licensing/licensingAddNewUser.png)
 
@@ -265,9 +263,9 @@ details on authentication.
 
 **Privilege:** The user’s level of access.  
 
-- Admin users have complete add/edit rights and can remove licenses and associated fields.  They also have access to the [*Admin*](#Admin) page, the Terms Tool tab on the license record and the terms tool checkbox. 
+- Admin users have complete add/edit rights and can remove licenses and associated fields.  They also have access to the Admin page, the Terms Tool tab on the license record and the terms tool checkbox. 
  
-- Add/Edit users can remove licenses and associated fields, but not have access to the [*Admin*](#Admin) page and the Terms Tool.  
+- Add/Edit users can remove licenses and associated fields, but not have access to the Admin page and the Terms Tool.  
 
 - View Only users can view all license information and are allowed access to the uploaded documents.
 
