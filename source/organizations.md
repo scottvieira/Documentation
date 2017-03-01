@@ -70,7 +70,9 @@ Here is an organization record for Cambridge Scientific Abstracts. The informati
 
 * **Issues:** Information about an organization that may be valuable over time such as notes about frequent breaks in access or an oddity in an organization's invoicing process. 
 
-* **Licenses:** Links to the records in CORAL Licensing for all licenses from the organization. 
+
+* **Licenses:** Links to the records in [CORAL 
+* ](http://coral-documentation.readthedocs.io/en/latest/licensing.html) for all licenses from the organization. 
 
 #### Organization
 
@@ -91,9 +93,13 @@ The Aliases tab allows the user to add multiple aliases for the organization.  T
 
 ![Screenshot of Contact view](img/organizations/organizationsContactView.png)
 
+
+
 The Contacts tab allows the user to add contact information for both specific personnel and general support.  None of the fields are required except for Role(s).
 
 The values for the ‘Role(s)’ field can be customized through the [Admin](#bookmark=id.26in1rg)[ ](#bookmark=id.26in1rg)page. When the contact is no longer accurate, it can either be deleted (deletion is restricted to users with admin privileges) or archived for historical tracking purposes. Contacts that have the ‘Archived’ box checked are kept in the system but are collapsed beneath a ‘Show Archived Contacts’ link so that all users know that the contact information is out of date.
+
+Contact information can be entered in either CORAL Organizations or CORAL Resources. Contact information which is resource specific may be entered in [CORAL Resources](http://coral-documentation.readthedocs.io/en/latest/resources.html#contacts). Information stored at the organization level will be inherited by individual resources within CORAL Resources.
 
 
 #### Accounts
@@ -102,9 +108,9 @@ The values for the ‘Role(s)’ field can be customized through the [Admin](#bo
 
 The Accounts tab is used for storing login information that library personnel use for site administration, gathering usage statistics, etc.
 
-Account login information can be entered in either CORAL Organizations or CORAL Resources. Account login information which is resource specific may be entered in CORAL Resources. Account login information that is not resource specific (ex. A single administrator login for all Gale databases) should be entered here in CORAL Organizations. Information stored at the organization level will be inherited by individual resources within CORAL Resources.
+Account login information can be entered in either CORAL Organizations or CORAL Resources. Account login information which is resource specific may be entered in [CORAL Resources](http://coral-documentation.readthedocs.io/en/latest/resources.html#account). Account login information that is not resource specific (ex. A single administrator login for all Gale databases) should be entered here in CORAL Organizations. Information stored at the organization level will be inherited by individual resources within CORAL Resources.
 
-Add new login information by selecting the ‘Add New External Login’ link.
+Add new login information by selecting the *Add New External Login* link.
 
 
 Most of the fields are self-explanatory, with the exception of
@@ -123,7 +129,7 @@ The Issues tab is meant for recording general information about an organization 
 
 ![Screenshot of licenses view](img/organizations/organizationsLicensesView.png)
 
-The Licenses tab provides links to the license records entered into CORAL Licensing for all licenses where the organization has been identified as the Publisher/Provider. The hyperlinked license name will open the license record in a new window.
+The Licenses tab provides links to the license records entered into [CORAL Licensing](http://coral-documentation.readthedocs.io/en/latest/licensing.html) for all licenses where the organization has been identified as the Publisher/Provider. The hyperlinked license name will open the license record in a new window.
 
 #### Admin
 
