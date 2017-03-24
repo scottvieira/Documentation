@@ -5,6 +5,16 @@ Installing CORAL
 Installation can occur in one of two ways – either through the web installation script or manually.  For a manual installation see [Installing CORAL Manually](http://docs.coral-erm.org/en/latest/manual.html).  The web 
 installation will provide advantages over manual installation because it will check MySQL privileges and PHP version and directory permissions.
 
+#### Software Requirements
+
+CORAL 2.0 requires following:
+
+> PHP 5.5 or above
+> 
+> MySQL 5.5 or above (Another alternative supported is MariaDB 10 or above)
+> 
+> Apache 2.2 or above 
+
 #### Installing CORAL 2.0
 
 Note: For upgrading to CORAL 2.0 see the following section [Upgrading to CORAL](http://docs.coral-erm.org/en/latest/install.html#upgrading-to-coral)
@@ -15,7 +25,8 @@ Step 1: Download a copy of the [latest version at Github](https://github.com/Cor
 
 Step 2: If you use the option to download the compressed zipped file, expand this file in a working folder.
 
-Step 3: Copy the expanded folder to your webserver.  If using Apache, this would be something like /var/www/html/ folder.  If CORAL will be in a sub folder on your webserver, change the folder name from "Coral-master" to, for example, "coral" or what name you choose.
+Step 3: Copy the expanded folder to your webserver.  If using Apache, this would be something like 
+`/var/www/html/` folder.  If CORAL will be in a sub folder on your webserver, change the folder name from "Coral-master" to, for example, "coral" or what name you choose.
 
 The web installation depends upon the index.php file found in the coral folder.  Your Apache settings should be set to include loading the index.php file.  
 
