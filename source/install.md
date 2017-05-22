@@ -116,7 +116,7 @@ When finished you should briefly see a message indicating what modules have been
 
 ![Screenshot of Successful Installation](img/install/installCongratulations.png)
 
-#### Upgrading to CORAL
+#### Upgrading CORAL
 
 Note: To upgrade to CORAL 2.0 and following you need to be sure all your modules are updated to the latest 1.x versions.  Before starting any upgrade process make a backup of your previous CORAL installation and data.
 
