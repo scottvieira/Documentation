@@ -20,6 +20,8 @@ There are a lot of great resources online about Markdown, but to get started you
 
 ### Basic Instructions on Getting Started with GitHub
 
+Note: For first times users you will need to have a GitHub account.  To create an account, go to [https://github.com](https://github.com).  You will also need to install some type of GitHub client software on your PC.  For the instructions below, we are using Git for Windows.  You can download Git for Windows at [https://git-scm.com](https://git-scm.com).  
+
 **Git and Github Documentation Workflow Procedures**
 
 *Note: Except as noted the following instructions are for Microsoft Windows using the command line prompt. *
