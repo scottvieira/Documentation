@@ -34,6 +34,12 @@ For example:
 
 **Answer:** The messages are low level warnings from PHP and usually do not signify anything serious. Generally, best practices for PHP dictates variable are defined. The CORAL Steering Committee is aware of this and has this issue listed for correction. However, if you are seeing these messages in your CORAL pages, you should be concerned that your server is configured to show all server error messages on the page that is being loaded, which could allow malicious users to gain insight into your vulnerabilities. You should change your PHP settings in php.ini to disable that display for any production instances. Change display_errors = On to display_errors = Off and restart Apache. 
 
+**Question:** How do I install CORAL 2.0.x on Ubuntu 14?
+
+**Answer:** Check out the [State of Libraria blog](http://stateoflibraria.com/2017/02/23/coral-2-on-ubuntu-14/), which has written up a nice post on installing CORAL 2 on Ubuntu 14.
+
+
+
 ### Technical
 
 

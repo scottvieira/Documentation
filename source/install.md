@@ -153,15 +153,16 @@ Note:
 
 If you require Unicode support, be sure to check the following settings and update as needed.  Older versions of CORAL/MySQL implementations may not have been setup for Unicode support.  
 
-In the `install/protected` folder of the latest Resources module, go to the `update_1.4.sql` file found under the latest Resources module.  Remove the comment from the following line and replace the placeholder `_DATABASE_NAME_` with your current Resources module database name.  Be sure to save your changes when finished.
+In the `organizations/install` folder, go to the `update_1.3.sql`.  Remove the comment from the following line and replace the placeholder `_DATABASE_NAME_` with your current Resources module database name.  Be sure to save your changes when finished.
 
-Here is the line you are changing.
+For example if your database name is `coral_productions_prod_v1`.  Find the following line in `update_1.3.sql`: 
 
+`ALTER DATABASE '_DATABASE_NAME_' CHARACTER SET utf8 COLLATE utf8_general_ci`
 
---ALTER DATABASE '_DATABASE_NAME_' CHARACTER SET utf8 COLLATE utf8_general_ci;
+And change it to the following:
 
+`ALTER DATABASE 'coral_organizations_prod_v1' CHARACTER SET utf8 COLLATE utf8_general_ci `
 
-----------
 
 Step 4: Open up a browser and type the URL pointing to your latest Resource module followed by `/install/update.php` and hit enter.  The v1.4.1 Resource update script can detect your current Resource module version.  Let's assume your current Resource version is v1.0.0.  If so, you should see the first screen below.
 
