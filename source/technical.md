@@ -130,3 +130,7 @@ suffix
     * Is – Answers a question, returns true/false, e.g. for User class `isAdmin()` method 
     * Get – retrieves a value 
     * Set – sets a value
+
+#### Database Schema
+
+For an overview of the database schema see [CORAL Database Schema](http://www.coral-erm.org/schema/) 

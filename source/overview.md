@@ -19,7 +19,7 @@ The steering committee consists of the individuals and libraries that have decid
 
 ##### Who is on the committee?
 
-Current members: [as of 2/22/2017]
+Current members: [as of 12/06/2017]
 
 - Steve Oberg, Wheaton College (Chair of Steering Committee, Assistant Professor of Library Science)
 
@@ -30,6 +30,8 @@ Current members: [as of 2/22/2017]
 - Remington Steed, Calvin College (Developer)
 
 - Katherine Swart, Calvin College (Collection Development Librarian)
+
+- Yan Song, North Carolina State University (Electronic Resources Librarian)
 
 - Mang Sun, Rice University (Systems Librarian)
 
@@ -72,17 +74,17 @@ The web committee consists of the individuals and libraries that have decided to
 
 Who is on the committee?
 
-Current members are as follows. [as of 2/22/2017]
+Current members are as follows. [as of 12/06/2017]
 
 - Scott Vieira, Rice University (Chair of the Web Committee, Member of the Steering Committee, Electronic Resources Librarian)
 
-- Nathan Ahlstrom, Medtronic (Senior IT Program Manager)
+- Laurel Narizny, CalTech (Systems Librarian)
+
+- Heather Wilson, CalTech (Acquisitions and Electronic Resources Librarian)
 
 - Yan Song, North Carolina State University (Electronic Resources Librarian)
 
 - Lauren Mueller, Rice University (Senior Electronic Resources Assistant)
-
-- Katherine Landry, Sam Houston State University (Electronic Resources Librarian)
 
 - Louisa Choy, Wheelock College (Digital Services Librarian)
 
@@ -111,11 +113,11 @@ Here is the proposed path for decision making authority.
 
 The Steering Committee will maintain a Chair position. The Chair position is restricted to the SC members with e-resources management experience. This restriction is not meant to belittle the contributions of developers but to make sure that the strongest voice in determining CORAL's future is someone who has expertise in e-resources management. In the absence of the Chair, other members of the Steering Committee with e-resources management experience will fill in as needed.
 
-The Steering Committee will seek volunteers from its members for the role of Chair to serve a two year term. If there is no volunteer for the role of Chair one will be appointed by a majority vote of SC members. If there are multiple volunteers one will be selected by a majority vote of SC members. If there is only one volunteer that person will be appointed as Chair.
+The Steering Committee will seek volunteers from its members for the role of Chair to serve a two year term. If there is no volunteer for the role of Chair one will be appointed by a majority vote of SC members. If there are multiple volunteers one will be selected by a majority vote of SC members. If there is only one volunteer that person will be appointed as Chair. If there are no volunteers from its members for the role of Chair, and the existing Chair is open to re-election, the Steering Committee can choose to re-elect the existing chair for another term.
 
-The Steering Committee will attempt to maintain a minimum of eight members representing four separate institutions. There is no maximum number of members but the Steering Committee will consider the appropriate functional size of the committee when considering new members.
+The Steering Committee will attempt to maintain a minimum of eight members representing four separate institutions. There is no maximum number of members but the Steering Committee will consider the appropriate functional size of the committee when considering new members. The chair of the Web Committee is automatically granted a seat on the Steering Committee.
 
-Libraries may volunteer to join the Steering Committee or may be invited by the Steering Committee. Steering Committee members must have a local production installation of CORAL and will be asked to contribute two individuals; a technical services librarian/staff member with e-resources management expertise and an information technology professional/developer. New members are approved by a two-thirds majority vote of SC members.
+Libraries may volunteer to join the Steering Committee or may be invited by the Steering Committee. Steering Committee members must have a local production installation of CORAL and will be asked to contribute two individuals; a technical services librarian/staff member with e-resources management expertise and an information technology professional/developer. New members are approved by a two-thirds majority vote of SC members.  In special cases, the Steering Committee can choose to invite an individual to the committee that may not be able to meet the requirement of contributing two individuals. Libraries and affiliate members are strongly encouraged to contribute individuals not only to the Steering Committee, but also the Web Committee.  Overlapping membership between both committees is permitted.
 
 Affiliates may volunteer or be invited by the Steering Committee. New affiliates are approved by a two-thirds majority vote of the SC members. Affiliate members are allowed two participants on the coral-admin list and may have two participants join the monthly conference calls. The number of affiliate members participating on the coral-admin listserv and the monthly SC conference calls will not exceed the number of steering committee members.
 
