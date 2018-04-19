@@ -11,6 +11,8 @@ CORAL 2.0 requires following:
 
 > PHP 5.5 or above
 > 
+> Required PHP extensions: gettext, mbstring, and mysqlnd
+> 
 > MySQL 5.5 or above (Another alternative supported is MariaDB 10 or above)
 > 
 > Apache 2.2 or above 
