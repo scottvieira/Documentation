@@ -404,15 +404,18 @@ The upload button loads the CSV into CORAL.
 
 ![Screenshot of File Import](img/resources/resourcesDelimitedFileImport.PNG)
 
-Next users need to configure the import settings in the Delimited File Import window. Users can select an existing import configuration, which is configured in *Admin* (see Admin section below for more details). Once selected, the column number will be populated in the form automatically. If users have not previously created an Import Configuration, then for each of the resource fields please input the number of the corresponding column in your CSV file. For example, if your import file contains Name in the second column that corresponds to the Resource Title, then you would enter 2 for the value for the Resource Title field. For columns with multiple values that are character-delimited, indicate the delimiter using *If delimited, delimited by field*. For fields with values across multiple columns, add additional sets using the *+Add another* links. Use the *Dedupe on this column* option for ISBN/ISSN sets to ignore any duplicate values that might occur across those columns. The Alias Types, Note Types, and Organization Roles that you can assign to your mapped columns can be configured on the Admin page. 
+Next users need to configure the import settings in the Delimited File Import window. Users can select an existing import configuration, which is configured in *Admin* (see Admin section below for more details). Once selected, the column number will be populated in the form automatically. If users have not previously created an Import Configuration, then for each of the resource fields, users need to input the column number for each corresponding column in the CSV file. The column number for each column can be found right above the mapping fields in the top portion of the interface. For columns with multiple values that are character-delimited, indicate the delimiter using *If delimited, delimited by field*. For fields with values across multiple columns, add additional sets using the *+Add another* links. Use the *Dedupe on this column* option for ISBN/ISSN sets to ignore any duplicate values that might occur across those columns. The Alias Types, Note Types, and Organization Roles that you can assign to your mapped columns can be configured on the Admin page.
+Users can also map a set of order related fields in the Acquisitions section, which contains Fund Code, Cost, Order Type and Currency. Lastly, users have the option to enable sending emails when starting workflows, which can be triggered automatically if records imported have the fields (Resource Format, Resource Type and Acquisition) matching with any existing workflows. If users don't want to bothered with the email notification, then leave this option unchecked.  
 
-Once submit, records in the file will be loaded into CORAL Resources module and an import report is generated (shown in the screenshot below). 
+Once submit, users will taken to the import preview window. (shown in the screenshot below). 
 
-### File Import Report
+### File Import Report Preview
 
-![Screenshot of Admin](img/resources/resourcesImportReport.PNG)
+![Screenshot of Admin](img/resources/resourcesImportReportPreview.PNG)
 
-The report summarizes the import settings and the results. In the example shown above, 3 records have been processed and added, one new parent record and two new organizations have been created. 
+The preview allows users to look at the import summary and choose to either proceed with the import or go back to the field mapping windows if anything goes wrong. 
+
+After the import is finally submitted, it'll take users to the final results page. The import will be archived and users can access it again in Imports history. 
 
 ## Admin
 
@@ -442,7 +445,7 @@ all other users the *Accounts* tab will be hidden.
 The *Workflow / User Group* tab contains the settings which control the
 workflow routing features. The Resources Module allows for the creation
 of multiple workflow rules based on resource type. The figure above
-shows three workflows including one for paid electronic resources, one for free electronic resources and one for paid electronic monographs. New workflows are added using the add workflow link.
+shows three workflows including one for paid electronic resources, one for free electronic resources and one for paid electronic monographs. New workflows are added using the add workflow link. Users can also copy any existing workflows by clicking on the yellow duplicate icon. 
 
 ### Edit workflow
 
@@ -484,11 +487,9 @@ Queue* pages.
 
 ### Import Configuration
 
-![Screenshot of Admin Edit User Group](img/resources/resourcesImportConfiguration.PNG)
+![Screenshot of Admin Edit User Group](img/resources/resourcesAdminImportConfiguration.PNG)
 
 Here, users can add a new import configuration or edit an existing configuration. 
-
-![Screenshot of Admin Edit User Group](img/resources/resourcesAddImportConfiguration.PNG)
 
 The instruction for adding a new one or editing an existing one is similar to what's in File Import section described earlier and a configuration name can be entered here. The corresponding column number in the importing csv file can be entered for any field shown in the screenshot. 
 
