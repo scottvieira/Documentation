@@ -1,4 +1,4 @@
-EBSCO's Knowledgebase User Guide
+Using EBSCO's Knowledgebase with CORAL
 ---------------------------------
 
 ### About CORAL and EBSCO's Knowledgebase Integration
