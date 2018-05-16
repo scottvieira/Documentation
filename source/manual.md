@@ -1,9 +1,9 @@
 Installing CORAL Manually
 -------------------------
 
-### Notes for Installing CORAL 2.0 Manually
+### Notes for Installing CORAL 3.0 Manually
 
-When you first [download the code](https://github.com/Coral-erm/Coral/releases), you will want to place the unzipped 2.0 code in your web server directory. 
+When you first [download the code](https://github.com/Coral-erm/Coral/releases), you will want to place the unzipped 3.0 code in your web server directory. 
 
 You will need to configure each module individually. 
 
@@ -143,10 +143,10 @@ side until both modules are installed.
 1. Join the listserv used for product updates, support, and general discussion by sending an email to listserv@listserv.nd.edu. Leave the subject line blank and include 'SUBSCRIBE CORAL-ERM Your Name' in the body; ex. SUBSCRIBE CORAL-ERM John Smith.
 
 
-**CORAL 2.0 Configuration.ini**
+**CORAL 3.0 Configuration.ini**
 There is one last configuration.ini file that you'll need to edit. In the root coral directory you will see a /common/ directory. Inside is a `configuration_sample.ini` file which you will want to copy or rename to `configuration.ini`
 
-- `[installation_details]` has a `version = ` which should be set to `"2.0.0"`
+- `[installation_details]` has a `version = ` which should be set to `"3.0.0"`
 - `[database]` has the same values that you entered for that section in the specific modules
 - each module has it's own entry like `[licensing]` with `enabled=` and `installed=` flags which can be set to `"Y"` or `"N"` 
 

@@ -30,6 +30,8 @@ Appendix
    
    api
    authentication
+   ebscokb
+   export
    import
    manual
    terms
