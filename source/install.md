@@ -7,7 +7,7 @@ installation will provide advantages over manual installation because it will ch
 
 #### Software Requirements
 
-CORAL 2.0 requires the following:
+CORAL 3.0 requires the following:
 
 > PHP 5.5 or above
 > 
@@ -17,11 +17,15 @@ CORAL 2.0 requires the following:
 > 
 > Apache 2.2 or above 
 
-#### Installing CORAL 2.0
+#### Installing CORAL 2.1 
 
-Note: For upgrading to CORAL 2.0 see the following section [Upgrading to CORAL](http://docs.coral-erm.org/en/latest/install.html#upgrading-to-coral)
+See [Installing CORAL 2.0.1 Documentation](http://docs.coral-erm.org/en/2.0.1/install.html).
 
-New to CORAL 2.0 is the Unified Installer which simplifies the web installation.
+#### Installing CORAL 3.0
+
+Note: For upgrading to CORAL from 3.0 from 1.x versions, see the following section [Upgrading to CORAL](http://docs.coral-erm.org/en/latest/install.html#upgrading-to-coral)
+
+The CORAL 3.0 installation uses the Unified Installer which simplifies the web installation.
 
 Step 1: Download a copy of the [latest version at Github](https://github.com/Coral-erm/Coral/releases).
 
@@ -120,7 +124,7 @@ When finished you should briefly see a message indicating what modules have been
 
 #### Upgrading CORAL
 
-Note: To upgrade to CORAL 2.0 and following you need to be sure all your modules are updated to the latest 1.x versions.  Before starting any upgrade process make a backup of your previous CORAL installation and data.
+Note: To upgrade to CORAL 3.0 and following you need to be sure all your modules are updated to the latest 1.x versions.  Before starting any upgrade process make a backup of your previous CORAL installation and data.
 
 **Installation Notes:**
 * There is a separate install for each 1.x module
@@ -297,7 +301,7 @@ Presently, v.1.0.0 is the only version of the Reports module, so there is no nee
 
 -----
 
-Once you have updated all your existing modules to the latest 1.x version you are ready to start the CORAL 2.0 upgrade.
+Once you have updated all your existing modules to the latest 1.x version you are ready to start the CORAL 3.0 upgrade.
 
 Step 9: Download a copy of the [latest version at Github](https://github.com/Coral-erm/Coral/releases).
 
@@ -360,7 +364,7 @@ You should receive the following.
 
 Again, update your permissions to lock your `configuration.ini` file again and click on "TRY AGAIN."
 
-Once finished, you should see the successfully upgraded CORAL 2.0 message before being redirected to the CORAL homepage.
+Once finished, you should see the successfully upgraded CORAL 3.0 message before being redirected to the CORAL homepage.
 
 ![Screenshot of Successful Upgrade](img/install/installUpgradeSuccessful.png)
  
