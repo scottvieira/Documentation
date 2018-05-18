@@ -1,17 +1,15 @@
 ## Propose New Resource API
 
-This API allows users to submit a new resource to CORAL Resource module via a client form. 
+This API allows users to submit a new resource order request to CORAL Resource module via a client form. 
 
 ### The API and the Client Form 
 The API is based on [Flight](http://flightphp.com/), a simple and extensible framework for PHP.   
 
 ![Screenshot of API Client Form](img/api/apiClientForm.PNG)
 
-This is a sample of a client form, which is based on [unirest]( http://unirest.io/php.html ). Users can enter resource information in the form. In this example, Product information is entered in several text fields including Title, Description, Provider, etc. For Format, Acquistion Type, Resource Type, and other fields, what's showing on the form are populated from the data predefined in Coral Admin tab. For fields with data filled in, they are mapped to the existing CORAL fields including Title, Description, URL, Alt URL, Fund Code, Cost, Format, Acquisition Type, and Resource Type. Other fields without a matching CORAL fields are loaded into CORAL as general notes. If a specific note type is created in CORAL, they can be mapped to the desired note type.  
+This is a sample of a client form, which is based on [unirest]( http://unirest.io/php.html ). Users can enter resource information in the form. This includes basic information about the resource including Title, Description, Provider, ISBN/ISSN, URL and information about the order such as fund code and cost. For Format, Acquisition Type, Resource Type, and Fund code, what's showing on the form are populated from the data predefined in Coral Admin tab. Data entered here are mapped to fields in CORAL Resources. Other fields without a matching CORAL fields are loaded into CORAL as general notes. If a specific note type is created in CORAL, they can be mapped to the desired note type.  
 
-![Screenshot of API Client Form Submit Report](img/api/apiClientFormSubmitReport.PNG)
-
-Once submitted, a report is presented with a summary of the fields entered as shown above. A new resource record is created automatically in CORAL Resource module, and data on the from may be mapped to the corresponding fields in CORAL. If data entered in Format, Acquisition Type and Resource Type match with what determine a workflow, the workflow is triggered once the record is submitted via the client form. 
+Once submitted, a report is presented with a summary of the fields. A new resource record is created automatically in CORAL Resource module. If data entered in Format, Acquisition Type and Resource Type match with what determine a workflow, the workflow is triggered once the record is submitted via the client form. 
 
 ### API Configuration
 
