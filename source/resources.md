@@ -29,11 +29,11 @@ CORAL Resources Module User Guide
 ## Home
 ========
 
-![Screenshot of Resources Home Page](img/resources/resourcesHome.PNG)
+![Screenshot of Resources Home Page](documentation/source/img/resources/Resources_Module_Home_3.0.png)
 
-Home provides both search and AZ browse access to the resource records.
+Home provides both search and A-Z browse access to the resource records.
 The *Name (contains)* field searches against resource name, resource
-alias, parent resource name and organization name. Multiple fields can
+alias, parent resource name and organization name. The sidebar also allows for searching across the Publisher, Platform, and ISBN/ISSN fields for more specific searching. Multiple fields can
 be combined in a single search for more precise searching. Search
 results can be exported to a spreadsheet using the excel icon in the
 upper right corner. The exported file includes more fields than what are
