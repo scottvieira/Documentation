@@ -35,6 +35,7 @@ Unauthorized IP: 127.0.0.1
 
 Edit api_client/index.php and set the $server variable:
 $server = "http://yourcoral.tld/resources/api/"; 
+
 Note that the Acquisition Type is hardcoded to show two options Approved and Need Approval. This can be customized to show desired acquisition types by modifying index.php (in the api_client folder). Users can either edit line 330 or remove line 330 and line 334. See the code in the screenshot below. 
 
 ![Screenshot of API Client IndexPHP File](img/api/apiClientIndexphp.PNG)
