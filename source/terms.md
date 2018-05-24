@@ -33,7 +33,7 @@ In SFX for example this is accomplished by  activating all the journals covered 
 Terms Tool tab of CORAL Licensing the link can be entered between
 the document "Cambridge University Press License Agreement" and the SFX target named "Cambridge University Press Journals Complete". The Terms Tool will now know that all journals available within the "Cambridge University Press Journals Complete" target are covered by the terms of this specific license agreement.
 
-![screenshot of table of terms tool resource links](img/terms/termsResourceLink.png)
+![screenshot of table of terms tool resource links](img/terms/termsResourceLink.PNG)
 
 
 The Terms Tool now has the information it needs to operate. The scenario is as follows. The Terms Tool receives an ISSN via the url *http://.../coral/terms/?issn=XXXX-XXXX*. The Terms Tool sends a query with the provided issn to the library’s openURL resolver. The openURL  resolver returns an xml reply listing all of the provider names (SFX’s target public name or SerialsSolutions’ databaseName) for the provided ISSN. The Terms Tool queries CORAL Licensing for all license  agreements which have been mapped to each provider name and retrieves  all of the associated license terms from the identified license agreements. The terms are then displayed on screen to the user.
