@@ -30,6 +30,7 @@ Appendix
    
    api
    authentication
+   dashboards
    ebscokb
    export
    import

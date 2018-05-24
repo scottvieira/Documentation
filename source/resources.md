@@ -119,21 +119,17 @@ tab on which it is added. The Note Type field has been included to
 provide context to the note. The values for the Note Type field can be
 customized through the *Admin* page.
 
-### Acquisitions
+### Orders
 
-![Screenshot of Acquisition](img/resources/resourcesAcquistion.PNG)
+![Screenshot of Orders](img/resources/resourcesOrders.PNG)
 
- The Acquisitions tab contains details of the libraries’ acquisition of
- the resource such as order number, cost, fund, license status, etc.
+The Orders information allows for tracking of multiple orders for each resource.  Users can choose between "create new order," "clone order," and "edit order information."  
 
-### Edit acquisitions information
+### Create and Edit order information
 
-![Screenshot of Edit Acquistion](img/resources/resourcesEditAcquistion.PNG)
+![Screenshot of Edit Orders](img/resources/resourcesEditOrder.PNG)
 
- The acquisitions information can be edited by using the edit
- order information link or the matching edit icon. The
- information here is meant to provide context to the local acquisitions
- processes. The *Acquisition Type* field is the same as was entered on
+ The order information can be created, cloned, or edited by using the create, clone, or edit order links located under Orders. The orders information is meant to provide description to local acquisitions. The *Acquisition Type* field is the same as was entered on
  the add new resource form.  
 
 The *Acquisitions* tab also includes the ability to track subscription
@@ -159,11 +155,22 @@ The values can be customized through the *Admin* page. Order number and
 System Number fields are meant to provide match points with the ILS. 
 
 
+### Acquisitions
+
+![Screenshot of Acquisition](img/resources/resourcesAcquisition.PNG)
+
+ The Acquisitions tab contains details of the libraries’ acquisition of
+ the resource such as order number, cost, fund, license status, etc.
+
 ### Edit Cost History
 
 ![Screenshot of Edit Cost History](img/resources/resourcesEditCostInformation.PNG)
 
 Additional cost history can be added through the *Edit Cost History* link. This allows to track cost history for the same resource. 
+
+Note: If enhanced cost history is enabled, then the user will see the following additional fields.
+
+![Screenshot of Enhanced Cost History View](img/resources/resourcesEnhancedCostHistory.PNG)
 
 ### Edit license and status
 
@@ -285,7 +292,7 @@ Issues related to a resource can be recorded in the *Issues* tab. Users can repo
 
 ![Screeshot of Report New Problem](img/resources/resourcesReportNewProblem.PNG)
 
-The *Report New Issue* link allows users to enter a new issue. There are several required fields marked with a red star. To add a contact, use the *Add Contact* link. Users may choose to CC themselves or add additional CCs. All contacts and CCs will receive an email alert about the issue. Fill in the Subject field and a brief description about the issue in the Body field. The *Applies to* check box has three options and users can select only one of them. For the *Applies to all Elsevier resources* option (shown in the example here), the issues will be recorded for all Elsevier resource records in CORAL. If *Applies to selected Elsevier resources* option is selected (as shown in the figure), a list of the available resources from the same organization will show up and users can select one or multiple items on the list. In the example shown, both items on the list are selected. 
+The *Report New Issue* link allows users to enter a new issue. There are several required fields marked with a red star. To add a contact, use the *Add Contact* link. Users may choose to CC themselves or add additional CCs. All contacts and CCs will receive an email alert about the issue. Fill in the Subject field and a brief description about the issue in the Body field. The *Applies to* check box has three options and users can select only one of them. For the *Applies to all Project Euclid resources* option (shown in the example here), the issues will be recorded for all Project Euclid resource records in CORAL. If *Applies to selected Project Euclid resources* option is selected (as shown in the figure), a list of the available resources from the same organization will show up and users can select one or multiple items on the list. In the example shown, both items on the list are selected. 
 
 ![Screenshot of View Open Issues](img/resources/resourcesViewOpenIssues.PNG)
 
@@ -317,11 +324,11 @@ available through the *Attachments* tab. Multiple attachments are grouped and so
  etc) provides context and allows for a way to group the attachments.
  The values for attachment Type can be edited through the *Admin* page.
 
-### Routing
+### Workflow
 
-![Screenshot of Routing](img/resources/resourcesRouting.PNG)
+![Screenshot of Routing](img/resources/resourcesWorkflow.PNG)
 
-The *Routing* tab shows the workflow through which the resource needs to
+The *Workflow* tab shows the workflow through which the resource needs to
 follow. The workflow and routing rules can be customized through the
 *Admin* page. That process is described later on in this document.
 
@@ -351,7 +358,7 @@ through the use of template files. The templates exist in the
 /admin/emails/ directory. See the technical documentation and
 installation guide for more information on editing the email templates.
 
-![Screenshot of Reassign Resource Step](img/resources/resourcesReassignResouceStep.PNG)
+![Screenshot of Edit Resource Step](img/resources/resourcesReassignResourceStep.PNG)
 
 Workflow steps can be reassigned to a group by clicking on the pencil icon beside the group name.
 As shown in the figure above, selecting a group from the dropdown list will assign the step to a selected group. 
