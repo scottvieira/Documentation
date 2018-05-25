@@ -14,13 +14,13 @@ CORAL Management has three components in the primary navigation at the top of ea
 - Admin
 
 
-### Home
+#### Home
 
 ![Screenshot of Management Home Page](img/management/managementHomePage.png)
 
 Document records are listed alphabetically by name and the name field can be searched. Additionally, the records can be filtered by category and document type.
 
-### New Document
+#### New Document
 
 Select *New Document* from the main navigation to begin adding new document records. This will open the New Document pop-up window.
 
@@ -50,7 +50,7 @@ Selecting the *Add Optional Note* link allows notes to be linked to the document
 **Note Type:** Provides a way to categorize the type of note. The options listed in the dropdown box may be created from the Admin tab or by using the *add note type* link under the dropdown box.
 
 
-### Editing a Document Record
+#### Editing a Document Record
 
 Once a document record has been created, the document record opens. A document record can also be opened by selecting it from the *Home* screen.
 
@@ -62,6 +62,6 @@ The above record is for a Cancellation of an E-Journal checklist. Below the name
 
 In this example, there is an archived version of the checklist as evidenced by the *1 archive(s) available” note. Selecting *show archives* makes archived copies visible and accessible. To add another archived version, select *upload archived document* and fill in the appropriate information. As previously mentioned, there can only be one current/active document. Therefore, to add a new version of a document, the current document must be archived first. Once that happens, an *upload new document* link will display. Select this and complete the necessary information to add the new version.
 
-### Admin
+#### Admin
 
 The Admin tab provides for the management of users, document types, note types, and categories.

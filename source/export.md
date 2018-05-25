@@ -3,7 +3,7 @@ Exporting in CORAL
 
 The export feature allows users to retrieve data from the Resources module in CSV (spreadsheet) format. 
 
-###How to Export Resources
+### How to Export Resources
 
 To export resources, click the green Excel icon on the right side of the screen, under the Change Module menu.   
 
@@ -19,7 +19,7 @@ You can then open the file on your computer using Excel, OpenOffice, Google Shee
 
 Note: If there are multiple values in a field, they will be separated by a semicolon and a space.
 
-###Exported Fields
+### Exported Fields
 
 - Resource ID: The unique identifier of each resource record.
 

@@ -1,7 +1,7 @@
 Dashboards User Guide
 ---------------------------------
 
-## About CORAL Resources Dashboards
+### About CORAL Resources Dashboards
 
 ![Screenshot of Dashboards Home Menu](img/dashboards/dashboardsHomeMenu.PNG)
 
@@ -9,7 +9,7 @@ The CORAL dashboards provide a quick overview of resource and cost info.
 
 Note: Enhanced Cost history must be enabled to use Dashboards in CORAL. See [Additional Server Configuration](http://docs.coral-erm.org/en/latest/manual.html#additional-server-configuration)
 
-## Statistics Dashboard
+### Statistics Dashboard
 
 ![Screenshot of Dashboards Statistics](img/dashboards/dashboardsStatistics.PNG)
 
@@ -17,7 +17,7 @@ Dashboards Statistics allows for a quick display of your Resources data by Resou
 
 ![Screenshot of Dashboards Statistics Results](img/dashboards/dashboardsStatisticsResults.PNG)
 
-## Yearly Costs Dashboard
+### Yearly Costs Dashboard
 
 ![Screenshot of Dashboards Yearly Cost](img/dashboards/dashboardsYearlyCost.PNG)
 
