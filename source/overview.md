@@ -19,39 +19,7 @@ The steering committee consists of the individuals and libraries that have decid
 
 ##### Who is on the committee?
 
-Current members: [as of 12/06/2017]
-
-- Steve Oberg, Wheaton College (Chair of Steering Committee, Assistant Professor of Library Science)
-
-- Tommy Keswick, CalTech (Digital Technologies Development Librarian)
-
-- Heather Wilson, CalTech (Acquisitions and Electronic Resources Librarian)
-
-- Remington Steed, Calvin College (Developer)
-
-- Katherine Swart, Calvin College (Collection Development Librarian)
-
-- Yan Song, North Carolina State University (Electronic Resources Librarian)
-
-- Mang Sun, Rice University (Systems Librarian)
-
-- Scott Vieira, Rice University (Chair of Web Committee, Electronic Resources Librarian)
-
-- Doug Hahn, Texas A&M (Developer)
-
-- Eric Hartnett, Texas A&M (Electronic Resources Librarian)
-
-- Jeffrey Mudge, Wheaton College (Developer)
-
-
-Affiliate Members:
-
-- Paul Poulain, BibLibre
-
-- Matthias Meusburger, BibLibre (Developer)
-
-- Carla Clark, SirsiDynix (Product Manager)
-
+[Meet the Team](http://coral-erm.org/meet-the-team/)
 
 Anyone with a desire to contribute, and the time to do so, is welcome to join. Just email the Admin List and express your interest!
 
@@ -74,20 +42,7 @@ The web committee consists of the individuals and libraries that have decided to
 
 Who is on the committee?
 
-Current members are as follows. [as of 12/06/2017]
-
-- Scott Vieira, Rice University (Chair of the Web Committee, Member of the Steering Committee, Electronic Resources Librarian)
-
-- Laurel Narizny, CalTech (Systems Librarian)
-
-- Heather Wilson, CalTech (Acquisitions and Electronic Resources Librarian)
-
-- Yan Song, North Carolina State University (Electronic Resources Librarian)
-
-- Lauren Mueller, Rice University (Senior Electronic Resources Assistant)
-
-- Louisa Choy, Wheelock College (Digital Services Librarian)
-
+[Meet the Team](http://coral-erm.org/meet-the-team/)
 
 Anyone with a desire to contribute, and the time to do so, is welcome to join. Just email us at [help@coral-erm.org](mailto:help@coral-erm.org) to express your interest!
 

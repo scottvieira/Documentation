@@ -15,7 +15,7 @@ CORAL Organizations has three major components in the main navigation at the top
 - New Organization
 - Admin
 
-### Home
+#### Home
 
 The home screen contains a search on the left and a list of organizations on the right.  The up and down arrows in the table header can be used to sort the organizations by name, alias, parent, or role.
 
@@ -33,7 +33,7 @@ There are four facets for search.  These facets can be used in conjunction.
 
 
 
-### New Organization
+#### New Organization
 
 ![Screenshot of Add New Organizations window](img/organizations/organizationsAddNewOrganization.png)
 
@@ -52,7 +52,7 @@ Select *New Organization* from the main navigation to begin adding new organizat
 
 * **Notes:** General notes.
 
-### The Organization Record
+#### The Organization Record
 
 ![Screenshot of Organizations record](img/organizations/organizationsRecordView.png)
 
@@ -70,7 +70,7 @@ Here is an organization record for 'Cambridge Scientific Abstracts'. The informa
 
 * **Licenses:** Links to the records in [CORAL Resources](http://coral-documentation.readthedocs.io/en/latest/licensing.html) for all licenses from the organization. 
 
-#### Organization
+##### Organization
 
 The figure above shows the organization tab for 'Cambridge Scientific Abstracts'. Notice that this screenshot does not display the *Account Details*, *Notes* or *Company URL* fields that were found on the New Organization window on the previous page. These three fields are not displayed because no data was entered into those fields when the record was added.
 
@@ -79,13 +79,13 @@ The *edit organization details* link ![edit icon](img/general/editicon.png), wil
 In this example 'Cambridge Scientific Abstracts' has been assigned ProQuest as the parent organization. The *view* link
 ![view icon](img/general/viewicon.png) next to ProQuest LLC will open the ProQuest organization record.
 
-#### Aliases
+##### Aliases
 
 ![Screenshot of Aliases view](img/organizations/organizationsAliasesView.png)
 
 The Aliases tab allows the user to add multiple aliases for the organization.  The default alias types are Alternative Name, Name Change, and Acronym.  These fields can be customized using the [Admin](#bookmark=id.26in1rg)[ ](#bookmark=id.26in1rg)page
 
-#### Contacts
+##### Contacts
 
 ![Screenshot of Contact view](img/organizations/organizationsContactView.png)
 
@@ -98,7 +98,7 @@ The values for the *Role(s)* field can be customized through the [Admin](#bookma
 Contact information can be entered in either CORAL Organizations or CORAL Resources. Contact information which is resource specific may be entered in [CORAL Resources](http://coral-documentation.readthedocs.io/en/latest/resources.html#contacts). Information stored at the organization level will be inherited by individual resources within CORAL Resources.
 
 
-#### Accounts
+##### Accounts
 
 ![Screenshot of accounts view](img/organizations/organizationsAccountView.png)
 
@@ -115,23 +115,23 @@ Most of the fields are self-explanatory, with the exception of
 
 * **Local Account Email:** The address of the library personnel registered on the account.
 
-#### Issues
+##### Issues
 
 ![Screenshot of issues view](img/organizations/organizationsIssuesView.png)
 
 The Issues tab is meant for recording general information about an organization that may be valuable over time. One example would be recording when an organization has frequent breaks in access or significant server downtimes. Another example would be having an organization that is often slow when it comes to sending out renewal invoices. The *add new issue* link opens a new window which includes a date and notes field. This field can be handy for recording the institutional knowledge that exists among various personnel.
 
-#### Licenses
+##### Licenses
 
 ![Screenshot of licenses view](img/organizations/organizationsLicensesView.png)
 
 The Licenses tab provides links to the license records entered into [CORAL Licensing](http://coral-documentation.readthedocs.io/en/latest/licensing.html) for all licenses where the organization has been identified as the Publisher/Provider. The hyperlinked license name will open the license record in a new window.
 
-#### Admin
+##### Admin
 
 The Admin page is where you can manage the module's user privileges as well as edit the values for organization role, contact role, alias type, external login type, and issue type.
   
-#####Adding New Users####
+###### Adding New Users####
 The *add new user* link on the Admin page opens the following window.  
 ![Screen shot for adding new user](img/organizations/organizationsAddNewUser.png)
 
