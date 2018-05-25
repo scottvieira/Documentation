@@ -1,7 +1,7 @@
 CORAL Resources Module User Guide
 ---------------------------------
 
-## About CORAL Resources
+### About CORAL Resources
 
  A component of Hesburgh Libraries locally developed ERM, CORAL
  Resources aids in the management of the electronic resource workflow
@@ -11,7 +11,7 @@ CORAL Resources Module User Guide
  queue in which automated email alerts indicate to staff when new tasks
  are available.
 
-## Component Overview
+### Component Overview
 
  CORAL Resources has five major components in the primary navigation at
  the top of each page.
@@ -26,7 +26,7 @@ CORAL Resources Module User Guide
 
  • Admin
 
-## Home
+### Home
 ========
 
 ![Screenshot of Resources Home Page](img/resources/Resources_Module_Home_3.0.png)
@@ -67,8 +67,8 @@ Please note that the system does allow duplicate records for the same
 resource to be entered. The form will however alert the user that
 another record with the same resource name already exists.
 
-## The Resource Record
-### Product
+### The Resource Record
+#### Product
 
 ![Screenshot of Product](img/resources/resourcesProduct.PNG)
 
@@ -77,7 +77,7 @@ resource is logically grouped. The first tab, *Product*, contains the
 descriptive information such as name, alias, issn, publisher, etc which
 identifies and defines the resource.
 
-### Edit product details
+#### Edit product details
 
 ![Screenshot of Edit Resource](img/resources/resourcesEditResource.PNG)
 
@@ -109,7 +109,7 @@ status as ‘Archived’. This was intended to be used to identify resources
 that were no longer available but for which there was value in retaining
 a record in CORAL.
 
-### Add new note
+#### Add new note
 
 ![Screenshot of Add New Note](img/resources/resourcesAddNewNote.PNG)
 
@@ -119,13 +119,13 @@ tab on which it is added. The Note Type field has been included to
 provide context to the note. The values for the Note Type field can be
 customized through the *Admin* page.
 
-### Orders
+#### Orders
 
 ![Screenshot of Orders](img/resources/resourcesOrders.PNG)
 
 The Orders information allows for tracking of multiple orders for each resource.  Users can choose between "create new order," "clone order," and "edit order information."  
 
-### Create and Edit order information
+#### Create and Edit order information
 
 ![Screenshot of Edit Orders](img/resources/resourcesEditOrder.PNG)
 
@@ -155,14 +155,14 @@ The values can be customized through the *Admin* page. Order number and
 System Number fields are meant to provide match points with the ILS. 
 
 
-### Acquisitions
+#### Acquisitions
 
 ![Screenshot of Acquisition](img/resources/resourcesAcquisition.PNG)
 
  The Acquisitions tab contains details of the libraries’ acquisition of
  the resource such as order number, cost, fund, license status, etc.
 
-### Edit Cost History
+#### Edit Cost History
 
 ![Screenshot of Edit Cost History](img/resources/resourcesEditCostInformation.PNG)
 
@@ -172,7 +172,7 @@ Note: If enhanced cost history is enabled, then the user will see the following 
 
 ![Screenshot of Enhanced Cost History View](img/resources/resourcesEnhancedCostHistory.PNG)
 
-### Edit license and status
+#### Edit license and status
 
 ![Screenshot of Edit Licenses](img/resources/resourcesEditLicenses.PNG)
 
@@ -190,7 +190,7 @@ Note: If enhanced cost history is enabled, then the user will see the following 
  link to each associated license is added to the Helpful Links section
  of the resource record for quick navigation between modules.
 
-### Access
+#### Access
 
 ![Screenshot of Access](img/resources/resourcesAccess.PNG)
 
@@ -200,7 +200,7 @@ authentication, simultaneous user limits, authorized sites, etc. The
 access information can be edited by using the edit access information
 link or the matching edit icon.
 
-### Edit access information
+#### Edit access information
 
 ![Screenshot of Edit Access](img/resources/resourcesEditAccess.PNG)
 
@@ -227,7 +227,7 @@ link or the matching edit icon.
  administration. Administrative logins are to be stored on the
  *Accounts* tab.
 
-### Cataloging
+#### Cataloging
 
  ![Screenshot of Cataloging](img/resources/resourcesCataloging.PNG)
 
@@ -238,7 +238,7 @@ link or the matching edit icon.
  information can be edited by using the *Edit Cataloging Details* link or
  the matching edit icon.
 
-### Edit Cataloging Details
+#### Edit Cataloging Details
 
 ![Screenshot of Edit Cataloging](img/resources/resourcesEditCataloging.PNG)
 
@@ -252,7 +252,7 @@ link or the matching edit icon.
  Completed, Ongoing, and Rejected. Checking the OCLC Holdings checkbox indicates that the
  resource is made available in OCLC.
 
-### Contacts
+#### Contacts
 
 ![Screenshot of Contacts](img/resources/resourcesContacts.PNG)
 
@@ -268,7 +268,7 @@ Resources Module includes a Contact Role field for each contact
 (support, invoicing, etc). The values for Contact Role can be edited
 through the *Admin* page.
 
-### Account
+#### Account
 
 ![Screenshot of Accounts](img/resources/resourcesAccount.PNG)
 
@@ -284,7 +284,7 @@ will be inherited and displayed here on the *Accounts* tab. As with
 Organizations, the Resources Module includes a Login Type field. The
 values for Login Type can be edited through the *Admin* page.
 
-### Issues
+#### Issues
 
 ![Screenshot of Attachments](img/resources/resourcesIssues.PNG)
 
@@ -308,7 +308,7 @@ Users can record downtime related to the resource record via the *Report New Dow
 
 The *View Current/Upcoming Downtime* will display all current or upcoming downtime reports, either organizational level or resource level. To archive/close a downtime report, click on the *resolve* link and the archived downtime should appear in the *View Archived Downtime* section. Please note, there is a bug here, resolved downtime reports are not displaying in the designated section. A bug fix is in progress. Organization related downtime should be entered in the *Organization* module. 
 
-### Attachments
+#### Attachments
 
 ![Screenshot of Attachment](img/resources/resourcesAttachments.PNG)
 
@@ -324,7 +324,7 @@ available through the *Attachments* tab. Multiple attachments are grouped and so
  etc) provides context and allows for a way to group the attachments.
  The values for attachment Type can be edited through the *Admin* page.
 
-### Workflow
+#### Workflow
 
 ![Screenshot of Routing](img/resources/resourcesWorkflow.PNG)
 
@@ -379,7 +379,7 @@ The *Edit The Current Workflow* link will open a Edit Workflow window, where use
 Task reminders are often seen in task management software. The email reminder function will remind users after the configured number of days when the step is assigned to the assigned group/member. It's worth noting that the edits made here will not overwrite the workflow configuration in *Admin* tab. 
 
 
-## My Queue
+### My Queue
 
 ![Screenshot of My Queue](img/resources/resourcesMyQueue.PNG)
 
@@ -400,14 +400,14 @@ on their association with a workflow group. Resources are removed from
 the user’s queue once the outstanding workflow task on the resource’s
 *Routing* tab is marked as complete.
 
-## File Import
+### File Import
 
 ![Screenshot of File Import](img/resources/resourcesFileImport.PNG)
 
 File Import allows users to import a file into CORAL. Users may choose a file from a local drive. The file has to be a delimited CSV file with any of the three delimiter options: comma, semicolon or pipe delimited.
 The upload button loads the CSV into CORAL.  
 
-### File Import Configuration
+#### File Import Configuration
 
 ![Screenshot of File Import](img/resources/resourcesDelimitedFileImport.PNG)
 
@@ -416,7 +416,7 @@ Users can also map a set of order related fields in the Acquisitions section, wh
 
 Once submit, users will be taken to the import preview window. (shown in the screenshot below). 
 
-### File Import Report Preview
+#### File Import Report Preview
 
 ![Screenshot of Admin](img/resources/resourcesImportReportPreview.PNG)
 
@@ -424,7 +424,7 @@ The preview allows users to look at the import summary and choose to either proc
 
 After the import is finally submitted, it'll take users to the final results page. The import will be archived and users can access it again in Imports history. 
 
-## Admin
+### Admin
 
 ![Screenshot of Admin](img/resources/resourcesAdmin.PNG)
 
@@ -432,7 +432,7 @@ The *Admin* page is available only to users with admin privileges. It is
 the page through which field values are customized and through which
 user privilege and access is set.
 
-### Edit User
+#### Edit User
 
 ![Screenshot of Edit User](img/resources/resourcesEditUser.PNG)
 
@@ -445,7 +445,7 @@ credentials that only a select few users need to see. Checking the ‘View
 Accounts’ box on the edit user form will allow the user to see the *Accounts* tab, for
 all other users the *Accounts* tab will be hidden.
 
-### Workflow / User Group
+#### Workflow / User Group
 
 ![Screenshot of Workflow User Group](img/resources/resourcesWorkflowUserGroup.PNG)
 
@@ -454,7 +454,7 @@ workflow routing features. The Resources Module allows for the creation
 of multiple workflow rules based on resource type. The figure above
 shows three workflows including one for paid electronic resources, one for free electronic resources and one for paid electronic monographs. New workflows are added using the add workflow link. Users can also copy any existing workflows by clicking on the yellow duplicate icon. 
 
-### Edit workflow
+#### Edit workflow
 
 ![Screenshot of Admin Edit Workflow](img/resources/resourcesAdminEditWorkflow.PNG)
 
@@ -481,7 +481,7 @@ parent step assigned will become active as soon as the new record is
 submitted. Workflow steps that have an assigned parent step will become
 active once the parent step is marked as complete.
 
-### Edit user group
+#### Edit user group
 
 ![Screenshot of Admin Edit User Group](img/resources/resourcesAdminEditUserGroup.PNG)
 
@@ -492,7 +492,7 @@ active. Users that are assigned to the group will then have the
 in-process resource appear on the *Outstanding Tasks* tabs of their *My
 Queue* pages.
 
-### Import Configuration
+#### Import Configuration
 
 ![Screenshot of Admin Edit User Group](img/resources/resourcesAdminImportConfiguration.PNG)
 
@@ -501,7 +501,7 @@ Here, users can add a new import configuration or edit an existing configuration
 The instruction for adding a new one or editing an existing one is similar to what's in File Import section described earlier and a configuration name can be entered here. The corresponding column number in the importing csv file can be entered for any field shown in the screenshot. 
 
  
-### Other Admin Settings
+#### Other Admin Settings
 
 There are many other fields which can be customized through the *Admin*
 page. Select the field you wish to edit in the left hand column and then
@@ -511,7 +511,7 @@ this document. There is however an additional setting managed here on
 the *Admin* page which needs to be described in more detail; Alert
 Settings.
 
-### Alert settings
+#### Alert settings
 
 ![Screenshot of Admin Alert Settings](img/resources/resourcesAdminAlertSettings.PNG)
 
