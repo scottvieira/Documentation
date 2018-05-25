@@ -34,6 +34,7 @@ Appendix
    ebscokb
    export
    import
+   integration
    manual
    terms
    translation
