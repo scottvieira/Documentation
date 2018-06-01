@@ -58,8 +58,7 @@ Projects
 
    merge
    gokb
-   website
-
+   
 Indices and tables
 ==================
 
