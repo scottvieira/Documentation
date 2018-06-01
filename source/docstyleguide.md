@@ -74,7 +74,25 @@ Note:  Admin rights are required to merge the pull request.  Only members on the
 
 18. After clicking on the "Merge pull request" button click the “Confirm merge” button.  You should receive the message “Pull request successfully merged and closed.”  Go ahead and delete your branch by pushing the “Delete branch” button.  Doing this will keep your workflow cleaner.  Likewise, creating a new branch when needed will keep your working files closer to the master branch.   Once you have committed your changes they will be updated in generally less than a minute at [http://docs.coral-erm.org/](http://docs.coral-erm.org/).  If changes don’t appear right away, try refreshing the cache in your browser.
 
-19. You have finished the process of cloning the repo, creating a branch, making updates to the source files, committing the changes in your new branch to the repo, and finally merging those changes into the master branch.  
+19. You have finished the process of cloning the repo, creating a branch, making updates to the source files, committing the changes in your new branch to the repo, and finally merging those changes into the master branch.
+
+### Updating Documentation Versions 
+
+Follow instructions from "Basic Instructions on Getting Started with Github" with the following differences.
+
+To preserve a version of the documentation a branch repo has been created for that version.  You will want to clone that branch repo instead of the master repo.
+
+For example use the following git command to clone the branch:
+
+**`git clone -b v2.0.1-Documentation -single-branch https://github.com/coral-erm/Documentation.git`**
+
+Change the branch name, make your edits and use the git add, commit, and push commands as described under the "Basic Instructions..." 
+
+Use the following git push format:
+
+**`git push https://github.com/coral-erm/Documentation <your branchname>`**
+
+Once your new branch has been committed and pushed to Github be sure to setup the pull request to merge your branch into the version branch originally cloned.  
 
 
 ### File Structure and File Naming Conventions ###
