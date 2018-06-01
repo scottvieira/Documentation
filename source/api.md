@@ -36,6 +36,11 @@ Unauthorized IP: 127.0.0.1
 Edit api_client/index.php and set the $server variable:
 $server = "http://yourcoral.tld/resources/api/"; 
 
+### Install Composer, Flight and Unirest
+In addition, you'll need to install Composer, Flight and Unirest. Install Composer, then run the "php computer.phar install" command from inside the [CORAL BASE DIR]/resources/api/directory. This will bring in and manage the Flight dependency for you. 
+
+Then navigate to [CORAL BASE DIR]/resources/api_client/  and run the ‘php composer.phar install’ command again. This will bring in and manage the Unirest dependency for you. Check out  [https://packagist.org/](https://packagist.org/) for instruction on getting Composer installed. The exact composer install command might be slightly different depending on which Composer install option you choose.
+
 Note that the Acquisition Type is hardcoded to show two options Approved and Need Approval. This can be customized to show desired acquisition types by modifying index.php (in the api_client folder). Users can either edit line 330 or remove line 330 and line 334. See the code in the screenshot below. 
 
 ![Screenshot of API Client IndexPHP File](img/api/apiClientIndexphp.png)
