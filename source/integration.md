@@ -15,12 +15,17 @@ ilsConnector=koha
 ilsVendorRole="Vendor"
 ilsApiUrl="http://mykoha.tld/api/"
 ilsAdminUrl="http://pro.mykoha.tld/"
+# If you want to use OAuth:
+oauthid="coral"
+oauthsecret="secret"
 ```
 
 - `ilsConnector` is the name of the ILS you want to connect to.
 - `ilsVendorRole` is the Coral organization role you want to map with Koha vendors.
 - `ilsApiUrl` is Koha's API address.
 - `ilsAdminUrl` is Koha's intranet address.
+
+If your koha version supports OAuth authentication for the REST API, you can enable it using `oauthid` and `oauthsecret`.
 
 Once enabled, you can search for an existing vendor in Koha when creating an organization in Coral:
 
