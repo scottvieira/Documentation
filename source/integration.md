@@ -9,11 +9,13 @@ Currently only Koha is implemented, but interactions with other ILSes could be a
 
 Vendors can be synchronized between Coral and Koha. To enable this feature, you have to edit the `[ils]` section in `organizations/admin/configuration.ini`:
 
-`[ils]
+```
+[ils]
 ilsConnector=koha
 ilsVendorRole="Vendor"
 ilsApiUrl="http://mykoha.tld/api/"
-ilsAdminUrl="http://pro.mykoha.tld/"`
+ilsAdminUrl="http://pro.mykoha.tld/"
+```
 
 - `ilsConnector` is the name of the ILS you want to connect to.
 - `ilsVendorRole` is the Coral organization role you want to map with Koha vendors.
