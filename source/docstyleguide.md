@@ -1,4 +1,4 @@
-CORAL Documentation Style Guide
+git CORAL Documentation Style Guide
 -------------------------------
 
 ### About the Style Guide ###
@@ -48,7 +48,7 @@ Running this command will do a few things including identifying what github acco
 
 You will notice that there are two folders under Documentation.  Build and Source.  Most users will be working exclusively with the Source.  This is where the individual files for the documentation are to found.  There are two files types of importance:  .md = Markdown files and .rst = Restructured Files.  Restructured Files are Python files used by the Sphinx Documentation Generator.  We are using only one of these files at this time.  This file is being used primarily to create our Table of Contents structure.  For now, you will be editing primarily the Markdown files.  If using Microsoft Windows, you can use the recommended MarkPad 2 for Windows application to open the files.
 
-8. Make whatever edits you need to the Markdown files and be sure to save your changes.  Be sure to save your changes.  
+8. Make whatever edits you need to the Markdown files and be sure to save your changes. 
 
 9. Go back to your command line and change your working directory to the following.  For our example,  **`C:\Work\Documentation`**
 
