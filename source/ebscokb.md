@@ -1,11 +1,11 @@
-Using EBSCO's Knowledgebase with CORAL
+Using EBSCO's Knowledge Base with CORAL
 ---------------------------------
 
-### About CORAL and EBSCO's Knowledgebase Integration
+### About CORAL and EBSCO's Knowledge Base Integration (HoldingsIQ)
 
-If your library has access to EBSCO's link resolver, Full Text Finder, you can integrate the EBSCO Knowledge Base (EBSCO KB) with CORAL. Integrating the EBSCO KB enables your library to search Full Text Finder for titles, packages, and vendors within CORAL, as well as import titles and packages directly into CORAL. When you import titles or packages from EBSCO, CORAL automatically creates resources along with their titles, descriptions, access URLs, resource identifiers, subjects, and coverage dates. After you set up the integration, you can access CORAL's EBSCO KB feature.
+EBSCO offers a subscription service called HoldingsIQ for libraries that want to use the EBSCO Knowledge Base(EBSCO KB) to manage their holdings and linking information.  Integrating the EBSCO KB enables your library to search the EBSCO KB for titles, packages, and vendors within CORAL, as well as import titles and packages directly into CORAL.  When you import titles or packages from EBSCO, CORAL automatically creates resources along with their titles, descriptions, access URLs, resource identifiers, subjects, and coverage dates. After you set up the integration, you can access CORAL's EBSCO KB feature.
 
-Please note that EBSCO does not permit the importing of over 10,000 records at one time.  Attempting to import 10,000 or more records may cause a time-out or other EBSCO API error.
+Please note that EBSCO does not permit the importing of over 10,000 records at one time.  Attempting to import 10,000 or more records may cause a time-out or other error.  Also, the current implementation of CORAL does not support the ability to update holdings information from within CORAL.  
 
 Before you set up your integration and start importing information from the EBSCO KB, you should familiarize yourself with the terminology that EBSCO uses. The EBSCO KB uses the following three data types:
 
@@ -18,7 +18,7 @@ Before you set up your integration and start importing information from the EBSC
 
 ### Setting up the EBSCO KB
 
-Before you can integrate the EBSCO KB, your library must have an EBSCO Customer ID and a valid RM API key. If you have an EBSCO account and Customer ID but you do not have an RM API key, you can [request an RM API key](https://developer.ebsco.com/signup) from EBSCO. 
+Before you can integrate the EBSCO KB, your library must have an EBSCO Customer ID and have subscribed to HoldingsIQ.  If you have an EBSCO account and Customer ID but you do not have a HoldingsIQ key, you can [request an API Key Information](https://developer.ebsco.com/signup) from EBSCO. 
 
 Once you’ve received your API key, continue with the following steps to set up your EBSCO KB integration with CORAL:
 
@@ -46,11 +46,11 @@ Once you’ve set up the integration, you can search the EBSCO KB for titles, pa
 
 	**All**—Searches all titles from the EBSCO KB.
 
-	**Selected in EBSCO KB**—Searches only the titles that are selected in your EBSCO Full Text Finder instance.
+	**Selected in EBSCO KB**—Searches only the titles that are selected in your EBSCO holdings instance.
 
-	**Not Selected**—Searches only the titles that are not selected in your EBSCO Full Text Finder instance.
+	**Not Selected**—Searches only the titles that are not selected in your EBSCO holdings instance.
 
-	**Ordered through EBSCO**—Searches only the titles that are selected in your EBSCO Full Text Finder instance and were purchased through EBSCO.
+	**Ordered through EBSCO**—Searches only the titles that are selected in your EBSCO holdings instance and were purchased through EBSCO.
 
 6. Select the types of titles (e.g. Book Series or Newsletter) that you want to limit your search to from the Resource Type drop-down list.
 7. Click Go!.
@@ -70,11 +70,11 @@ After your search results are displayed, you can view the details for titles and
 
 	**All**—Searches all packages from the EBSCO KB.
 
-	**Selected in EBSCO KB**—Searches only the packages that are selected in your EBSCO Full Text Finder instance.
+	**Selected in EBSCO KB**—Searches only the packages that are selected in your EBSCO holdings instance.
 
-	**Not Selected**—Searches only the packages that are not selected in your EBSCO Full Text Finder instance.
+	**Not Selected**—Searches only the packages that are not selected in your EBSCO holdings instance.
 
-	**Ordered through EBSCO**—Searches only the packages that are selected in your EBSCO Full Text Finder instance and were purchased through EBSCO.
+	**Ordered through EBSCO**—Searches only the packages that are selected in your EBSCO holdings instance and were purchased through EBSCO.
 
 5. Select the types of packages (e.g. Print or Aggregated Full Text) that you want to limit your search to from the Content Type drop-down list.
 6. Click Go!.
@@ -179,7 +179,7 @@ Specifies the organization that CORAL should associate with the resource that is
 
 **Package Titles**
 
-Specifies which title information should be imported. A note displays how many titles within the package your library has associated with its EBSCO Full Text Finder instance. You can select the following options:
+Specifies which title information should be imported. A note displays how many titles within the package your library has associated with its EBSCO holdings instance. You can select the following options:
 
 - Selected titles only—Creates a new resource for each title within the package that is associated with your library’s EBSCO account.
 
