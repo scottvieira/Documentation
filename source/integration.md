@@ -7,7 +7,22 @@ Currently only Koha is implemented, but interactions with other ILSes could be a
 
 #### Koha
 
-Vendors can be synchronized between Coral and Koha. To enable this feature, you have to edit the `[ils]` section in `organizations/admin/configuration.ini`:
+##### Features
+Vendors can be synchronized between Coral and Koha.
+
+##### Prerequisites
+
+Koha 18.05 or later is needed to use OAuth authentication. Earlier versions of Koha used cookie-based authentication to access the REST API, which is not suitable in our case.
+
+##### Installation
+In Coral, install Unirest and league/oauth2-client in resources/api_client (composer might be the easiest way to do it)
+
+In Koha, install Net::OAuth2::AuthorizationServer and enable RESTOAuth2ClientCredentials syspref.
+
+##### Configuration
+In Koha, create a user for the REST API, edit this user, click on more -> manage API Keys -> Generate new client id/secret pair.
+
+In Coral, edit the `[ils]` section in `organizations/admin/configuration.ini`, and add/edit the following values:
 
 ```
 [ils]
@@ -15,17 +30,16 @@ ilsConnector=koha
 ilsVendorRole="Vendor"
 ilsApiUrl="http://mykoha.tld/api/"
 ilsAdminUrl="http://pro.mykoha.tld/"
-# If you want to use OAuth:
-oauthid="coral"
-oauthsecret="secret"
+oauthid="<paste Client ID generated in Koha>"
+oauthsecret="<paste Secret generated in Koha>"
 ```
 
 - `ilsConnector` is the name of the ILS you want to connect to.
 - `ilsVendorRole` is the Coral organization role you want to map with Koha vendors.
 - `ilsApiUrl` is Koha's API address.
 - `ilsAdminUrl` is Koha's intranet address.
-
-If your koha version supports OAuth authentication for the REST API, you can enable it using `oauthid` and `oauthsecret`.
+- `oauthid` is the client ID generated in Koha.
+- `oauthsecret` is the secret generated in Koha.
 
 Once enabled, you can search for an existing vendor in Koha when creating an organization in Coral:
 
