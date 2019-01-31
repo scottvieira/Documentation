@@ -17,7 +17,7 @@ Koha 18.05 or later is needed to use OAuth authentication. Earlier versions of K
 ##### Installation
 In Coral, install Unirest and league/oauth2-client in resources/api_client (composer might be the easiest way to do it)
 
-In Koha, install Net::OAuth2::AuthorizationServer and enable RESTOAuth2ClientCredentials syspref.
+In Koha, install Net::OAuth2::AuthorizationServer and enable RESTOAuth2ClientCredentials system preference.
 
 ##### Configuration
 In Koha, create a user for the REST API, edit this user, click on more -> manage API Keys -> Generate new client id/secret pair.
