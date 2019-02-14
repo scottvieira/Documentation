@@ -41,7 +41,7 @@ For example:
 
 **Question:** I subscribe to ERM through SirsiDynix and was wondering if there is a way to change the settings so that the database doesn’t “time out” so frequently?  
 
-**Answer:** There is a way to help fix the problem via a timeout variable in the configuration.ini for the Auth module. An example of the file is copied and pasted below. The variable is highlighted in bold red. The installation process for CORAL will prompt you to change the default, but there is no end user way to update the value after the installation process is complete, unless you or IT support (or SirsiDynix?) can manually access and edit the file. The value is in seconds.
+**Answer:** There is a way to help fix the problem via a timeout variable in the configuration.ini for the Auth module. An example of the file is copied and pasted below. The variable is highlighted in bold red. The installation process for CORAL will prompt you to change the default, but there is no end user way to update the value after the installation process is complete, unless you or IT support (or SirsiDynix?) can manually access and edit the file. The value is in seconds. iiiii
 
 > [settings]
 
@@ -61,5 +61,5 @@ For example:
 
 ### Technical
 
-<<<iiii
+
 
