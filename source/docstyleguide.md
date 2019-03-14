@@ -94,6 +94,10 @@ Use the following git push format:
 
 Once your new branch has been committed and pushed to Github be sure to setup the pull request to merge your branch into the version branch originally cloned.  
 
+### Updating the Table of Contents Structure (TOC)
+
+
+
 
 ### File Structure and File Naming Conventions ###
 
