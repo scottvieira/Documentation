@@ -108,7 +108,7 @@ Affiliates may volunteer or be invited by the WC. New affiliates are approved by
 
 Github Documentation Repository Governance
 
-Each WC member will be granted admin and ownership rights to the GitHub documentation repositories. Each Affiliate will be granted two accounts with admin rights to the GitHub documentation repositories that will supply merge rights for  contributions (if they want them). WC members are responsible for policing the documentation repositories on GitHub and making sure that all members follow agreed upon procedures and in accordance with the WC’s style guide. WC members may remove admin rights to documentation repositories as necessary. CB
+Each WC member will be granted admin and ownership rights to the GitHub documentation repositories. Each Affiliate will be granted two accounts with admin rights to the GitHub documentation repositories that will supply merge rights for  contributions (if they want them). WC members are responsible for policing the documentation repositories on GitHub and making sure that all members follow agreed upon procedures and in accordance with the WC’s style guide. WC members may remove admin rights to documentation repositories as necessary. 
 
 
 
