@@ -221,7 +221,7 @@ Once the search is inititiated, a list of mathcing packages will appear containi
 
 1. Name - containing the package name with vendor in parenthesis.
 2. Title Count - The number of EBSCO Kb titles associated with the package with the number selected by your library appearing in parenthesis. 
-3. Content Typr - The content type of the package.
+3. Content Type - The content type of the package.
 4. Current Status - The status of the package in CORAL.
 5. Current Holdings - The holdings from EBSCO Kb
 
