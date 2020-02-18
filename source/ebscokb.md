@@ -220,24 +220,24 @@ Select Packages from the dropdown menu. Searching by a package name is currently
 Once the search is inititiated, a list of mathcing packages will appear containing the follwing details:
 
 1. Name - containing the package name with vendor in parenthesis.
-2. Title Count - The number of EBSCO Kb titles associated with the package with the number selected by your library appearing in parenthesis. 
+2. Title Count - The number of EBSCO KB titles associated with the package with the number selected by your library appearing in parenthesis. 
 3. Content Type - The content type of the package.
 4. Current Status - The status of the package in CORAL.
-5. Current Holdings - The holdings from EBSCO Kb
+5. Current Holdings - The holdings from EBSCO KB.
 
 #### Package Statuses
-The package status indicates the relationship of the package between EBSCO Kb and CORAL. There are four possible statuses.
+The package status indicates the relationship of the package between EBSCO KB and CORAL. There are four possible statuses.
 
-Not Selected & Not Imported. The table cell will be blank, indicating that the package is not selected in EBSCO Kb and has no corresponding CORAL Resource record.
+Not Selected & Not Imported. The table cell will be blank, indicating that the package is not selected in EBSCO KB and has no corresponding CORAL Resource record.
 
-Not Selected & Imported. The table cell will have a delete symbol and a “Delete from CORAL” message. This indicates that the package is not selected in EBSCO Kb, but has a corresponding Coral Resource record. Clicking on “Delete from CORAL” will present the option to delete the CORAL Resource and all child records (if applicable).
+Not Selected & Imported. The table cell will have a delete symbol and a “Delete from CORAL” message. This indicates that the package is not selected in EBSCO KB, but has a corresponding Coral Resource record. Clicking on “Delete from CORAL” will present the option to delete the CORAL Resource and all child records (if applicable).
 
-Selected & Not Imported. The table cell will have a warning symbol and a “Import Package” message. This indicates that the package is selected in EBSCO Kb, but does not have a corresponding Coral Resource record. Clicking on “Import Package” will start the import package process (see below).
+Selected & Not Imported. The table cell will have a warning symbol and a “Import Package” message. This indicates that the package is selected in EBSCO KB, but does not have a corresponding Coral Resource record. Clicking on “Import Package” will start the import package process (see below).
 
-Selected & Imported. The table cell with have a check mark and a “View in CORAL” message. This indicates that the package is selected in EBSCO Kb and has a corresponding Coral Resource record. Clicking on “View in CORAL” will take you to the Resource page.
+Selected & Imported. The table cell with have a check mark and a “View in CORAL” message. This indicates that the package is selected in EBSCO KB and has a corresponding Coral Resource record. Clicking on “View in CORAL” will take you to the Resource page.
 
 #### Package Holdings
-The package holdings allow you to make changes in EBSCO Kb. Clicking on the button will present you will options to toggle the package’s status and import or delete the package from CORAL (if it has been imported).
+The package holdings allow you to make changes in EBSCO KB. Clicking on the button will present you will options to toggle the package’s status and import or delete the package from CORAL (if it has been imported).
 For packages that are Not Selected, you can either select the package and, if the package doesn’t not have a Resource record in CORAL, import the package.
 Note: Selecting a package will select it and ALL of its titles. For a-la-carte title selection, click on View Titles and see information about title holdings below.
 
