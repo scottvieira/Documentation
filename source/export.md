@@ -7,7 +7,7 @@ The export feature allows users to retrieve data from the Resources module in CS
 
 To export resources, click the green Excel icon on the right side of the screen, under the Change Module menu.   
 
-![Screenshot of Resources module with Export button](img/export/exportButton.png)
+![Screenshot of Resources module with Export button](img/export/exportButton.PNG)
 
 Note: If your Resources module has a lot of records, you may need to wait for the file to be prepared. 
 
