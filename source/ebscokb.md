@@ -217,7 +217,7 @@ After you start an import, a progress tracker displays. For large imports (great
 
 Select Packages from the dropdown menu. Searching by a package name is currently the only option, but results can be filtered by Selection and Content type.
 
-Once the search is inititiated, a list of mathcing packages will appear containing the follwing details:
+Once the search is initiated, a list of matching packages will appear containing the following details:
 
 1. Name - containing the package name with vendor in parenthesis.
 2. Title Count - The number of EBSCO KB titles associated with the package with the number selected by your library appearing in parenthesis. 
