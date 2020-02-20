@@ -225,8 +225,6 @@ Once the search is initiated, a list of matching packages will appear containing
 4. Current Status - The status of the package in CORAL.
 5. Current Holdings - The holdings from EBSCO KB.
 
-![Screenshot of EBSCO KB Package Search Coral](img/ebscokb/ebscokbPackageSearchCoral.PNG)
-
 #### Package Statuses
 The package status indicates the relationship of the package between EBSCO KB and CORAL. There are four possible statuses.
 
