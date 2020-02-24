@@ -13,6 +13,8 @@ CORAL Management has three components in the primary navigation at the top of ea
 - New Document
 - Admin
 
+![Screenshot of Management Home Page](img/management/managementHomepage.png)
+
 Document records are listed alphabetically by name and the name field can be searched. Additionally, the records can be filtered by category and document type.
 
 #### New Document
@@ -50,7 +52,7 @@ Selecting the *Add Optional Note* link allows notes to be linked to the document
 Once a document record has been created, the document record opens. A document record can also be opened by selecting it from the *Home* screen.
 
 
-![Screenshot of Management's Editing a Document Record](img/management/managementEditDocumentRecord.png)
+ ![Screenshot of Management's Editing a Document Record](img/management/managementEditDocumentRecord.png)
 
 
 The above record is for a Cancellation of an E-Journal checklist. Below the name is the description of the document, the associated categories, the documents creation date and creator, and the date the record was last updated and by whom. 

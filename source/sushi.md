@@ -5,9 +5,8 @@ SUSHI
 
 The following pages are recommended reading for anyone new to setting up the SUSHI functionality in CORAL.
 
-[NISO SUSHI Tools and Other Aids](https://www.niso.org/standards-committees/sushi/sushi-tools "NISO SUSHI Tools and Other Aids")
-
 [Known SUSHI Compliant Vendors](https://www.projectcounter.org/about/register/ "Known SUSHI Compliant Vendors")
+[NISO SUSHI Tools and Other Aids](https://www.niso.org/standards-committees/sushi/sushi-tools "NISO SUSHI Tools and Other Aids")
 
 #### Confirmed Providers
 
