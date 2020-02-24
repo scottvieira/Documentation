@@ -244,6 +244,3 @@ Note: Selecting a package will select it and ALL of its titles. For a-la-carte t
 For packages that are Selected, you can either deselect the package, and if the package has a corresponding Resource record in CORAL, delete the record.
 Note: Deselecting a package will deselect it and ALL of its titles.
 
-
-
-
