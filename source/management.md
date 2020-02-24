@@ -16,7 +16,7 @@ CORAL Management has three components in the primary navigation at the top of ea
 
 #### Home
 
-![Screenshot of Management Home Page](img/management/managementHomePage.png)
+![Screenshot of Management Home Page](img/management/managementHomepage.png)
 
 Document records are listed alphabetically by name and the name field can be searched. Additionally, the records can be filtered by category and document type.
 
