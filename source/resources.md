@@ -27,7 +27,6 @@ CORAL Resources Module User Guide
  • Admin
 
 #### Home
-========
 
 ![Screenshot of Resources Home Page](img/resources/Resources_Module_Home_3.0.png)
 
@@ -111,6 +110,9 @@ a record in CORAL.
 
 ##### Add new note
 
+
+
+
 ![Screenshot of Add New Note](img/resources/resourcesAddNewNote.PNG)
 
 An additional notes feature has been added to the *Product*,
@@ -126,6 +128,9 @@ customized through the *Admin* page.
 The Orders information allows for tracking of multiple orders for each resource.  Users can choose between "create new order," "clone order," and "edit order information."  
 
 ##### Create and Edit order information
+
+
+
 
 ![Screenshot of Edit Orders](img/resources/resourcesEditOrder.PNG)
 
@@ -164,6 +169,8 @@ System Number fields are meant to provide match points with the ILS.
 
 ##### Edit Cost History
 
+
+
 ![Screenshot of Edit Cost History](img/resources/resourcesEditCostInformation.PNG)
 
 Additional cost history can be added through the *Edit Cost History* link. This allows to track cost history for the same resource. 
@@ -173,6 +180,8 @@ Note: If enhanced cost history is enabled, then the user will see the following 
 ![Screenshot of Enhanced Cost History View](img/resources/resourcesEnhancedCostHistory.PNG)
 
 ##### Edit license and status
+
+
 
 ![Screenshot of Edit Licenses](img/resources/resourcesEditLicenses.PNG)
 
@@ -290,15 +299,23 @@ values for Login Type can be edited through the *Admin* page.
 
 Issues related to a resource can be recorded in the *Issues* tab. Users can report an issue, view open issues or view archived issues. Downtime can also be recorded under Downtime section, where users may report a new downtime, or view current/upcoming downtime or view archived downtime.    
 
+
+
 ![Screeshot of Report New Problem](img/resources/resourcesReportNewProblem.PNG)
 
 The *Report New Issue* link allows users to enter a new issue. There are several required fields marked with a red star. To add a contact, use the *Add Contact* link. Users may choose to CC themselves or add additional CCs. All contacts and CCs will receive an email alert about the issue. Fill in the Subject field and a brief description about the issue in the Body field. The *Applies to* check box has three options and users can select only one of them. For the *Applies to all Project Euclid resources* option (shown in the example here), the issues will be recorded for all Project Euclid resource records in CORAL. If *Applies to selected Project Euclid resources* option is selected (as shown in the figure), a list of the available resources from the same organization will show up and users can select one or multiple items on the list. In the example shown, both items on the list are selected. 
+
+
+
 
 ![Screenshot of View Open Issues](img/resources/resourcesViewOpenIssues.PNG)
 
 To look at all open issues, users can click on *View Open Issues* link and all open issues will be expanded below the linking text. Open issues can be closed by clicking on the *Close* link in the same view. See screenshot above. Open issues can be downloaded in a csv file by clicking on the excel icon beside the text View Open Issues. 
 
 The *View Archived Issues* link will display all archived/closed issues. Users can also download closed issues in a csv file by clicking on the excel icon. 
+
+
+
 
 ![Screenshot of Resource Downtime Report](img/resources/resourcesResourceDowntimeReport.PNG)
 
@@ -314,6 +331,9 @@ The *View Current/Upcoming Downtime* will display all current or upcoming downti
 
 Additional documents relevant to the resource can be uploaded and made
 available through the *Attachments* tab. Multiple attachments are grouped and sorted by attachment type.
+
+
+
 
 ![Screenshot of Add New Attachment](img/resources/resourcesAddNewAttachment.PNG)
 
@@ -434,6 +454,9 @@ user privilege and access is set.
 
 ##### Edit User
 
+
+
+
 ![Screenshot of Edit User](img/resources/resourcesEditUser.PNG)
 
 The first tab on the page is for editing user accounts. There are three
@@ -482,6 +505,9 @@ submitted. Workflow steps that have an assigned parent step will become
 active once the parent step is marked as complete.
 
 ##### Edit user group
+
+
+
 
 ![Screenshot of Admin Edit User Group](img/resources/resourcesAdminEditUserGroup.PNG)
 
