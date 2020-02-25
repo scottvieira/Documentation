@@ -35,7 +35,8 @@ There are four facets for search.  These facets can be used in conjunction.
 
 #### New Organization
 
-![Screenshot of Add New Organizations window](img/organizations/organizationsAddNewOrganization.png)
+
+ ![Screenshot of Add New Organizations window](img/organizations/organizationsAddNewOrganization.png)
 
 
 Select *New Organization* from the main navigation to begin adding new organization records.
