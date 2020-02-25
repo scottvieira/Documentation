@@ -109,10 +109,6 @@ that were no longer available but for which there was value in retaining
 a record in CORAL.
 
 ##### Add new note
-
-
-
-
 ![Screenshot of Add New Note](img/resources/resourcesAddNewNote.PNG)
 
 An additional notes feature has been added to the *Product*,
@@ -122,16 +118,11 @@ provide context to the note. The values for the Note Type field can be
 customized through the *Admin* page.
 
 ##### Orders
-
 ![Screenshot of Orders](img/resources/resourcesOrders.PNG)
 
 The Orders information allows for tracking of multiple orders for each resource.  Users can choose between "create new order," "clone order," and "edit order information."  
 
 ##### Create and Edit order information
-
-
-
-
 ![Screenshot of Edit Orders](img/resources/resourcesEditOrder.PNG)
 
  The order information can be created, cloned, or edited by using the create, clone, or edit order links located under Orders. The orders information is meant to provide description to local acquisitions. The *Acquisition Type* field is the same as was entered on
@@ -161,28 +152,20 @@ System Number fields are meant to provide match points with the ILS.
 
 
 ##### Acquisitions
-
 ![Screenshot of Acquisition](img/resources/resourcesAcquisition.PNG)
 
  The Acquisitions tab contains details of the libraries’ acquisition of
  the resource such as order number, cost, fund, license status, etc.
 
 ##### Edit Cost History
-
-
-
 ![Screenshot of Edit Cost History](img/resources/resourcesEditCostInformation.PNG)
 
 Additional cost history can be added through the *Edit Cost History* link. This allows to track cost history for the same resource. 
 
 Note: If enhanced cost history is enabled, then the user will see the following additional fields.
-
 ![Screenshot of Enhanced Cost History View](img/resources/resourcesEnhancedCostHistory.PNG)
 
 ##### Edit license and status
-
-
-
 ![Screenshot of Edit Licenses](img/resources/resourcesEditLicenses.PNG)
 
  The *Acquisitions* tab includes information about the relevant
@@ -200,8 +183,7 @@ Note: If enhanced cost history is enabled, then the user will see the following 
  of the resource record for quick navigation between modules.
 
 ##### Access
-
-![Screenshot of Access](img/resources/resourcesAccess.PNG)
+ ![Screenshot of Access](img/resources/resourcesAccess.PNG)
 
 The *Access* tab includes the information about how the resource is
 accessed including things such as IP versus username/password
@@ -210,8 +192,7 @@ access information can be edited by using the edit access information
 link or the matching edit icon.
 
 ##### Edit access information
-
-![Screenshot of Edit Access](img/resources/resourcesEditAccess.PNG)
+ ![Screenshot of Edit Access](img/resources/resourcesEditAccess.PNG)
 
  The values for all fields on the *Access* tab except for username and
  password can be customized through the *Admin* page. The Authorized Site
@@ -237,7 +218,6 @@ link or the matching edit icon.
  *Accounts* tab.
 
 ##### Cataloging
-
  ![Screenshot of Cataloging](img/resources/resourcesCataloging.PNG)
 
  The *Cataloging* tab includes data and workflow information related to
@@ -278,8 +258,7 @@ Resources Module includes a Contact Role field for each contact
 through the *Admin* page.
 
 ##### Account
-
-![Screenshot of Accounts](img/resources/resourcesAccount.PNG)
+ ![Screenshot of Accounts](img/resources/resourcesAccount.PNG)
 
 The *Accounts* tab is the same as is found on an organization record in
 the Organizations Module. It is intended to store the login credentials
@@ -294,34 +273,24 @@ Organizations, the Resources Module includes a Login Type field. The
 values for Login Type can be edited through the *Admin* page.
 
 ##### Issues
-
-![Screenshot of Attachments](img/resources/resourcesIssues.PNG)
+ ![Screenshot of Attachments](img/resources/resourcesIssues.PNG)
 
 Issues related to a resource can be recorded in the *Issues* tab. Users can report an issue, view open issues or view archived issues. Downtime can also be recorded under Downtime section, where users may report a new downtime, or view current/upcoming downtime or view archived downtime.    
 
-
-
-![Screeshot of Report New Problem](img/resources/resourcesReportNewProblem.PNG)
+ ![Screeshot of Report New Problem](img/resources/resourcesReportNewProblem.PNG)
 
 The *Report New Issue* link allows users to enter a new issue. There are several required fields marked with a red star. To add a contact, use the *Add Contact* link. Users may choose to CC themselves or add additional CCs. All contacts and CCs will receive an email alert about the issue. Fill in the Subject field and a brief description about the issue in the Body field. The *Applies to* check box has three options and users can select only one of them. For the *Applies to all Project Euclid resources* option (shown in the example here), the issues will be recorded for all Project Euclid resource records in CORAL. If *Applies to selected Project Euclid resources* option is selected (as shown in the figure), a list of the available resources from the same organization will show up and users can select one or multiple items on the list. In the example shown, both items on the list are selected. 
 
-
-
-
-![Screenshot of View Open Issues](img/resources/resourcesViewOpenIssues.PNG)
+ ![Screenshot of View Open Issues](img/resources/resourcesViewOpenIssues.PNG)
 
 To look at all open issues, users can click on *View Open Issues* link and all open issues will be expanded below the linking text. Open issues can be closed by clicking on the *Close* link in the same view. See screenshot above. Open issues can be downloaded in a csv file by clicking on the excel icon beside the text View Open Issues. 
 
 The *View Archived Issues* link will display all archived/closed issues. Users can also download closed issues in a csv file by clicking on the excel icon. 
-
-
-
-
-![Screenshot of Resource Downtime Report](img/resources/resourcesResourceDowntimeReport.PNG)
+ ![Screenshot of Resource Downtime Report](img/resources/resourcesResourceDowntimeReport.PNG)
 
 Users can record downtime related to the resource record via the *Report New Downtime* link. The downtime report includes downtime start date, downtime resolution date, problem type and some notes. Please note, when it reaches the downtime resolution date, the downtime report will be archived automatically. If the Downtime Resolution date is not entered here, a *Resolve* link will show in the *View Current/Upcoming Downtime* link shown the figure below. Problem Type can be configured in *Admin* Downtime Type tab. New downtime can also be entered in the Organizations Module. Please note Report New Downtime in Organizations module is an optional feature, which can be turned on by updating the Organization module configuration file (resourceIssues=Y).
-
-![Screenshot of View current Downtime](img/resources/resourcesViewCurrentDowntime.PNG)
+ 
+ ![Screenshot of View current Downtime](img/resources/resourcesViewCurrentDowntime.PNG)
 
 The *View Current/Upcoming Downtime* will display all current or upcoming downtime reports, either organizational level or resource level. To archive/close a downtime report, click on the *resolve* link and the archived downtime should appear in the *View Archived Downtime* section. Please note, there is a bug here, resolved downtime reports are not displaying in the designated section. A bug fix is in progress. Organization related downtime should be entered in the *Organization* module. 
 
@@ -332,10 +301,7 @@ The *View Current/Upcoming Downtime* will display all current or upcoming downti
 Additional documents relevant to the resource can be uploaded and made
 available through the *Attachments* tab. Multiple attachments are grouped and sorted by attachment type.
 
-
-
-
-![Screenshot of Add New Attachment](img/resources/resourcesAddNewAttachment.PNG)
+ ![Screenshot of Add New Attachment](img/resources/resourcesAddNewAttachment.PNG)
 
  New attachments are added using the *Add New Attachment* link. The Name
  field is intended to be a descriptive name for the attachment. The
@@ -505,11 +471,7 @@ submitted. Workflow steps that have an assigned parent step will become
 active once the parent step is marked as complete.
 
 ##### Edit user group
-
-
-
-
-![Screenshot of Admin Edit User Group](img/resources/resourcesAdminEditUserGroup.PNG)
+ ![Screenshot of Admin Edit User Group](img/resources/resourcesAdminEditUserGroup.PNG)
 
 Each step or task in a workflow must be assigned to a user group. Enter
 a group name and a group email address. An email alert will be sent to
@@ -538,8 +500,7 @@ the *Admin* page which needs to be described in more detail; Alert
 Settings.
 
 ##### Alert settings
-
-![Screenshot of Admin Alert Settings](img/resources/resourcesAdminAlertSettings.PNG)
+ ![Screenshot of Admin Alert Settings](img/resources/resourcesAdminAlertSettings.PNG)
 
 These alert settings determine the functionality of the alert feature
 associated with the subscription period end date on the *Acquisitions*
