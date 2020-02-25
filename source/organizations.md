@@ -36,7 +36,8 @@ There are four facets for search.  These facets can be used in conjunction.
 #### New Organization
 
 
- ![Screenshot of Add New Organizations window](img/organizations/organizationsAddNewOrganization.png)
+
+![Screenshot of Add New Organizations window](img/organizations/organizationsAddNewOrganization.png)
 
 
 Select *New Organization* from the main navigation to begin adding new organization records.
@@ -132,8 +133,10 @@ The Licenses tab provides links to the license records entered into [CORAL Licen
 
 The Admin page is where you can manage the module's user privileges as well as edit the values for organization role, contact role, alias type, external login type, and issue type.
   
-###### Adding New Users####
+#### Adding New Users
 The *add new user* link on the Admin page opens the following window.  
+
+
 ![Screen shot for adding new user](img/organizations/organizationsAddNewUser.png)
 
 If you utilize your institution's existing authentication system, the *Login ID* would be the user’s campus ID.
