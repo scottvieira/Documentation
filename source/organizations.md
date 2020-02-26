@@ -19,7 +19,7 @@ CORAL Organizations has three major components in the main navigation at the top
 
 The home screen contains a search on the left and a list of organizations on the right.  The up and down arrows in the table header can be used to sort the organizations by name, alias, parent, or role.
 
-![Screenshot of Organizations Home Page](img/organizations/organizationsHomePage.png)
+ ![Screenshot of Organizations Home Page](img/organizations/organizationsHomePage.png)
 
 There are four facets for search.  These facets can be used in conjunction.
 
@@ -35,10 +35,7 @@ There are four facets for search.  These facets can be used in conjunction.
 
 #### New Organization
 
-
-
 ![Screenshot of Add New Organizations window](img/organizations/organizationsAddNewOrganization.png)
-
 
 Select *New Organization* from the main navigation to begin adding new organization records.
 
