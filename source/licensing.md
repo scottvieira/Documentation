@@ -138,6 +138,7 @@ record.
 
 ##### Adding Expressions
 The *Add New Expression* link opens a pop-up window, where you can add expressions for the documents that have been previously loaded.
+
 ![screenshot of the Expressions form.  There are 3 fields.](img/licensing/licensingAddNewExpression.png)
 
 - **Document:** The document name for which you want to add a new expression. The drop-down is pre-populated from the existing document names in the specific license record. This is a required field.
@@ -164,10 +165,6 @@ in this document. Display notes are intended to be displayed outside the module,
 
 The *Add/view Display Notes* link opens a window which allows you to enter multiple display notes. It also displays the Document Text on that same window so that you can refer back to it while adding the notes. The sort order of multiple notes can also be adjusted
 through this same window. 
-
-
-![screenshot of internal notes window](img/licensing/licensingViewEditInternalNotes.png)
-
 
 In the below example, the Interlibrary Loan expression type has been set to use Display Notes and as such the expression is presented with an additional checkbox to the left of the Document Text. 
 
