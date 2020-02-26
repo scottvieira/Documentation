@@ -171,6 +171,8 @@ In the below example, the Interlibrary Loan expression type has been set to use 
 
 !source/img/licensing/licensingAddExpressionDisplayNote.png "screenshot of display note")
 
+![screenshot](img/licensing/licensingTermsTool.png "licensingAddExpressionDisplayNote")
+
 
 ![[screenshot of display notes window](img/licensing/licensingInternalversusDisplayNote.png)
 
