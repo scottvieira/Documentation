@@ -16,7 +16,7 @@ managing agreements. The module allows users to identify license
 clauses most important to record and track from an institutional point
 of view. With related features like a clause comparison function, and
 ILL and course pack terms tools that can be implemented to deliver
-terms through other systems such as SFX, Serials Solutions, or EBSCO. The CORAL Licensing module
+terms through other systems such as SFX, Serials Solutions, or EBSCO, the CORAL Licensing module
 provides a way to make better use of permissions included in the
 license agreement.
 
