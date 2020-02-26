@@ -165,10 +165,6 @@ in this document. Display notes are intended to be displayed outside the module,
 The *Add/view Display Notes* link opens a window which allows you to enter multiple display notes. It also displays the Document Text on that same window so that you can refer back to it while adding the notes. The sort order of multiple notes can also be adjusted
 through this same window. 
 
-
-![screenshot of internal notes window](img/licensing/licensingViewEditInternalNotes.png)
-
-
 In the below example, the Interlibrary Loan expression type has been set to use Display Notes and as such the expression is presented with an additional checkbox to the left of the Document Text. 
 
 ![[screenshot of display notes window](img/licensing/licensingInternalversusDisplayNote.png)
