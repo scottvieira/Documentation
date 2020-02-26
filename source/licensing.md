@@ -138,6 +138,7 @@ record.
 
 ##### Adding Expressions
 The *Add New Expression* link opens a pop-up window, where you can add expressions for the documents that have been previously loaded.
+
 ![screenshot of the Expressions form.  There are 3 fields.](img/licensing/licensingAddNewExpression.png)
 
 - **Document:** The document name for which you want to add a new expression. The drop-down is pre-populated from the existing document names in the specific license record. This is a required field.
