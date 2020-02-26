@@ -168,13 +168,7 @@ through this same window.
 
 In the below example, the Interlibrary Loan expression type has been set to use Display Notes and as such the expression is presented with an additional checkbox to the left of the Document Text. 
 
-
-!source/img/licensing/licensingAddExpressionDisplayNote.png "screenshot of display note")
-
 ![screenshot](img/licensing/licensingTermsTool.png "licensingAddExpressionDisplayNote")
-
-
-![[screenshot of display notes window](img/licensing/licensingInternalversusDisplayNote.png)
 
 Internal Notes do not receive this checkbox. When the licensing librarian or other
 appropriate personnel has finished editing the expression
