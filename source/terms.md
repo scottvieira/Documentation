@@ -38,7 +38,7 @@ The Terms Tool now has the information it needs to operate and can perform the q
 
 ### Terms Tool in Action
 
-The following screenshot shows the Terms Tool display for the journal "Aeronautical journal" (issn 0001-9240).  This screenshot is taken from a live in-use terms tool instance that has customized expression types that differentiate between print and electronic.  
+The following screenshot shows the Terms Tool display for the journal "Aeronautical Journal" (issn 0001-9240).  This screenshot is taken from a live in-use terms tool instance that has customized expression types that differentiate between print and electronic.  
 
 ![screenshot of terms tool display of links to terms.](img/terms/TermsDisplayLinks.PNG)
 
