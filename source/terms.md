@@ -38,13 +38,13 @@ The Terms Tool now has the information it needs to operate and can perform the q
 
 ### Terms Tool in Action
 
-The following screenshot shows the Terms Tool display for the journal "Aeronautical journal" (issn 0001-9240).  This screenshot is taken from a live in-use terms tool instance that has customized expression types that differentiate between print and electronic.  
+The following screenshot shows the Terms Tool display for the journal "Aeronautical Journal" (issn 0001-9240).  This screenshot is taken from a live in-use terms tool instance that has customized expression types that differentiate between print and electronic.  
 
-![screenshot of terms tool display of links to terms.](img/terms/termsTermsDisplayLinks.png)
+![screenshot of terms tool display of links to terms.](img/terms/TermsDisplayLinks.PNG)
 
 At this point the Terms Tool has already queried both the openURL resolver and then CORAL Licensing and identified that Coursepack, Course Reserves, and Interlibrary Loan terms are available for this journal. The link for Interlibrary Loan leads to the following screenshot.  
 
-![screenshot of terms tool display of terms](img/terms/termsTermsDisplay.png)
+![screenshot of terms tool display of terms](img/terms/TermsDisplay.PNG)
 
 And in the above screenshot the user now sees the specific interlibrary loan license terms for this journal. Access to this journal is available via Cambridge University Press and interlibrary loan use is *Not Clear* (note that this is fabricated data).  
 
@@ -53,7 +53,7 @@ The *Display Notes* from the license record detail how the interlibrary loan is 
 The Terms Tool will display terms for all providers when the library does have access through multiple providers.  In this example, access is also provided through Proquest Education Journals.  If no interlibrary loan license terms are available for a provider the Terms Tool will show that as well as in the
 following example:
 
-![screenshot of terms tool display of providers with no entered license terms](img/terms/termsProviderNoTerms.png)
+![screenshot of terms tool display of providers with no entered license terms](img/terms/termsProviderNoTerms.PNG)
 
 
 Again, please note that the license terms in these screenshots are all
