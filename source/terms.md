@@ -40,7 +40,7 @@ The Terms Tool now has the information it needs to operate and can perform the q
 
 The following screenshot shows the Terms Tool display for the journal "Aeronautical journal" (issn 0001-9240).  This screenshot is taken from a live in-use terms tool instance that has customized expression types that differentiate between print and electronic.  
 
-![screenshot of terms tool display of links to terms.](img/terms/termsTermsDisplayLinks.png)
+![screenshot of terms tool display of links to terms.](source/img/terms/TermsDisplayLinks.PNG)
 
 At this point the Terms Tool has already queried both the openURL resolver and then CORAL Licensing and identified that Coursepack, Course Reserves, and Interlibrary Loan terms are available for this journal. The link for Interlibrary Loan leads to the following screenshot.  
 
