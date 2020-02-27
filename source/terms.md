@@ -3,7 +3,7 @@ Terms Tool User Guide
 
 ### About the CORAL Terms Tool
 
-An add-on to CORAL Licensing, the Terms Tool enables key stakeholders such as interlibrary loan staff to view the license terms without needing direct access to CORAL Licensing. The tool allows authorized users to retrieve license terms for a specific resource based on an ISSN or ISBN query. In addition to CORAL Licensing, the Terms Tool requires the installing site to have either the SFX or SerialsSolutions openURL resolver (or alternatively any openURL resolver with an API). The Terms Tool queries the openURL resolver for a specific ISSN or ISBN, retrieves the list of available providers for that ISSN/ISBN, and then queries CORAL Licensing for the license terms for each provider. It is a multi-step process but it all takes place behind the scenes and results in a seamless easy to use process for the user.
+An add-on to CORAL Licensing, the Terms Tool enables key stakeholders such as interlibrary loan staff to view the license terms without needing direct access to CORAL Licensing. The tool allows authorized users to retrieve license terms for a specific resource based on an ISSN or ISBN query. In addition to CORAL Licensing, the Terms Tool requires the installing site to have either the SFX, Serials Solutions, or EBSCO openURL resolver (or alternatively any openURL resolver with an API). The Terms Tool queries the openURL resolver for a specific ISSN or ISBN, retrieves the list of available providers for that ISSN/ISBN, and then queries CORAL Licensing for the license terms for each provider. It is a multi-step process but it all takes place behind the scenes and results in a seamless easy to use process for the user.
 
 *Please note that screenshots and text in this document are just examples and do not necessarily reflect terms for a particular resource.*
 
@@ -21,7 +21,7 @@ This license record  shows both the *Coursepacks* and *Interlibrary Loan *expres
  checkbox is selected.
 
 
-![screenshot of the update user information pop-up](img/terms/termsToolEmail.png)
+![Update user information Terms Tool](img/terms/termsToolEmail.png)
 
 ### Mapping License Terms to Resources
 
@@ -36,7 +36,7 @@ the document "Cambridge University Press License Agreement" and the SFX target n
 ![screenshot of table of terms tool resource links](img/terms/termsResourceLink.PNG)
 
 
-The Terms Tool now has the information it needs to operate. The scenario is as follows. The Terms Tool receives an ISSN via the url *http://.../coral/terms/?issn=XXXX-XXXX*. The Terms Tool sends a query with the provided issn to the library’s openURL resolver. The openURL  resolver returns an xml reply listing all of the provider names (SFX’s target public name or SerialsSolutions’ databaseName) for the provided ISSN. The Terms Tool queries CORAL Licensing for all license  agreements which have been mapped to each provider name and retrieves  all of the associated license terms from the identified license agreements. The terms are then displayed on screen to the user.
+The Terms Tool now has the information it needs to operate. The scenario is as follows. The Terms Tool receives an ISSN via the url *http://.../coral/terms/?issn=XXXX-XXXX*. The Terms Tool sends a query with the provided issn to the library’s openURL resolver. The openURL  resolver returns an xml reply listing all of the provider names (SFX’s target public name or Serials Solutions’ Database Name) for the provided ISSN. The Terms Tool queries CORAL Licensing for all license  agreements which have been mapped to each provider name and retrieves  all of the associated license terms from the identified license agreements. The terms are then displayed on screen to the user.
 
 ### Terms Tool in Action
 
