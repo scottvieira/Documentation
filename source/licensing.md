@@ -39,7 +39,7 @@ the top of each page.
 
 #### Home
 
-![image of home screen for Licensing modules.  Search features are on the left and a table of licenses on the right.](img/licensing/licensingHome.png)
+![Home screen for Licensing modules.  Search features are on the left and a table of licenses on the right.](img/licensing/licensingHome.png)
 
 
 The home screen contains a search on the left and a list of license records on the right. The search runs against the following fields: license name, publisher/provider, consortium, license status, document type, and expression type.   
