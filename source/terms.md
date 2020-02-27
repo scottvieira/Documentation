@@ -3,7 +3,7 @@ Terms Tool User Guide
 
 ### About the CORAL Terms Tool
 
-An add-on to CORAL Licensing, the Terms Tool enables key stakeholders such as interlibrary loan staff to view the license terms without needing direct access to CORAL Licensing. The tool allows authorized users to retrieve license terms for a specific resource based on an ISSN or ISBN query. In addition to CORAL Licensing, the Terms Tool requires the installing site to have either the SFX, Serials Solutions, or EBSCO openURL resolver (or alternatively any openURL resolver with an API). The Terms Tool queries the openURL resolver for a specific ISSN or ISBN, retrieves the list of available providers for that ISSN/ISBN, and then queries CORAL Licensing for the license terms for each provider. It is a multi-step process but it all takes place behind the scenes and results in a seamless easy to use process for the user.
+An add-on to CORAL Licensing, the Terms Tool enables key stakeholders such as interlibrary loan staff to view the license terms without needing direct access to CORAL Licensing. The tool allows authorized users to retrieve license terms for a specific resource based on an ISSN or ISBN query. In addition to CORAL Licensing, the Terms Tool requires the installing site to have either the SFX, Ex Libris, formerly Serials Solutions, or EBSCO link resolver (or alternatively any link resolver with an API). The Terms Tool queries the link resolver for a specific ISSN or ISBN, retrieves the list of available providers for that ISSN/ISBN, and then queries CORAL Licensing for the license terms for each provider. It is a multi-step process that takes place behind the scenes and results in a seamless easy to use process for the user.
 
 *Please note that screenshots and text in this document are just examples and do not necessarily reflect terms for a particular resource.*
 
@@ -29,18 +29,18 @@ At this point there is a completed license record showing the terms for the lice
 
 The task is to identify which journals are covered by the "Cambridge University Press License Agreement" license agreement. This is accomplished by making a connection between the license agreement and the list of journals as entered in the library’s openURL resolver. In this example all of the journals that are covered by the terms of the agreement were activated and entered as a distinct group within the  library’s openURL resolver. 
 
-In SFX for example this is accomplished by  activating all the journals covered by the agreement within the same target. The target is then given a target public name of "Cambridge University Press Journals Complete" (serialsolutions calls this field databaseName). Then within the
+In the link resolver this is accomplished by activating all the journals covered by the agreement within the same target. The target is then given a target public name of "Cambridge University Press Journals Complete" (Serial Solutions calls this field Database Name). Then within the
 Terms Tool tab of CORAL Licensing the link can be entered between
-the document "Cambridge University Press License Agreement" and the SFX target named "Cambridge University Press Journals Complete". The Terms Tool will now know that all journals available within the "Cambridge University Press Journals Complete" target are covered by the terms of this specific license agreement.
+the document "Cambridge University Press License Agreement" and the SFX or link resolver target named "Cambridge University Press Journals Complete". The Terms Tool will now know that all journals available within the "Cambridge University Press Journals Complete" target are covered by the terms of this specific license agreement.
 
 ![screenshot of table of terms tool resource links](img/terms/termsResourceLink.PNG)
 
 
-The Terms Tool now has the information it needs to operate. The scenario is as follows. The Terms Tool receives an ISSN via the url *http://.../coral/terms/?issn=XXXX-XXXX*. The Terms Tool sends a query with the provided issn to the library’s openURL resolver. The openURL  resolver returns an xml reply listing all of the provider names (SFX’s target public name or Serials Solutions’ Database Name) for the provided ISSN. The Terms Tool queries CORAL Licensing for all license  agreements which have been mapped to each provider name and retrieves  all of the associated license terms from the identified license agreements. The terms are then displayed on screen to the user.
+The Terms Tool now has the information it needs to operate and can perform the query for license expressions. First the Terms Tool receives an ISSN via the url *https://{server name}/licensing/terms.php?issn={ISSN}*. The Terms Tool sends a query with the provided issn to the library’s openURL resolver. The openURL resolver returns an xml reply listing all of the provider names (SFX’s target public name or Serials Solutions’ Database Name) for the provided ISSN. The Terms Tool queries CORAL Licensing for all license  agreements which have been mapped to each provider name and retrieves  all of the associated license terms from the identified license agreements. The terms are then displayed on screen to the user.
 
 ### Terms Tool in Action
 
-The following screenshot shows the Terms Tool display for the journal "American Political Science Review" (issn 0003-0554).  This screenshot is taken from a live in-use terms tool instance that has customized expression types that differentiate between print and electronic.  
+The following screenshot shows the Terms Tool display for the journal "Aeronautical journal" (issn 0001-9240).  This screenshot is taken from a live in-use terms tool instance that has customized expression types that differentiate between print and electronic.  
 
 ![screenshot of terms tool display of links to terms.](img/terms/termsTermsDisplayLinks.png)
 
@@ -60,7 +60,7 @@ following example:
 
 Again, please note that the license terms in these screenshots are all
 fabricated examples and do not reflect the actual terms of the
-provider’s real license agreements. In the *American Political Science Review* example, access is also provided through multiple Gale databases but no license terms were entered for Gale in our system. 
+provider’s real license agreements. In the *Aeronautical journal* example, access is also provided through multiple other databases but no license terms were entered for some in our system. 
 
 
 
@@ -76,12 +76,10 @@ provider’s real license agreements. In the *American Political Science Review*
  the Terms Tool which will dynamically use the ISSN and/or ISBN for the
  specific resource being requested. One example is to place the necessary
  code in the footer of the SFX menu template. Similar options should
- exist for the SerialsSolutions openURL resolver. A number of options
- exist for how the Terms Tool could be implemented. It will be up to
- each library to determine how they wish to create the necessary
- ISSN/ISBN links.
-
-![screenshot of SFX Menu with License Terms Link..](img/terms/termsSFXMenuLink.png)
+ exist for the Serials Solutions openURL resolver. A number of options
+ exist for how the Terms Tool could be implemented. It is up to
+ the library to determine how they wish to create the necessary
+ ISSN/ISBN links and use the Terms Tool.
 
 
 ### Technical Documentation
