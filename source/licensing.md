@@ -48,7 +48,7 @@ The home screen contains a search on the left and a list of license records on t
 
 Select *New License* from the main navigation to begin adding new licensing records.  This will open the License pop-up window. 
 
-![screenshot of Add License form. There are three fields.](img/licensing/licensingAddNewLicense.png)
+![screenshot of Add License form. There are three fields.](img/licensing/licensingAddNewLicense.png "AddNewLicense")
 
 - **License Name:** Name of the license record. A license record can group together all licenses that are either related to each other or related to the same resource. If you have licensed a package of electronic journals from Springer and have over the years collected several licenses and amendments for that package, you can place all of those documents on the same license record.  Then, you need to give the license record a name which gives some indication as to the documents found on that record. In this example ‘Springer Online Journals’ may be a valid license name. If you have license documents for Springer eBooks, you can rename the license to something like 'Springer Online Products'
 
