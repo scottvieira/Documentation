@@ -53,7 +53,7 @@ The *Display Notes* from the license record detail how the interlibrary loan is 
 The Terms Tool will display terms for all providers when the library does have access through multiple providers.  In this example, access is also provided through Proquest Education Journals.  If no interlibrary loan license terms are available for a provider the Terms Tool will show that as well as in the
 following example:
 
-![screenshot of terms tool display of providers with no entered license terms](img/terms/termsProviderNoTerms.png)
+![screenshot of terms tool display of providers with no entered license terms](img/terms/termsProviderNoTerms.PNG)
 
 
 Again, please note that the license terms in these screenshots are all
