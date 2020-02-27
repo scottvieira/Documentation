@@ -44,7 +44,7 @@ The following screenshot shows the Terms Tool display for the journal "Aeronauti
 
 At this point the Terms Tool has already queried both the openURL resolver and then CORAL Licensing and identified that Coursepack, Course Reserves, and Interlibrary Loan terms are available for this journal. The link for Interlibrary Loan leads to the following screenshot.  
 
-![screenshot of terms tool display of terms](img/terms/termsTermsDisplay.png)
+![screenshot of terms tool display of terms](img/terms/TermsDisplay.PNG)
 
 And in the above screenshot the user now sees the specific interlibrary loan license terms for this journal. Access to this journal is available via Cambridge University Press and interlibrary loan use is *Not Clear* (note that this is fabricated data).  
 
