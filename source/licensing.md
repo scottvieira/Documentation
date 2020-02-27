@@ -39,7 +39,7 @@ the top of each page.
 
 #### Home
 
-![image of home screen for Licensing modules.  Search features are on the left and a table of licenses on the right.](img/licensing/licensingHome.png)
+![Home screen for Licensing modules.  Search features are on the left and a table of licenses on the right.](img/licensing/licensingHome.png)
 
 
 The home screen contains a search on the left and a list of license records on the right. The search runs against the following fields: license name, publisher/provider, consortium, license status, document type, and expression type.   
@@ -159,7 +159,7 @@ to hold an interpretation of the text of the clause.
 
 There are two types of expression notes in CORAL Licensing: *Display
 Notes* and *Internal Notes*. You can set the note type to either Internal
-or Display for each expression type on the[*Admin*](#Admin) page detailed later
+or Display for each expression type on the [*Admin*](#Admin) page detailed later
 in this document. Display notes are intended to be displayed outside the module, for instance in the Terms Tool, and there is a additional functionality built.  Internal Notes are for internal use only and do not have additional display functionalities built in.  
 
 
@@ -187,9 +187,9 @@ Using this tab it is possible to relate a specific license to the covered journa
 ![screenshot of display notes window](img/licensing/licensingTermsTool.png)
 
 
-In this example, the Cambridge University Press License Agreement is being associated with the 'Cambridge University Press Journals Complete' target in the link resolver ('Cambridge University Press Journals Complete' is the link resolver's target public name). This License connection allows for the delivery of license terms through the link resolver menu as detailed in the Terms Tool User Guide. This tab is meant to be used in conjunction with the Terms Tool and can be disabled for those who do not wish to use it.
+In this example, the Cambridge University Press License Agreement is being associated with the 'Cambridge University Press Journals Complete' target in the link resolver ('Cambridge University Press Journals Complete is the link resolver's target public name). This License connection allows for the delivery of license terms through the link resolver menu as detailed in the Terms Tool User Guide. This tab is meant to be used in conjunction with the Terms Tool and can be disabled for those who do not wish to use it.
 
-For more information on the Terms Tool, go to the [Terms Tool documentation](http://coral-documentation.readthedocs.io/en/latest/licensing.html#terms-tool).  
+For more information on the Terms Tool, go to the [Terms Tool documentation](https://coral-documentation.readthedocs.io/en/latest/terms.html).  
 
 #### Attachments
 
