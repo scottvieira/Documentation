@@ -15,8 +15,8 @@ anticipating a variety of agreements and institutional goals for
 managing agreements. The module allows users to identify license
 clauses most important to record and track from an institutional point
 of view. With related features like a clause comparison function, and
-ILL and course pack terms tools that can be implemented to deliver
-terms through other systems such as SFX, Serials Solutions, or EBSCO, the CORAL Licensing module
+ILL and course pack Terms Tool that can be implemented to deliver
+terms through other systems such as SFX, Ex Libris (formerly Serials Solutions), or EBSCO Full Text Finder, the CORAL Licensing module
 provides a way to make better use of permissions included in the
 license agreement.
 
@@ -159,7 +159,7 @@ to hold an interpretation of the text of the clause.
 
 There are two types of expression notes in CORAL Licensing: *Display
 Notes* and *Internal Notes*. You can set the note type to either Internal
-or Display for each expression type on the[*Admin*](#Admin) page detailed later
+or Display for each expression type on the [*Admin*](#Admin) page detailed later
 in this document. Display notes are intended to be displayed outside the module, for instance in the Terms Tool, and there is a additional functionality built.  Internal Notes are for internal use only and do not have additional display functionalities built in.  
 
 
@@ -180,7 +180,7 @@ finished and it makes the expression available through the Terms Tool. An email 
 
 Once the expressions or terms of the license are known, the next
 question to ask is ‘Which journals are covered by these terms?’.
-That’s where the *Terms Tool* tab comes into play. The Terms Tool works with the SFX, Serials Solutions and EBSCO link resolvers.   
+That’s where the *Terms Tool* tab comes into play. The Terms Tool works with the SFX, Ex Libris, and EBSCO link resolvers.   
 
 Using this tab it is possible to relate a specific license to the covered journals in a specific target or package. 
 
@@ -189,7 +189,7 @@ Using this tab it is possible to relate a specific license to the covered journa
 
 In this example, the Cambridge University Press License Agreement is being associated with the 'Cambridge University Press Journals Complete' target in the link resolver ('Cambridge University Press Journals Complete' is the link resolver's target public name). This License connection allows for the delivery of license terms through the link resolver menu as detailed in the Terms Tool User Guide. This tab is meant to be used in conjunction with the Terms Tool and can be disabled for those who do not wish to use it.
 
-For more information on the Terms Tool, go to the [Terms Tool documentation](http://coral-documentation.readthedocs.io/en/latest/licensing.html#terms-tool).  
+For more information on the Terms Tool, go to the [Terms Tool documentation]https://coral-documentation.readthedocs.io/en/latest/terms.html).  
 
 #### Attachments
 
