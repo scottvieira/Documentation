@@ -21,7 +21,7 @@ Dashboards Statistics allows for a quick display of your Resources data by Resou
 
 ![Screenshot of Dashboards Yearly Cost](img/dashboards/dashboardsYearlyCost.PNG)
 
-Yearly Costs allows for a quick display of your Resources data by Resource Type, Subject, Acquisition Type, Order Type, Cost Details, and Year Start and end dates.  You can also Group By: Resource, Resource Type,  Subject, and Acquisition Type.  Once your criteria has been selected click Display to view your results or Export to export your results.
+Yearly Costs allows for a quick display of your Resources data by Resource Type, Subject, Acquisition Type, Order Type, Cost Details, and Year Start and end dates.  You can also Group By: Resource, Resource Type,  Subject, and Acquisition Type.  You can also view total sum for all cost details. Once your criteria has been selected click Display to view your results or Export to export your results. 
 
 ![Screenshot of Dashboards Yearly Cost](img/dashboards/dashboardsYearlyCostResults.PNG)
  
