@@ -213,7 +213,7 @@ Specifies the Resource Type that should be associated with the resource that COR
 
 After you start an import, a progress tracker displays. For large imports (greater than 1000 records) this process can take several minutes. If CORAL encounters any errors during the import, the title name and EBSCO KB ID are displayed for each title that had an error. You can use this information to import those titles individually, or you can re-import the package and its titles again.
 
-#### Searching for EBSCO Packages in CORAL
+#### Searching for EBSCO Packages in CORAL and Updates to EBSCO KB
 
 Select Packages from the dropdown menu. Searching by a package name is currently the only option, but results can be filtered by Selection and Content type.
 
