@@ -189,7 +189,7 @@ Using this tab it is possible to relate a specific license to the covered journa
 
 In this example, the Cambridge University Press License Agreement is being associated with the 'Cambridge University Press Journals Complete' target in the link resolver ('Cambridge University Press Journals Complete' is the link resolver's target public name). This License connection allows for the delivery of license terms through the link resolver menu as detailed in the Terms Tool User Guide. This tab is meant to be used in conjunction with the Terms Tool and can be disabled for those who do not wish to use it.
 
-For more information on the Terms Tool, go to the [Terms Tool documentation] https://coral-documentation.readthedocs.io/en/latest/terms.html).  
+For more information on the Terms Tool, go to the [Terms Tool documentation](https://coral-documentation.readthedocs.io/en/latest/terms.html).  
 
 #### Attachments
 
