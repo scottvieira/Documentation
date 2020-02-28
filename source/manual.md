@@ -195,9 +195,14 @@ or
 `Date.format = 'dd-mm-yyyy';`
 
 ### Number formatting
-Currently all numbers in CORAL are in the default en_US 2 decimals. This can be adjusted by the following:
+Currently, all numbers in Coral are in the default format:
 
-Install the php-intl package.
+    - en_US
+    - 2 decimals
+
+This patchs allows to define how numbers should be parsed and displayed in Coral.
+
+First of all, install the php-intl package.
 
 The configuration takes place in common/configuration.ini, as such:
 
@@ -207,6 +212,14 @@ number_decimals = 2
 
 If number_locale is omitted, it will be defaulted to en_US
 If number_decimals is omitted, it will be defaulted to 2
+
+This PR currently affects every part of the resources module using
+cost_to_integer and integer_to_cost function:
+
+    new resource, api, api_client, imports, summary and cost history.
+
+Special sql processing has been made to exports and dashboards.
+Special javascript processing has been made to cost history.
 
 #### Email customization 
 The templates for the workflow notification and alert emails are located in `/admin/emails/`
