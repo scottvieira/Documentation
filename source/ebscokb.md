@@ -5,7 +5,7 @@ Using EBSCO's Knowledge Base with CORAL
 
 EBSCO offers a subscription service called HoldingsIQ for libraries that want to use the EBSCO Knowledge Base(EBSCO KB) to manage their holdings and linking information.  Integrating the EBSCO KB enables your library to search the EBSCO KB for titles, packages, and vendors within CORAL, as well as import titles and packages directly into CORAL.  When you import titles or packages from EBSCO, CORAL automatically creates resources along with their titles, descriptions, access URLs, resource identifiers, subjects, and coverage dates. After you set up the integration, you can access CORAL's EBSCO KB feature.
 
-Please note that EBSCO does not permit the importing of over 10,000 records at one time.  Attempting to import 10,000 or more records may cause a time-out or other error.  Also, the current implementation of CORAL does not support the ability to update holdings information from within CORAL.  
+Please note that EBSCO does not permit the importing of over 10,000 records at one time.  Attempting to import 10,000 or more records may cause a time-out or other error.  
 
 Before you set up your integration and start importing information from the EBSCO KB, you should familiarize yourself with the terminology that EBSCO uses. The EBSCO KB uses the following three data types:
 
