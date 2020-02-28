@@ -194,6 +194,20 @@ or
 
 `Date.format = 'dd-mm-yyyy';`
 
+### Number formatting
+Currently all numbers in CORAL are in the default en_US 2 decimals. This can be adjusted by the following:
+
+Install the php-intl package.
+
+The configuration takes place in common/configuration.ini, as such:
+
+[settings]
+number_locale = "fr_FR"
+number_decimals = 2
+
+If number_locale is omitted, it will be defaulted to en_US
+If number_decimals is omitted, it will be defaulted to 2
+
 #### Email customization 
 The templates for the workflow notification and alert emails are located in `/admin/emails/`
 
