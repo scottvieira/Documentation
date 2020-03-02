@@ -164,6 +164,14 @@ Note that this will send an email to the feedbackEmailAddress also set in `confi
 temporary testing purposes you may wish to change or remove this email address.  The number of days 
 in advance and other email addresses can be modified in the Alert Settings tab of the Admin page. 
 
+CORAL by default will open modules in new windows. However CORAL can be configured to open modules in the same window.
+
+In common/configuration.ini:
+
+[settings]
+open_new_windows = Y/N
+
+
 ### Additional CORAL Resources customization options 
 
 #### Payment formatting 
