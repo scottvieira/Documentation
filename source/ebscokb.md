@@ -5,7 +5,7 @@ Using EBSCO's Knowledge Base with CORAL
 
 EBSCO offers a subscription service called HoldingsIQ for libraries that want to use the EBSCO Knowledge Base(EBSCO KB) to manage their holdings and linking information.  Integrating the EBSCO KB enables your library to search the EBSCO KB for titles, packages, and vendors within CORAL, as well as import titles and packages directly into CORAL.  When you import titles or packages from EBSCO, CORAL automatically creates resources along with their titles, descriptions, access URLs, resource identifiers, subjects, and coverage dates. After you set up the integration, you can access CORAL's EBSCO KB feature.
 
-Please note that EBSCO does not permit the importing of over 10,000 records at one time.  Attempting to import 10,000 or more records may cause a time-out or other error.  
+Please note that EBSCO does not permit the importing of over 10,000 records at one time.  Attempting to import 10,000 or more records may cause a time-out or other error.  Also, the current implementation of CORAL does not support the ability to update holdings information from within CORAL.  
 
 Before you set up your integration and start importing information from the EBSCO KB, you should familiarize yourself with the terminology that EBSCO uses. The EBSCO KB uses the following three data types:
 
@@ -212,37 +212,4 @@ Specifies the Resource Type that should be associated with the resource that COR
 ![Screenshot of package import for EBSCO KB](img/ebscokb/ebscokbImportPackage.PNG)
 
 After you start an import, a progress tracker displays. For large imports (greater than 1000 records) this process can take several minutes. If CORAL encounters any errors during the import, the title name and EBSCO KB ID are displayed for each title that had an error. You can use this information to import those titles individually, or you can re-import the package and its titles again.
-
-#### Searching for EBSCO Packages in CORAL and Updates to EBSCO KB
-
-Select Packages from the dropdown menu. Searching by a package name is currently the only option, but results can be filtered by Selection and Content type.
-
-Once the search is initiated, a list of matching packages will appear containing the following details:
-
-1. Name - containing the package name with vendor in parenthesis.
-2. Title Count - The number of EBSCO KB titles associated with the package with the number selected by your library appearing in parenthesis. 
-3. Content Type - The content type of the package.
-4. Current Status - The status of the package in CORAL.
-5. Current Holdings - The holdings from EBSCO KB.
-
-#### Package Statuses
-The package status indicates the relationship of the package between EBSCO KB and CORAL. There are four possible statuses.
-
-Not Selected & Not Imported. The table cell will be blank, indicating that the package is not selected in EBSCO KB and has no corresponding CORAL Resource record.
-
-Not Selected & Imported. The table cell will have a delete symbol and a “Delete from CORAL” message. This indicates that the package is not selected in EBSCO KB, but has a corresponding Coral Resource record. Clicking on “Delete from CORAL” will present the option to delete the CORAL Resource and all child records (if applicable).
-
-Selected & Not Imported. The table cell will have a warning symbol and a “Import Package” message. This indicates that the package is selected in EBSCO KB, but does not have a corresponding Coral Resource record. Clicking on “Import Package” will start the import package process (see below).
-
-Selected & Imported. The table cell with have a check mark and a “View in CORAL” message. This indicates that the package is selected in EBSCO KB and has a corresponding Coral Resource record. Clicking on “View in CORAL” will take you to the Resource page.
-
-#### Package Holdings
-The package holdings allow you to make changes in EBSCO KB. Clicking on the button will present you will options to toggle the package’s status and import or delete the package from CORAL (if it has been imported).
-For packages that are Not Selected, you can either select the package and, if the package doesn’t not have a Resource record in CORAL, import the package.
-Note: Selecting a package will select it and ALL of its titles. For a-la-carte title selection, click on View Titles and see information about title holdings below.
-
-For packages that are Selected, you can either deselect the package, and if the package has a corresponding Resource record in CORAL, delete the record.
-Note: Deselecting a package will deselect it and ALL of its titles.
-
-![Screenshot of holdings update for EBSCO KB](img/ebscokb/ebscokbPackageHoldingsUpdatekb.PNG)
 
