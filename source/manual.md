@@ -164,14 +164,6 @@ Note that this will send an email to the feedbackEmailAddress also set in `confi
 temporary testing purposes you may wish to change or remove this email address.  The number of days 
 in advance and other email addresses can be modified in the Alert Settings tab of the Admin page. 
 
-CORAL by default will open modules in new windows. However, CORAL can be configured to open modules in the same window.
-
-In common/configuration.ini:
-
-[settings]
-open_new_windows = Y/N
-
-
 ### Additional CORAL Resources customization options 
 
 #### Payment formatting 
@@ -201,33 +193,6 @@ functionality.  Be sure this format matches the format you set in `directory.php
 or 
 
 `Date.format = 'dd-mm-yyyy';`
-
-### Number formatting
-Currently, all numbers in Coral are in the default format:
-
-    - en_US
-    - 2 decimals
-
-This patchs allows to define how numbers should be parsed and displayed in Coral.
-
-First of all, install the php-intl package.
-
-The configuration takes place in common/configuration.ini, as such:
-
-[settings]
-number_locale = "fr_FR"
-number_decimals = 2
-
-If number_locale is omitted, it will be defaulted to en_US
-If number_decimals is omitted, it will be defaulted to 2
-
-This PR currently affects every part of the resources module using
-cost_to_integer and integer_to_cost function:
-
-    new resource, api, api_client, imports, summary and cost history.
-
-Special sql processing has been made to exports and dashboards.
-Special javascript processing has been made to cost history.
 
 #### Email customization 
 The templates for the workflow notification and alert emails are located in `/admin/emails/`
