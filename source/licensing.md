@@ -15,8 +15,8 @@ anticipating a variety of agreements and institutional goals for
 managing agreements. The module allows users to identify license
 clauses most important to record and track from an institutional point
 of view. With related features like a clause comparison function, and
-ILL and course pack Terms Tool that can be implemented to deliver
-terms through other systems such as SFX, Ex Libris (formerly Serials Solutions), or EBSCO Full Text Finder, the CORAL Licensing module
+ILL and course pack terms tools that can be implemented to deliver
+terms through other systems such as SFX, the CORAL Licensing module
 provides a way to make better use of permissions included in the
 license agreement.
 
@@ -48,7 +48,7 @@ The home screen contains a search on the left and a list of license records on t
 
 Select *New License* from the main navigation to begin adding new licensing records.  This will open the License pop-up window. 
 
-![screenshot of Add License form. There are three fields.](img/licensing/licensingAddNewLicense.png "AddNewLicense")
+![screenshot of Add License form. There are three fields.](img/licensing/licensingAddNewLicense.png)
 
 - **License Name:** Name of the license record. A license record can group together all licenses that are either related to each other or related to the same resource. If you have licensed a package of electronic journals from Springer and have over the years collected several licenses and amendments for that package, you can place all of those documents on the same license record.  Then, you need to give the license record a name which gives some indication as to the documents found on that record. In this example ‘Springer Online Journals’ may be a valid license name. If you have license documents for Springer eBooks, you can rename the license to something like 'Springer Online Products'
 
@@ -138,7 +138,6 @@ record.
 
 ##### Adding Expressions
 The *Add New Expression* link opens a pop-up window, where you can add expressions for the documents that have been previously loaded.
-
 ![screenshot of the Expressions form.  There are 3 fields.](img/licensing/licensingAddNewExpression.png)
 
 - **Document:** The document name for which you want to add a new expression. The drop-down is pre-populated from the existing document names in the specific license record. This is a required field.
@@ -159,16 +158,20 @@ to hold an interpretation of the text of the clause.
 
 There are two types of expression notes in CORAL Licensing: *Display
 Notes* and *Internal Notes*. You can set the note type to either Internal
-or Display for each expression type on the [*Admin*](#Admin) page detailed later
+or Display for each expression type on the[*Admin*](#Admin) page detailed later
 in this document. Display notes are intended to be displayed outside the module, for instance in the Terms Tool, and there is a additional functionality built.  Internal Notes are for internal use only and do not have additional display functionalities built in.  
 
 
 The *Add/view Display Notes* link opens a window which allows you to enter multiple display notes. It also displays the Document Text on that same window so that you can refer back to it while adding the notes. The sort order of multiple notes can also be adjusted
 through this same window. 
 
+
+![screenshot of internal notes window](img/licensing/licensingViewEditInternalNotes.png)
+
+
 In the below example, the Interlibrary Loan expression type has been set to use Display Notes and as such the expression is presented with an additional checkbox to the left of the Document Text. 
 
-![screenshot of display notes window](img/licensing/licensingInternalversusDisplayNote.png)
+![[screenshot of display notes window](img/licensing/licensingInternalversusDisplayNote.png)
 
 Internal Notes do not receive this checkbox. When the licensing librarian or other
 appropriate personnel has finished editing the expression
@@ -180,16 +183,16 @@ finished and it makes the expression available through the Terms Tool. An email 
 
 Once the expressions or terms of the license are known, the next
 question to ask is ‘Which journals are covered by these terms?’.
-That’s where the *Terms Tool* tab comes into play. The Terms Tool works with the SFX, Ex Libris, and EBSCO link resolvers.   
+That’s where the *Terms Tool* tab comes into play. The Terms Tool currently works only with the SFX link resolver.  It is true that not every institution uses SFX.  The *Terms Tool* tab could be renamed and/or repurposed for use with  other openurl resolvers or journal management systems. 
 
-Using this tab it is possible to relate a specific license to the covered journals in a specific target or package. 
+Using this tab it is possible to relate a specific license to the covered journals in a specific SFX target or package. 
 
 ![screenshot of display notes window](img/licensing/licensingTermsTool.png)
 
 
-In this example, the Cambridge University Press License Agreement is being associated with the 'Cambridge University Press Journals Complete' target in the link resolver ('Cambridge University Press Journals Complete' is the link resolver's target public name). This License connection allows for the delivery of license terms through the link resolver menu as detailed in the Terms Tool User Guide. This tab is meant to be used in conjunction with the Terms Tool and can be disabled for those who do not wish to use it.
+In this example, the Cambridge University Press License Agreement is being associated with the 'Cambridge University Press Journals Complete' target in SFX ('Cambridge University Press Journals Complete' is the SFX target public name). This SFX – License connection allows for the delivery of license terms through the SFX menu as detailed in the Terms Tool User Guide. This tab is meant to be used in conjunction with the Terms Tool and can be disabled for those who do not wish to use it.
 
-For more information on the Terms Tool, go to the [Terms Tool documentation](https://coral-documentation.readthedocs.io/en/latest/terms.html).  
+For more information on the Terms Tool, go to the [Terms Tool documentation](http://coral-documentation.readthedocs.io/en/latest/licensing.html#terms-tool).  
 
 #### Attachments
 
@@ -272,4 +275,6 @@ details on authentication.
 **Terms Tool Email:** Enter email address if you wish the user to
 receive email notification when the terms tool box is checked for a
 given expression. Leave this blank for all others.
+
+
 
