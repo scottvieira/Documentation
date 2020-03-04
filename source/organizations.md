@@ -147,3 +147,7 @@ All valid users are given view only access when logged into CORAL Organizations 
 
 * **View only:** provides only the ability to view existing organization records.
 
+
+
+* **View only:** provides only the ability to view existing organization records.
+

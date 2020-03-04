@@ -164,6 +164,14 @@ Note that this will send an email to the feedbackEmailAddress also set in `confi
 temporary testing purposes you may wish to change or remove this email address.  The number of days 
 in advance and other email addresses can be modified in the Alert Settings tab of the Admin page. 
 
+By default CORAL will open modules in new windows. However, it can be configured to open modules in the same window.
+
+In common/configuration.ini:
+
+[settings]
+open_new_windows = Y/N
+
+
 ### Additional CORAL Resources customization options 
 
 #### Payment formatting 
@@ -193,6 +201,31 @@ functionality.  Be sure this format matches the format you set in `directory.php
 or 
 
 `Date.format = 'dd-mm-yyyy';`
+
+### Number formatting
+CORAL can be configured to define how numbers should be parsed and displayed. The default format is:
+
+    - en_US
+    - 2 decimals
+
+To define how numbers display in your instance, install the php-intl package.
+
+The configuration takes place in common/configuration.ini, as such:
+
+[settings]
+number_locale = "fr_FR"
+number_decimals = 2
+
+If number_locale is omitted, it will be defaulted to en_US
+If number_decimals is omitted, it will be defaulted to 2
+
+This will affect every part of the resources module using
+cost_to_integer and integer_to_cost function:
+
+    new resource, api, api_client, imports, summary and cost history.
+
+Special sql processing has been made to exports and dashboards.
+Special javascript processing has been made to cost history.
 
 #### Email customization 
 The templates for the workflow notification and alert emails are located in `/admin/emails/`
@@ -259,3 +292,5 @@ If interoperability isn’t working (you’ll know it’s not working when you g
 have the database setting and that your database user can connect to that database.  Also, be sure to complete installation of both modules involved.
 
 If your remote user auth variable isn’t working, verify that you have `register_globals = On`
+
+

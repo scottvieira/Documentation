@@ -15,9 +15,9 @@ anticipating a variety of agreements and institutional goals for
 managing agreements. The module allows users to identify license
 clauses most important to record and track from an institutional point
 of view. With related features like a clause comparison function, and
-ILL and course pack terms tools that can be implemented to deliver
-terms through other systems such as SFX, the CORAL Licensing module
-provides a way to make better use of permissions included in the
+ILL and course pack Terms Tool that can be implemented to deliver
+terms through other systems such as SFX, or EBSCO Full Text Finder, and potentially for Ex Libris (formerly Serials Solutions) the CORAL Licensing module
+the CORAL Licensing module provides a way to make better use of permissions included in the
 license agreement.
 
 *Please note that screenshots and text in this document are just
@@ -183,7 +183,8 @@ finished and it makes the expression available through the Terms Tool. An email 
 
 Once the expressions or terms of the license are known, the next
 question to ask is ‘Which journals are covered by these terms?’.
-That’s where the *Terms Tool* tab comes into play. The Terms Tool currently works only with the SFX link resolver.  It is true that not every institution uses SFX.  The *Terms Tool* tab could be renamed and/or repurposed for use with  other openurl resolvers or journal management systems. 
+
+That’s where the *Terms Tool* tab comes into play. The Terms Tool works with the SFX, and EBSCO link resolvers with potentially options for integration with Ex Libris Serials Solutions.   
 
 Using this tab it is possible to relate a specific license to the covered journals in a specific SFX target or package. 
 
@@ -275,6 +276,4 @@ details on authentication.
 **Terms Tool Email:** Enter email address if you wish the user to
 receive email notification when the terms tool box is checked for a
 given expression. Leave this blank for all others.
-
-
 
