@@ -246,3 +246,6 @@ Note: Deselecting a package will deselect it and ALL of its titles.
 
 ![Screenshot of holdings update for EBSCO KB](img/ebscokb/ebscokbPackageHoldingsUpdatekb.PNG)
 
+
+
+
