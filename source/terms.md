@@ -68,9 +68,9 @@ provider’s real license agreements.
  ISSN or ISBN such as
  [*http://coral.mylibrary.edu/coral/terms/?issn=XXXX-XXXX*.](http://coral.mylibrary.edu/coral/terms?issn=XXXX-XXXX)
  Using the Terms Tool requires some way for users to easily send this
- type of ISSN/ISBN query. In order to use the Terms Tool, the library's link resolver must be configured with the URL. To configure    consult instructions for the product your library uses. A number of options
+ type of ISSN/ISBN query. In order to use the Terms Tool, the library's link resolver must be configured with the URL. To configure    consult documentation for the openURL link resolver used by your library. A number of options
  exist for how the Terms Tool could be implemented and utilized. It is up to
- the library to determine how they wish to create the necessary
+ the individual library to determine how they wish to create the necessary
  ISSN/ISBN links and use the Terms Tool.
 
 
