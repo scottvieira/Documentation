@@ -16,7 +16,7 @@ managing agreements. The module allows users to identify license
 clauses most important to record and track from an institutional point
 of view. With related features like a clause comparison function, and
 ILL and course pack Terms Tool that can be implemented to deliver
-terms through other systems such as SFX, Ex Libris (formerly Serials Solutions), or EBSCO Full Text Finder, the CORAL Licensing module
+terms through other systems such as SFX, or EBSCO Full Text Finder, and potentially for Ex Libris (formerly Serials Solutions) the CORAL Licensing module
 provides a way to make better use of permissions included in the
 license agreement.
 
@@ -272,4 +272,7 @@ details on authentication.
 **Terms Tool Email:** Enter email address if you wish the user to
 receive email notification when the terms tool box is checked for a
 given expression. Leave this blank for all others.
+
+
+
 
