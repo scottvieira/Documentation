@@ -180,7 +180,7 @@ finished and it makes the expression available through the Terms Tool. An email 
 
 Once the expressions or terms of the license are known, the next
 question to ask is ‘Which journals are covered by these terms?’.
-That’s where the *Terms Tool* tab comes into play. The Terms Tool works with the SFX, Ex Libris, and EBSCO link resolvers.   
+That’s where the *Terms Tool* tab comes into play. The Terms Tool works with the SFX, and EBSCO link resolvers with potentially options for integration with Ex Libris Serials Solutions.   
 
 Using this tab it is possible to relate a specific license to the covered journals in a specific target or package. 
 
