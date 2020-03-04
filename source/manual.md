@@ -164,6 +164,14 @@ Note that this will send an email to the feedbackEmailAddress also set in `confi
 temporary testing purposes you may wish to change or remove this email address.  The number of days 
 in advance and other email addresses can be modified in the Alert Settings tab of the Admin page. 
 
+CORAL by default will open modules in new windows. However, CORAL can be configured to open modules in the same window.
+
+In common/configuration.ini:
+
+[settings]
+open_new_windows = Y/N
+
+
 ### Additional CORAL Resources customization options 
 
 #### Payment formatting 
@@ -286,3 +294,5 @@ If interoperability isn’t working (you’ll know it’s not working when you g
 have the database setting and that your database user can connect to that database.  Also, be sure to complete installation of both modules involved.
 
 If your remote user auth variable isn’t working, verify that you have `register_globals = On`
+
+
