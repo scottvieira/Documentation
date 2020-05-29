@@ -109,7 +109,9 @@ that were no longer available but for which there was value in retaining
 a record in CORAL.
 
 ##### Add new note
+
 ![Screenshot of Add New Note](img/resources/resourcesAddNewNote.PNG)
+
 
 An additional notes feature has been added to the *Product*,
 *Acquisitions* and *Access* tab. The note will be visible only on the
