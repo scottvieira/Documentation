@@ -1,9 +1,6 @@
 CORAL Resources Module User Guide
 ---------------------------------
 
-.. |br| raw:: html
-
-    <br>
 
 ### About CORAL Resources
 
@@ -113,7 +110,7 @@ that were no longer available but for which there was value in retaining
 a record in CORAL.
 
 ##### Add new note 
-![Screenshot of Add New Note]|br|(img/resources/resourcesAddNewNote.PNG)
+![Screenshot of Add New Note](img/resources/resourcesAddNewNote.PNG)
 
 
 An additional notes feature has been added to the *Product*,
