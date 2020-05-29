@@ -108,8 +108,9 @@ status as ‘Archived’. This was intended to be used to identify resources
 that were no longer available but for which there was value in retaining
 a record in CORAL.
 
-##### Add new note
-![Screenshot of Add New Note]<br>(img/resources/resourcesAddNewNote.PNG)
+##### Add new note <br>
+![Screenshot of Add New Note](img/resources/resourcesAddNewNote.PNG)
+<br>
 
 
 An additional notes feature has been added to the *Product*,
